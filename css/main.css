@@ -236,26 +236,62 @@ p { margin-bottom: 15px; color: var(--text-light); }
 }
 
 /* Dropdown */
+/* --- DROPDOWN MENI (POPRAVLJENO) --- */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 100%; /* Odmah ispod linka */
     left: 0;
-    background: var(--white);
-    width: 200px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    min-width: 220px; /* Malo širi meni da tekst stane */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Jača senka */
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    border-top: 3px solid #004085; /* Plava linija na vrhu za stil */
+    border-radius: 0 0 4px 4px;
+    z-index: 1000; /* KLJUČNO: Ovo diže meni iznad slajdera! */
 }
+
+/* Prikazivanje na hover */
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-.dropdown-menu li { border-bottom: 1px solid #eee; }
-.dropdown-menu a { padding: 12px 20px; font-size: 14px; }
-.dropdown-menu a:hover { background: var(--light-bg); padding-left: 25px; }
+
+.dropdown-menu li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize; /* Prvo slovo veliko, ostala mala */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover efekat za stavke u meniju */
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    color: #004085;
+    padding-left: 25px; /* Malo pomeranje teksta */
+}
 
 .hamburger { display: none; cursor: pointer; }
 .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--text-dark); transition: 0.3s; }
@@ -847,9 +883,12 @@ p { margin-bottom: 15px; color: var(--text-light); }
 
     /* 2. HEADER LOGO */
     .main-header .container { padding: 0 15px; height: 70px; }
-    .logo-wrapper { gap: 8px; }
+    .logo-wrapper { gap: 15px; }
     .logo-img-1 { height: 32px; }
-    .logo-img-2 { height: 24px; }
+    .logo-img-2 { 
+        height: 60px;
+        
+    }
 
     /* 3. HERO SLIDER */
     .hero-slider { height: 450px; }

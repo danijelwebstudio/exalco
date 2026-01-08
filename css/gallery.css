@@ -1,0 +1,217 @@
+/* =========================================
+   GALLERY PAGE STYLES (FINALNA VERZIJA)
+   ========================================= */
+
+/* --- PAGE HEADER --- */
+.page-header {
+    background: url('../assets/images/hero/slide2.jpg') no-repeat center center/cover;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.page-header .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 34, 68, 0.75);
+}
+
+.page-header .container { position: relative; z-index: 2; }
+
+.page-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb { font-size: 16px; color: #ccc; }
+.breadcrumb a { color: #fff; font-weight: 500; }
+.breadcrumb i { margin: 0 10px; font-size: 12px; }
+
+/* --- GALLERY GRID --- */
+.gallery-section { padding-bottom: 80px; }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 300px;
+    background-color: #000;
+}
+
+.gallery-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0.95;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* --- CTA SECTION (POPRAVLJENO DUGME) --- */
+.cta-section {
+    background-color: #f4f7fa;
+    padding: 80px 0;
+    text-align: center;
+    border-top: 1px solid #e1e5ea;
+}
+
+.cta-content h2 { color: #1a2b4c; font-size: 32px; margin-bottom: 15px; }
+.cta-content p { color: #666; max-width: 600px; margin: 0 auto 30px auto; font-size: 16px; }
+
+/* Popravka za dugme da bude lepo i centrirano */
+.cta-section .submit-btn {
+    display: inline-flex !important; /* Forsira flex da poravna ikonicu */
+    align-items: center;
+    justify-content: center;
+    width: auto !important; /* Nije preko celog ekrana */
+    padding: 15px 40px; /* Malo šire dugme */
+    background-color: #004085;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+    gap: 10px; /* Razmak između teksta i strelice */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cta-section .submit-btn i {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* HOVER EFEKAT (Isti kao social) */
+.cta-section .submit-btn:hover {
+    background-color: #222;       /* Tamno siva boja */
+    transform: translateY(-5px);  /* Diže se gore */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Jača senka */
+}
+
+.cta-section .submit-btn:hover i {
+    transform: translateX(5px); /* Strelica ide desno */
+}
+
+/* =========================================
+   LIGHTBOX FIXES (POPRAVKA DUPLIH STRELICA)
+   ========================================= */
+
+/* 1. SKLANJANJE TEKSTA ISPOD SLIKE */
+.lb-dataContainer {
+    display: none !important; 
+}
+
+/* 2. SAKRIVANJE DEFAULT STRELICA I PRIKAZ NOVIH */
+.lb-nav a.lb-prev, .lb-nav a.lb-next {
+    opacity: 1 !important; /* Uvek vidljive */
+    background-image: none !important; /* <--- OVO UKLANJA STARE STRELICE */
+    width: 50px; 
+}
+
+/* Nova Leva strelica (FontAwesome) */
+.lb-prev:before {
+    content: '\f053'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5); 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Nova Desna strelica (FontAwesome) */
+.lb-next:before {
+    content: '\f054'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.lb-prev:hover:before, .lb-next:hover:before {
+    background: #004085; /* Plava boja na hover */
+}
+
+/* Dugme za zatvaranje (X) */
+.lb-close {
+    opacity: 1;
+    top: 20px;
+    right: 20px;
+    background-image: none !important; /* Sklanjamo stari X */
+}
+
+/* Novi X (FontAwesome) */
+.lb-close:after {
+    content: '\f00d'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: block; /* Osigurava da se vidi */
+}
+
+.lb-close:hover:after {
+    background: red;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .page-header h1 { font-size: 32px; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item { height: 250px; }
+    
+    .lb-prev:before, .lb-next:before {
+        width: 40px; height: 40px; font-size: 20px; /* Manje strelice na telefonu */
+    }
+}

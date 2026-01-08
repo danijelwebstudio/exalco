@@ -1,0 +1,147 @@
+/* =========================================
+   CEO MESSAGE STYLES
+   ========================================= */
+
+/* --- PAGE HEADER (Isti stil, druga slika ako želiš) --- */
+.page-header {
+    background: url('../assets/images/hero/exal-factory.jpg') no-repeat center center/cover;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.page-header .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 34, 68, 0.8);
+}
+
+.page-header .container { position: relative; z-index: 2; }
+
+.page-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb { font-size: 16px; color: #ccc; }
+.breadcrumb a { color: #fff; font-weight: 500; }
+.breadcrumb i { margin: 0 10px; font-size: 12px; }
+
+/* --- CEO CONTENT --- */
+.ceo-section {
+    padding-bottom: 80px;
+}
+
+.ceo-wrapper {
+    display: flex;
+    align-items: flex-start; /* Poravnava tekst i sliku gore */
+    gap: 60px;
+}
+
+/* Slika Direktora */
+.ceo-image {
+    flex: 1;
+    position: relative;
+}
+
+.ceo-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px #004085; /* Plavi okvir iza slike */
+    border: 1px solid #ddd;
+}
+
+/* Tekst Poruke */
+.ceo-text {
+    flex: 1.5;
+}
+
+.ceo-text h2 {
+    color: #1a2b4c;
+    font-size: 30px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.ceo-text h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #f39c12; /* Zlatna linija */
+}
+
+.ceo-message-body {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.ceo-message-body p {
+    margin-bottom: 20px;
+}
+
+/* Citat stil (opciono za uvod) */
+.quote-intro {
+    font-size: 18px;
+    font-style: italic;
+    color: #004085;
+    border-left: 4px solid #004085;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Potpis */
+.ceo-signature {
+    margin-top: 40px;
+}
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a2b4c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.ceo-title {
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Potpis slika (ako imaš skeniran potpis, ako ne, briši ovo) */
+.signature-img {
+    margin-top: 15px;
+    height: 50px;
+    opacity: 0.7;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .ceo-wrapper {
+        flex-direction: column;
+    }
+    .ceo-image {
+        max-width: 400px;
+        margin: 0 auto 30px auto;
+    }
+}
