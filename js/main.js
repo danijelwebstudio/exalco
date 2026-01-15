@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // ==========================================
-    // 1. MOBILE NAVIGATION
+    // 1. MOBILE NAVIGATION (HAMBURGER)
     // ==========================================
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Zatvori meni kad se klikne na link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
+    // Zatvori meni kad se klikne na obican link (koji nije dropdown)
+    document.querySelectorAll('.nav-menu a:not(.dropdown > a)').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
@@ -22,7 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 2. HEADER SCROLL EFFECT
+    // 2. DROPDOWN MENI ZA MOBILNE (KLIK LOGIKA)
+    // ==========================================
+    const dropdownLinks = document.querySelectorAll('.dropdown > a');
+
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Proveravamo da li je ekran mobilni/tablet (ispod 992px)
+            if (window.innerWidth <= 992) {
+                e.preventDefault(); // Sprečava odlazak na drugu stranu
+                
+                // Nađi roditelja (li.dropdown)
+                const parent = link.parentElement;
+                
+                // Zatvori sve ostale otvorene menije da ne bude guzva
+                document.querySelectorAll('.dropdown').forEach(item => {
+                    if (item !== parent) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                // Otvori ili zatvori trenutni meni
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // ==========================================
+    // 3. HEADER SCROLL EFFECT
     // ==========================================
     const header = document.querySelector('.main-header');
     window.addEventListener('scroll', () => {
@@ -34,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. STATS COUNTER ANIMATION (POPRAVLJENO)
+    // 4. STATS COUNTER ANIMATION
     // ==========================================
     const statsSection = document.querySelector('.stats-banner');
     const stats = document.querySelectorAll('.stat-item h3');
@@ -42,46 +69,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startCount(el) {
         const goalText = el.innerText;
-        // Izvuci samo brojeve (npr. iz "16,000" pravi 16000)
         const goalNum = parseInt(goalText.replace(/,/g, '').replace(/[^0-9]/g, '')) || 0;
         
         if(goalNum === 0) return;
 
         let count = 0;
-        const duration = 2000; // Animacija traje 2 sekunde za SVE brojeve
-        const intervalTime = 20; // Osvežava se svakih 20ms
-        
-        // Izračunaj koliko treba da skoči u svakom koraku da bi stigao na vreme
-        // npr. za 16000 skace po 160, a za 100 skace po 1
+        const duration = 2000;
+        const intervalTime = 20;
         const step = Math.ceil(goalNum / (duration / intervalTime));
 
         const counter = setInterval(() => {
             count += step;
-            
             if (count >= goalNum) {
-                count = goalNum; // Da ne prebaci broj
+                count = goalNum;
                 clearInterval(counter);
             }
-            
-            // Vrati format (dodaj + ako je bio tu)
             el.innerText = count.toLocaleString() + (goalText.includes('+') ? '+' : ''); 
-            
         }, intervalTime);
     }
 
-    window.addEventListener('scroll', () => {
-        if (!statsSection) return;
-        const sectionPos = statsSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 1.3;
-
-        if (sectionPos < screenPos && !started) {
-            stats.forEach(stat => startCount(stat));
-            started = true;
-        }
-    });
+    if(statsSection) {
+        window.addEventListener('scroll', () => {
+            const sectionPos = statsSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight / 1.3;
+            if (sectionPos < screenPos && !started) {
+                stats.forEach(stat => startCount(stat));
+                started = true;
+            }
+        });
+    }
 
     // ==========================================
-    // 4. HERO SLIDER LOGIC
+    // 5. HERO SLIDER LOGIC
     // ==========================================
     const slides = document.querySelectorAll('.slide');
     const nextBtn = document.querySelector('.next-btn');
@@ -110,28 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
             showSlide(currentSlide - 1);
         }
 
-        if(nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                nextSlide();
-                resetTimer();
-            });
-        }
+        if(nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
+        if(prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetTimer(); });
 
-        if(prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                prevSlide();
-                resetTimer();
-            });
-        }
-
-        function startTimer() {
-            slideTimer = setInterval(nextSlide, slideInterval);
-        }
-
-        function resetTimer() {
-            clearInterval(slideTimer);
-            startTimer();
-        }
+        function startTimer() { slideTimer = setInterval(nextSlide, slideInterval); }
+        function resetTimer() { clearInterval(slideTimer); startTimer(); }
 
         startTimer();
     }
