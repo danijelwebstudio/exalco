@@ -1,0 +1,32 @@
+html { scroll-behavior: smooth; }
+
+/* FADE IN UP */
+.reveal {
+    opacity: 0;
+    transform: translateY(80px); 
+    transition: all 0.8s ease-out;
+    visibility: hidden;
+}
+
+/* FADE IN LEFT */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.8s ease-out;
+    visibility: hidden;
+}
+
+/* FADE IN RIGHT */
+.reveal-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.8s ease-out;
+    visibility: hidden;
+}
+
+/* KLASA KOJA SE AKTIVIRA/DEAKTIVIRA */
+.active {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+    visibility: visible !important;
+}

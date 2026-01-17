@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/ceo.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
 
@@ -25,38 +26,45 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="lang-search">
-                    <a href="ceo-message.html" class="lang-active">EN</a>
+                    <a href="../pages/ceo-message-sr.html">SR</a>
                     <span class="divider">|</span>
-                    <a href="ceo-message-sr.html">SR</a>
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <a href="../pages/ceo-message.html" class="lang-active">EN</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <header class="main-header">
+   <header class="main-header">
         <div class="container">
             <div class="logo-wrapper">
-                <a href="../index-en.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Kosar Logo" class="logo-img-1"></a>
-                <a href="../index-en.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Exalco Logo" class="logo-img-2"></a>
+                <a href="../index-en.html" class="logo-item">
+                    <img src="../assets/images/kosar-logo-min.png" alt="Kosar Aluminium Logo" class="logo-img-1">
+                </a>
+                <a href="../index-en.html" class="logo-item">
+                    <img src="../assets/images/EXAL.jpg" alt="EXALCO Logo" class="logo-img-2">
+                </a>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="../index-en.html">Home</a></li>
+                    <li><a href="../index-en.html" class="active">Home</a></li>
                     
                     <li class="dropdown">
-                        <a href="#" class="active">Company <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">Company <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="ceo-message.html" style="color: #004085; font-weight: bold;">CEO's Message</a></li>
+                            <li><a href="../pages/about-us.html">About Us</a></li>
+                            <li><a href="../pages/ceo-message.html">CEO's Message</a></li>
                         </ul>
                     </li>
 
-                    <li class="dropdown"><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li class="dropdown"><a href="#">Forms <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                    
+                    <li><a href="../pages/contact.html">Contact</a></li>
                 </ul>
                 <div class="header-search"><i class="fas fa-search"></i></div>
                 <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
@@ -67,8 +75,8 @@
     <section class="page-header">
         <div class="overlay"></div>
         <div class="container">
-            <h1>CEO's Message</h1>
-            <div class="breadcrumb">
+            <h1 class="reveal">CEO's Message</h1>
+            <div class="breadcrumb reveal">
                 <a href="../index-en.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Company</span>
             </div>
         </div>
@@ -78,11 +86,11 @@
         <div class="container">
             <div class="ceo-wrapper">
                 
-                <div class="ceo-image">
-                    <img src="../assets/images/gallery/1.jpg" alt="Company CEO">
+                <div class="ceo-image reveal-left">
+                    <img src="../assets/images/hero/exal-factory.jpg" alt="Company CEO">
                 </div>
 
-                <div class="ceo-text">
+                <div class="ceo-text reveal-right">
                     <h2>Dear Customers and Partners,</h2>
                     
                     <div class="ceo-message-body">
@@ -112,24 +120,29 @@
         </div>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer reveal">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-col">
-                    <h4>About EXAL</h4>
+                    <h4>About EXALCO Company</h4>
                     <div class="footer-line"></div>
-                    <p>Kausar Zanjan Aluminum Company with the EXALCO brand is known as one of the most reputable brands in the aluminum profile industry.</p>
+                    <p>Kausar Zanjan Aluminum Company, under the brand EXALCO, is known as one of the most reputable brands
+                        in the aluminum profile industry through the production of various types of them.</p>
                 </div>
+
                 <div class="footer-col">
-                    <h4>Quick Access</h4>
+                    <h4>Quick Links</h4>
                     <div class="footer-line"></div>
                     <ul class="footer-links">
-                        <li><a href="../index-en.html">Home</a></li>
-                        <li><a href="#">Company</a></li>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="pages/about-us.html">About Us</a></li>
+                        <li><a href="pages/ceo-message.html">CEO's Message</a></li>
                         <li><a href="#">Products</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <div class="footer-line"></div>
@@ -138,12 +151,25 @@
                         <li><i class="fas fa-phone"></i> +387 65 000 000</li>
                         <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
                     </ul>
+                    
+                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
-                <p>All rights Reserved. | Website Designed & hosted: Danijel Zorić</p>
+                <p>All rights reserved. | Design and hosting: Danijel Zorić</p>
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -154,5 +180,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>

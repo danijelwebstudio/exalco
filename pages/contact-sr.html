@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
 
@@ -24,17 +25,14 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="lang-search">
-                    <a href="index.html" class="lang-active">SR</a>
+                    <a href="contact-sr.html" class="lang-active">SR</a>
                     <span class="divider">|</span>
-                    <a href="index-en.html">EN</a>
+                    <a href="contact.html">EN</a>
 
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <header class="main-header">
         <div class="container">
@@ -57,18 +55,10 @@
                             <li><a href="../pages/ceo-message-sr.html">Poruka Direktora</a></li>
                         </ul>
                     </li>
-
                     <li class="dropdown">
                         <a href="#">Proizvodi <i class="fas fa-chevron-down"></i></a>
-                        </li>
-                    
                     <li><a href="../pages/gallery-sr.html">Galerija</a></li>
                     <li><a href="#">Blog</a></li>
-                    
-                    <li class="dropdown">
-                        <a href="#">Obrasci <i class="fas fa-chevron-down"></i></a>
-                    </li>
-                    
                     <li><a href="../pages/contact-sr.html">Kontakt</a></li>
                 </ul>
                 <div class="header-search"><i class="fas fa-search"></i></div>
@@ -80,8 +70,8 @@
     <section class="page-header">
         <div class="overlay"></div>
         <div class="container">
-            <h1>Kontaktirajte Nas</h1>
-            <p>Stupite u kontakt sa našim stručnim timom za upite i podršku.</p>
+            <h1 class="reveal">Kontaktirajte Nas</h1>
+            <p class="reveal">Stupite u kontakt sa našim stručnim timom za upite i podršku.</p>
         </div>
     </section>
 
@@ -89,7 +79,7 @@
         <div class="container">
             <div class="contact-wrapper">
                 
-                <div class="contact-info-box">
+                <div class="contact-info-box reveal-left">
                     <h2>Budimo u Kontaktu</h2>
                     <p class="subtitle">Tu smo da odgovorimo na sva vaša pitanja o našim proizvodima i iskustvima.</p>
                     
@@ -129,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="contact-form-box">
+                <div class="contact-form-box reveal-right">
                     <h2>Pošaljite Nam Poruku</h2>
                     
                     <form action="https://formspree.io/f/TVOJ_KOD_OVDE" method="POST" class="styled-form">
@@ -170,7 +160,7 @@
         </div>
     </section>
 
-    <div class="full-width-map">
+    <div class="full-width-map reveal">
         <iframe 
             src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
@@ -182,24 +172,30 @@
         </iframe>
     </div>
 
-    <footer class="main-footer">
+   
+    <footer class="main-footer reveal">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-col">
                     <h4>O Kompaniji EXAL</h4>
                     <div class="footer-line"></div>
-                    <p>Kompanija Kausar Zanjan Aluminum, pod brendom EXALCO, poznata je kao jedan od najuglednijih brendova u industriji aluminijumskih profila.</p>
+                    <p>Kompanija Kausar Zanjan Aluminum, pod brendom EXALCO, poznata je kao jedan od najuglednijih brendova
+                        u industriji aluminijumskih profila kroz proizvodnju različitih vrsta istih.</p>
                 </div>
+
                 <div class="footer-col">
                     <h4>Brzi Pristup</h4>
                     <div class="footer-line"></div>
                     <ul class="footer-links">
-                        <li><a href="../index-sr.html">Početna</a></li>
-                        <li><a href="../pages/about-us-sr.html">Kompanija</a></li>
+                         <li><a href="../index.html">Početna</a></li>
+                        <li><a href="about-us-sr.html">O Nama</a></li>
+                        <li><a href="ceo-message-sr.html">Poruka Direktora</a></li>
                         <li><a href="#">Proizvodi</a></li>
-                        <li><a href="../pages/contact-sr.html">Kontakt</a></li>
+                        <li><a href="gallery-sr.html">Galerija</a></li>
+                        <li><a href="contact-sr.html">Kontakt</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Kontakt</h4>
                     <div class="footer-line"></div>
@@ -208,9 +204,22 @@
                         <li><i class="fas fa-phone"></i> +387 65 000 000</li>
                         <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
                     </ul>
+                    
+                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
                 <p>Sva prava zadržana. | Dizajn i hosting: Danijel Zorić</p>
@@ -224,5 +233,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>
