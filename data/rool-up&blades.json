@@ -1,0 +1,146 @@
+{
+    "PA15": {
+        "image": "../assets/images/products/RollUpBlades/PA15.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/PA15.webp",
+        "extra_images": [],
+        "code": "PA15",
+        "en": {
+            "name": "Roll-up Blades 10cm Profil code PA15",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "17.5*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.734" }
+        },
+        "sr": {
+            "name": "Lamelice 10cm code PA15",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "17.5*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.734" }
+        }
+    },
+    "PA05": {
+        "image": "../assets/images/products/RollUpBlades/PA05.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/PA05.webp",
+        "extra_images": [],
+        "code": "PA05",
+        "en": {
+            "name": "Roll-up Blades 5cm Profil code PA05",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "15.3*83.2", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.715" }
+        },
+        "sr": {
+            "name": "Lamelice 5cm code PA05",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "15.3*83.2", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.715" }
+        }
+    },
+    "PA10": {
+        "image": "../assets/images/products/RollUpBlades/PA10.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/PA10.webp",
+        "extra_images": [],
+        "code": "PA10",
+        "en": {
+            "name": "Roll-up Blades 8cm Profil code PA10",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "17.5*85", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.567" }
+        },
+        "sr": {
+            "name": "Lamelice 8cm code PA10",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "17.5*85", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.567" }
+        }
+    },
+    "PA01": {
+        "image": "../assets/images/products/RollUpBlades/PA01.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/PA01.webp",
+        "extra_images": [],
+        "code": "PA01",
+        "en": {
+            "name": "Roll-up Blades 9cm Profil code PA01",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "35*90", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.26" }
+        },
+        "sr": {
+            "name": "Lamelice 9cm code PA01",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "35*90", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.26" }
+        }
+    },
+    "ROLL-UP-BLADES-PROFIL": {
+        "image": "../assets/images/products/RollUpBlades/Roll-up Blades Profil.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil.webp",
+        "extra_images": [],
+        "code": "ROLL-UP-BLADES-PROFIL",
+        "en": {
+            "name": "Roll-up Blades Profil",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "18*30.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.26" }
+        },
+        "sr": {
+            "name": "Profil za lamelice",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "18*30.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.26" }
+        }
+    },
+    "ROLL-UP-BLADES-PROFIL-2": {
+        "image": "../assets/images/products/RollUpBlades/Roll-up Blades Profil-2.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil-2.webp",
+        "extra_images": [],
+        "code": "ROLL-UP-BLADES-PROFIL-2",
+        "en": {
+            "name": "Roll-up Blades Profil",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "16.8*29.6*31.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.291" }
+        },
+        "sr": {
+            "name": "Profil za lamelice 2",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "16.8*29.6*31.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.291" }
+        }
+    },
+    "ROLL-UP-BLADES-PROFIL-3": {
+        "image": "../assets/images/products/RollUpBlades/Roll-up Blades Profil-3.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil-3.webp",
+        "extra_images": [],
+        "code": "ROLL-UP-BLADES-PROFIL-3",
+        "en": {
+            "name": "Roll-up Blades Profil",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "18*30.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.26" }
+        },
+        "sr": {
+            "name": "Profil za lamelice 3",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "18*30.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.26" }
+        }
+    },
+    "PA20": {
+        "image": "../assets/images/products/RollUpBlades/PA20.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/PA20.webp",
+        "extra_images": [],
+        "code": "PA20",
+        "en": {
+            "name": "Roll-up Rail 6cm Profil code PA20",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "35*6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.875" }
+        },
+        "sr": {
+            "name": "Šina 6cm code PA20",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "35*6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.875" }
+        }
+    },
+    "RO20": {
+        "image": "../assets/images/products/RollUpBlades/RO20.webp",
+        "tech_image": "../assets/images/products/RollUpBlades/tech/RO20.webp",
+        "extra_images": [],
+        "code": "RO20",
+        "en": {
+            "name": "Vertical rail Profile, long base, code RO20",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "32.5*39.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.387" }
+        },
+        "sr": {
+            "name": "Vertikalna šina code RO20",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "32.5*39.9", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.387" }
+        }
+    }
+}

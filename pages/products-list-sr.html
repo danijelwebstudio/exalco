@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Proizvoda</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <style>
+        .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; margin-bottom: 80px; align-items: start; }
+        .profile-card { background: #fff; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
+        .profile-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-color: #0056b3; }
+        .card-img-wrapper { height: 220px; padding: 20px; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-bottom: 1px solid #eee; }
+        .profile-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .card-info { padding: 20px; text-align: center; }
+        .code-badge { background: #e3f2fd; color: #0056b3; padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 12px; display:inline-block; margin-bottom:10px; }
+        .profile-name { font-size: 16px; font-weight: 700; color: #333; margin: 0; }
+        .prod-desc { font-size: 13px; color: #666; margin-top: 8px; line-height: 1.4; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; color: #555; text-decoration: none; font-weight: 600; padding: 8px 16px; background: #fff; border: 1px solid #ccc; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background: #0056b3; color: white; border-color: #0056b3; }
+        .loading-msg { text-align: center; width: 100%; padding: 50px; font-size: 18px; color: #666; grid-column: 1/-1; }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="../index.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Logo"></a>
+                <a href="../index.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Početna</a></li>
+                    <li><a href="about-us-sr.html">O Nama</a></li>
+                    <li><a href="products-sr.html" class="active">Proizvodi</a></li>
+                    <li><a href="contact-sr.html">Kontakt</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" style="background:#f4f4f4; padding:60px 0; text-align:center;">
+        <div class="container">
+            <h1 id="series-title" style="color:#333; margin-bottom: 10px;">Učitavanje...</h1>
+            <a href="products-sr.html" class="back-btn"><i class="fas fa-arrow-left"></i> Nazad na sve sisteme</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="catalog-grid" id="product-grid">
+                <div class="loading-msg">Učitavanje podataka...</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container" style="text-align: center; padding: 20px;">
+            <p>&copy; 2026 Exal Aluminium</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/loader.js"></script>
+</body>
+</html>

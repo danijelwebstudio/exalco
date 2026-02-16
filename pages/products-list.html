@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Exal Aluminium</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <style>
+        /* Isti stilovi kao na srpskoj verziji */
+        .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; margin-bottom: 80px; }
+        .profile-card { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; overflow: hidden; transition: all 0.4s; text-decoration: none; display: flex; flex-direction: column; }
+        .profile-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: #0056b3; }
+        .card-img-wrapper { width: 100%; height: 200px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .profile-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .card-info { padding: 20px; text-align: center; border-top: 1px solid #f0f0f0; }
+        .code-badge { background-color: #e3f2fd; color: #1565c0; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 20px; display: inline-block; margin-bottom: 12px; }
+        .profile-name { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 5px; }
+        .cta-text { margin-top: 15px; font-size: 13px; color: #0056b3; font-weight: 600; text-transform: uppercase; }
+        
+        .loading-msg { grid-column: 1/-1; text-align: center; font-size: 1.2rem; color: #666; padding: 50px; }
+        
+        .back-btn { display: inline-block; margin-top: 20px; color: #666; text-decoration: none; }
+        .back-btn:hover { color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar"><div class="container"><div class="top-bar-left"><span>Exal Aluminium</span></div></div></div>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index-en.html">Home</a></li>
+                    <li><a href="products-en.html">Catalog</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" style="background: #f4f4f4; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h1 class="reveal" id="series-title" style="color: #333;">Loading...</h1>
+            <a href="products-en.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to all series</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="catalog-grid" id="product-grid">
+                <div class="loading-msg">Loading data...</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container"><p>Exal Aluminium &copy; 2026</p></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/loader.js"></script>
+</body>
+</html>

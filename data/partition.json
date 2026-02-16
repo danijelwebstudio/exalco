@@ -1,0 +1,18 @@
+{
+    "P-59": {
+        "image": "../assets/images/products/PartitionSystem/P-59.webp",
+        "tech_image": "../assets/images/products/PartitionSystem/tech/P-59.webp",
+        "extra_images": [],
+        "code": "P-59",
+        "en": {
+            "name": "Partition Profil code P-59",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "59*41.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.891" }
+        },
+        "sr": {
+            "name": "Pregradni profil code P-59",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "59*41.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.891" }
+        }
+    }
+}

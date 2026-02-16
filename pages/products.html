@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proizvodi - Exal Aluminium</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <style>
+        /* Stil za kartice kategorija */
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            display: block; /* Da ceo link bude klikabilan */
+        }
+        .category-card:hover { transform: translateY(-5px); }
+        .cat-img { height: 300px; width: 100%; object-fit: cover; transition: 0.5s; }
+        .category-card:hover .cat-img { transform: scale(1.1); }
+        .cat-overlay {
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 20px; color: white;
+        }
+        .cat-overlay h3 { margin: 0; font-size: 22px; text-transform: uppercase; }
+        .cat-overlay p { font-size: 14px; opacity: 0.9; margin-top: 5px; color: #ddd; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="phone"><i class="fas fa-phone-alt"></i> +387 65 000 000</span>
+                <span class="email"><i class="fas fa-envelope"></i> info@exalaluminium.com</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="lang-search">
+                    <a href="#">EN</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="lang-active">SR</a>
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="../index.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Logo" class="logo-img-1"></a>
+                <a href="../index.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Logo" class="logo-img-2"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Početna</a></li>
+                    
+                    <li class="dropdown"><a href="#">Kompanija <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us-sr.html">O Nama</a></li>
+                            <li><a href="ceo-message-sr.html">Poruka Direktora</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown"><a href="products-sr.html" class="active">Proizvodi <i class="fas fa-chevron-down"></i></a></li>
+                    
+                    <li><a href="gallery-sr.html">Galerija</a></li>
+                    <li><a href="contact-sr.html">Kontakt</a></li>
+                </ul>
+                <div class="header-search"><i class="fas fa-search"></i></div>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="reveal">Naši Proizvodi</h1>
+            <div class="breadcrumb reveal">
+                <a href="../index.html">Početna</a> <i class="fas fa-chevron-right"></i> <span>Katalog</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Kategorije Sistema</h2>
+            <div class="divider-line center reveal"></div>
+            
+            <div class="product-grid">
+                
+                <a href="product-details.html" class="category-card reveal">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="../assets/images/hinged doors.jpg" alt="Okretni Sistemi" class="cat-img">
+                    </div>
+                    <div class="cat-overlay">
+                        <h3>Okretni Sistemi</h3>
+                        <p>Prozori i vrata sa šarkama (Hinge Systems)</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card reveal">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="../assets/images/sliding system.jpg" alt="Klizni Sistemi" class="cat-img">
+                    </div>
+                    <div class="cat-overlay">
+                        <h3>Klizni Sistemi</h3>
+                        <p>Klizna vrata i prozori (Sliding Systems)</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card reveal">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="../assets/images/Curtain Wall.png" alt="Fasadni Sistemi" class="cat-img">
+                    </div>
+                    <div class="cat-overlay">
+                        <h3>Fasadni Sistemi</h3>
+                        <p>Staklene fasade (Curtain Walls)</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card reveal">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="../assets/images/catalog.png" alt="Specijalni Profili" class="cat-img">
+                    </div>
+                    <div class="cat-overlay">
+                        <h3>Specijalni Profili</h3>
+                        <p>Industrijski i namenski profili</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer reveal">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h4>O Kompaniji EXAL</h4>
+                    <div class="footer-line"></div>
+                    <p>Lider u proizvodnji aluminijumskih profila.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Brzi Linkovi</h4>
+                    <div class="footer-line"></div>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Početna</a></li>
+                        <li><a href="products-sr.html">Proizvodi</a></li>
+                        <li><a href="contact-sr.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-line"></div>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Banja Luka, BiH</li>
+                        <li><i class="fas fa-phone"></i> +387 65 000 000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Sva prava zadržana.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

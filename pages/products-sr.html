@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proizvodi - Exal Aluminium</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <style>
+        /* --- STILOVI --- */
+        body { background-color: #f8f9fa; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; margin-bottom: 80px; align-items: start; }
+        .system-card { background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border: 1px solid #eee; overflow: hidden; transition: box-shadow 0.3s ease; }
+        .system-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .card-trigger { cursor: pointer; position: relative; background: #fff; z-index: 2; }
+        .card-img-container { height: 200px; overflow: hidden; position: relative; }
+        .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .system-card:hover .card-img { transform: scale(1.05); }
+        .card-header-bar { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; background: #fff; border-bottom: 1px solid #f0f0f0; }
+        .card-title { font-size: 18px; font-weight: 700; color: #222; text-transform: uppercase; margin: 0; }
+        .card-icon { font-size: 16px; color: #0056b3; transition: transform 0.3s ease; }
+        .card-dropdown { max-height: 0; overflow: hidden; background-color: #f8f9fa; transition: max-height 0.4s ease-out; }
+        .system-card.sys-open .card-icon { transform: rotate(180deg); }
+        .system-card.sys-open .card-header-bar { background-color: #f0f4f8; border-bottom: 1px solid #dce4ec; }
+        .dropdown-inner { padding: 20px; border-top: 1px solid #eee; }
+        .sub-group { margin-bottom: 15px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .sub-group:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+        .sub-title { font-size: 13px; color: #0056b3; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .tags-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag-link { display: inline-block; padding: 6px 12px; background: #fff; color: #444; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 600; transition: all 0.2s; }
+        .tag-link:hover { background: #0056b3; color: #fff; border-color: #0056b3; transform: translateY(-2px); }
+        .full-link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 20; }
+        
+        /* LOGO FIX */
+        .main-header .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+        .logo-wrapper { display: flex; align-items: center; gap: 15px; height: 100%; }
+        .logo-item { display: flex; align-items: center; height: 100%; }
+        .logo-item img { height: 50px; width: auto; object-fit: contain; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="phone"><i class="fas fa-phone-alt"></i> +387 65 000 000</span>
+                <span class="email"><i class="fas fa-envelope"></i> info@exalaluminium.com</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="lang-search">
+                    <a href="products-en.html">EN</a><span class="divider">|</span><a href="#" class="lang-active">SR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="../index.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Logo"></a>
+                <a href="../index.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Početna</a></li>
+                    <li><a href="about-us-sr.html">O Nama</a></li>
+                    <li><a href="products-sr.html" class="active">Proizvodi</a></li>
+                    <li><a href="gallery-sr.html">Galerija</a></li>
+                    <li><a href="contact-sr.html">Kontakt</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="reveal">Katalog Proizvoda</h1>
+            <p class="reveal" style="color:#fff; margin-top:10px;">Izaberite sistem za prikaz detalja</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="product-grid">
+
+                <div class="system-card reveal">
+                    <div class="card-trigger" onclick="toggleDropdown(this)">
+                        <div class="card-img-container"><img src="../assets/images/hinged doors.jpg" class="card-img"></div>
+                        <div class="card-header-bar">
+                            <h3 class="card-title">Okretni Sistemi</h3>
+                            <i class="fas fa-chevron-down card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-dropdown">
+                        <div class="dropdown-inner">
+                            <div class="sub-group">
+                                <span class="sub-title">Termički Prekid</span>
+                                <div class="tags-wrap">
+                                    <a href="products-list-sr.html?series=w55" class="tag-link">W55</a>
+                                    <a href="products-list-sr.html?series=w60" class="tag-link">W60</a>
+                                    <a href="products-list-sr.html?series=w69" class="tag-link">W69</a>
+                                    <a href="products-list-sr.html?series=th60" class="tag-link">TH60</a>
+                                    <a href="products-list-sr.html?series=e55" class="tag-link">E55</a>
+                                </div>
+                            </div>
+                            <div class="sub-group">
+                                <span class="sub-title">Hladni Profil</span>
+                                <div class="tags-wrap">
+                                    <a href="products-list-sr.html?series=59series" class="tag-link">Serija 59</a>
+                                    <a href="products-list-sr.html?series=47series" class="tag-link">Serija 47</a>
+                                    <a href="products-list-sr.html?series=lightaldox" class="tag-link">Light Aldox</a>
+                                    <a href="products-list-sr.html?series=heavyaldox" class="tag-link">Heavy Aldox</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <div class="card-trigger" onclick="toggleDropdown(this)">
+                        <div class="card-img-container"><img src="../assets/images/sliding system.jpg" class="card-img"></div>
+                        <div class="card-header-bar">
+                            <h3 class="card-title">Klizni Sistemi</h3>
+                            <i class="fas fa-chevron-down card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-dropdown">
+                        <div class="dropdown-inner">
+                            <div class="sub-group">
+                                <span class="sub-title">Podizno-Klizni (Termički)</span>
+                                <div class="tags-wrap">
+                                    <a href="products-list-sr.html?series=hs96" class="tag-link">HS96</a>
+                                    <a href="products-list-sr.html?series=sliding92" class="tag-link">Sliding 92</a>
+                                    <a href="products-list-sr.html?series=ths77" class="tag-link">THS 77</a>
+                                </div>
+                            </div>
+                            <div class="sub-group">
+                                <span class="sub-title">Klizni (Hladni)</span>
+                                <div class="tags-wrap">
+                                    <a href="products-list-sr.html?series=60sliding" class="tag-link">60 Sliding</a>
+                                    <a href="products-list-sr.html?series=newsliding" class="tag-link">New Sliding</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <div class="card-trigger" onclick="toggleDropdown(this)">
+                        <div class="card-img-container"><img src="../assets/images/Curtain Wall.png" class="card-img"></div>
+                        <div class="card-header-bar">
+                            <h3 class="card-title">Fasadni Sistemi</h3>
+                            <i class="fas fa-chevron-down card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-dropdown">
+                        <div class="dropdown-inner">
+                            <div class="tags-wrap">
+                                <a href="products-list-sr.html?series=facecap" class="tag-link">Standardna (Facecap)</a>
+                                <a href="products-list-sr.html?series=frameless" class="tag-link">Strukturalna (Frameless)</a>
+                                <a href="products-list-sr.html?series=uchennel" class="tag-link">U-Channel</a>
+                                <a href="products-list-sr.html?series=rainforce" class="tag-link">Rainforce</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=verandah" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Verandah System.png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Zimske Bašte</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=rollup" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Roll-Up & Blades (Roletne i Brisoleji).png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Roletne i Brisoleji</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=gridesystem" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Gride System (Mreže  Komarnici).png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Mreže i Komarnici</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=partition" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Partition System (Pregradni zidovi).png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Pregradni Zidovi</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=handrail" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Hand Rail.png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Ograde i Rukohvati</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=automatic_door" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Automatic Door (Automatska vrata).png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Automatska Vrata</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <a href="products-list-sr.html?series=pipe_profiles" class="full-link"></a>
+                    <div class="card-img-container"><img src="../assets/images/Pipe Profiles (Cijevni profili).png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Cijevni Profili</h3>
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </div>
+
+                <div class="system-card reveal">
+                    <div class="full-link" style="cursor: default;"></div>
+                    <div class="card-img-container"><img src="../assets/images/Ceramic Profile.png" class="card-img"></div>
+                    <div class="card-header-bar">
+                        <h3 class="card-title">Profili za Keramiku</h3>
+                        <span style="font-size:12px; color:#999; font-weight:600;">Uskoro</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h4>O Nama</h4>
+                    <div class="footer-line"></div>
+                    <p>Lider u proizvodnji aluminijumskih profila.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-line"></div>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +387 65 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Exal Aluminium</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+        function toggleDropdown(trigger) {
+            const card = trigger.parentElement;
+            const dropdown = card.querySelector('.card-dropdown');
+            const isOpen = card.classList.contains('sys-open');
+
+            document.querySelectorAll('.system-card').forEach(c => {
+                c.classList.remove('sys-open');
+                const dd = c.querySelector('.card-dropdown');
+                if(dd) dd.style.maxHeight = null;
+            });
+
+            if (!isOpen) {
+                card.classList.add('sys-open');
+                dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>

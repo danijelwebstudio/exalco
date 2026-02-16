@@ -1,0 +1,130 @@
+{
+    "DOS30-030": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-030.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-030.webp",
+        "extra_images": [],
+        "code": "DOS30-030",
+        "en": {
+            "name": "Profil code Dos30-030",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "30*59", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.679" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-030",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "30*59", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.679" }
+        }
+    },
+    "DOS30-033": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-033.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-033.webp",
+        "extra_images": [],
+        "code": "DOS30-033",
+        "en": {
+            "name": "Profil code Dos30-033",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "0.35*0.33", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.61" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-033",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "0.35*0.33", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.61" }
+        }
+    },
+    "DOS30-128": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-128.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-128.webp",
+        "extra_images": [],
+        "code": "DOS30-128",
+        "en": {
+            "name": "Profil code Dos30-128",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "128.0*10.0", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.584" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-128",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "128.0*10.0", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.584" }
+        }
+    },
+    "DOS30-30-1": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-30-1.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-30-1.webp",
+        "extra_images": [],
+        "code": "DOS30-30-1",
+        "en": {
+            "name": "Profil code Dos30-30-1",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "30.1*74.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-30-1",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "30.1*74.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1" }
+        }
+    },
+    "DOS30-33U": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-33U.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-33U.webp",
+        "extra_images": [],
+        "code": "DOS30-33U",
+        "en": {
+            "name": "Profil code Dos30-33U",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "36.2*33.0", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.38" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-33U",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "36.2*33.0", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.38" }
+        }
+    },
+    "DOS30-38-9": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-38-9.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/DOS30-38-9.webp",
+        "extra_images": [],
+        "code": "DOS30-38-9",
+        "en": {
+            "name": "Profil code Dos30-38-9",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "14.1*38.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.29" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-38-9",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "14.1*38.9", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.29" }
+        }
+    },
+    "DOS30-48-6": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-48-6.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-48-6.webp",
+        "extra_images": [],
+        "code": "DOS30-48-6",
+        "en": {
+            "name": "Profil code Dos30-48-6",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "42.5*48.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.048" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-48-6",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "42.5*48.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.048" }
+        }
+    },
+    "DOS30-90-9": {
+        "image": "../assets/images/products/AutomaticDoor/Dos30-90-9.webp",
+        "tech_image": "../assets/images/products/AutomaticDoor/tech/Dos30-90-9.webp",
+        "extra_images": [],
+        "code": "DOS30-90-9",
+        "en": {
+            "name": "Profil code Dos30-90-9",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "16.3*90.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.36" }
+        },
+        "sr": {
+            "name": "Profil code Dos30-90-9",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "16.3*90.9", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.36" }
+        }
+    }
+}

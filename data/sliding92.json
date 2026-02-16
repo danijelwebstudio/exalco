@@ -1,0 +1,210 @@
+{
+    "SL-2801": {
+        "image": "../assets/images/products/Sliding92/SL-2801.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2801.webp",
+        "extra_images": [],
+        "code": "SL-2801",
+        "en": {
+            "name": "Frame Profil code SL-2801",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "95*40.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.081" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2801",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "95*40.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.081" }
+        }
+    },
+    "SL-2802": {
+        "image": "../assets/images/products/Sliding92/SL-2802.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2802.webp",
+        "extra_images": [],
+        "code": "SL-2802",
+        "en": {
+            "name": "Frame Profil code SL-2802",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.989" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2802",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.989" }
+        }
+    },
+    "SL-2803": {
+        "image": "../assets/images/products/Sliding92/SL-2803.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2803.webp",
+        "extra_images": [],
+        "code": "SL-2803",
+        "en": {
+            "name": "Frame Profil code SL-2803",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "45*37.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.73" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2803",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "45*37.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.73" }
+        }
+    },
+    "SL-2805": {
+        "image": "../assets/images/products/Sliding92/SL-2805.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2805.webp",
+        "extra_images": [],
+        "code": "SL-2805",
+        "en": {
+            "name": "Frame Profil code SL-2805",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.989" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2805",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.989" }
+        }
+    },
+    "SL-2815": {
+        "image": "../assets/images/products/Sliding92/SL-2815.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2815.webp",
+        "extra_images": [],
+        "code": "SL-2815",
+        "en": {
+            "name": "Frame Profil code SL-2815",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "95.3*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.107" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2815",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "95.3*42.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.107" }
+        }
+    },
+    "SL-2816": {
+        "image": "../assets/images/products/Sliding92/SL-2816.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2816.webp",
+        "extra_images": [],
+        "code": "SL-2816",
+        "en": {
+            "name": "Frame Profil code SL-2816",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "92.3*41.2", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.202" }
+        },
+        "sr": {
+            "name": "Štok profil code SL-2816",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "92.3*41.2", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.202" }
+        }
+    },
+    "SL-2804": {
+        "image": "../assets/images/products/Sliding92/SL-2804.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2804.webp",
+        "extra_images": [],
+        "code": "SL-2804",
+        "en": {
+            "name": "Vent Profil code SL-2804",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "28*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.84" }
+        },
+        "sr": {
+            "name": "Profil krila code SL-2804",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "28*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.84" }
+        }
+    },
+    "SL-2806": {
+        "image": "../assets/images/products/Sliding92/SL-2806.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2806.webp",
+        "extra_images": [],
+        "code": "SL-2806",
+        "en": {
+            "name": "Vent Profil code SL-2806",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "28*61", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.84" }
+        },
+        "sr": {
+            "name": "Profil krila code SL-2806",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "28*61", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.84" }
+        }
+    },
+    "SL-2807": {
+        "image": "../assets/images/products/Sliding92/SL-2807.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2807.webp",
+        "extra_images": [],
+        "code": "SL-2807",
+        "en": {
+            "name": "Vent Profil code SL-2807",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
+        },
+        "sr": {
+            "name": "Profil krila code SL-2807",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+        }
+    },
+    "SL-2810": {
+        "image": "../assets/images/products/Sliding92/SL-2810.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2810.webp",
+        "extra_images": [],
+        "code": "SL-2810",
+        "en": {
+            "name": "Vent Profil code SL-2810",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "28*29.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.87" }
+        },
+        "sr": {
+            "name": "Profil krila code SL-2810",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "28*29.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.87" }
+        }
+    },
+    "SL-2814": {
+        "image": "../assets/images/products/Sliding92/SL-2814.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2814.webp",
+        "extra_images": [],
+        "code": "SL-2814",
+        "en": {
+            "name": "Grid Profil code SL-2814",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
+        },
+        "sr": {
+            "name": "Profil rešetke code SL-2814",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+        }
+    },
+    "SL-2813": {
+        "image": "../assets/images/products/Sliding92/SL-2813.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2813.webp",
+        "extra_images": [],
+        "code": "SL-2813",
+        "en": {
+            "name": "Handled Vent Profil, code SL-2813",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
+        },
+        "sr": {
+            "name": "Profil krila sa ručkom code SL-2813",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+        }
+    },
+    "SL-2809": {
+        "image": "../assets/images/products/Sliding92/SL-2809.webp",
+        "tech_image": "../assets/images/products/Sliding92/tech/SL-2809.webp",
+        "extra_images": [],
+        "code": "SL-2809",
+        "en": {
+            "name": "Interlock Profil code SL-2809",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
+        },
+        "sr": {
+            "name": "Profil preklopa code SL-2809",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+        }
+    }
+}

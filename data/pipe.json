@@ -1,0 +1,50 @@
+{
+    "PIPE-19": {
+        "image": "../assets/images/products/PipeProfiles/19.webp",
+        "tech_image": "../assets/images/products/PipeProfiles/tech/19.webp",
+        "extra_images": [],
+        "code": "PIPE-19",
+        "en": {
+            "name": "Pipe Profil with a diameter of 19",
+            "description": "High-quality aluminium pipe profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Pipe", "weight": "0.181" }
+        },
+        "sr": {
+            "name": "Cev fi 19",
+            "description": "Visokokvalitetni aluminijumski profil cevi.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Cev", "weight": "0.181" }
+        }
+    },
+    "PIPE-35": {
+        "image": "../assets/images/products/PipeProfiles/35.webp",
+        "tech_image": "../assets/images/products/PipeProfiles/tech/35.webp",
+        "extra_images": [],
+        "code": "PIPE-35",
+        "en": {
+            "name": "Pipe Profil with a diameter of 35",
+            "description": "High-quality aluminium pipe profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Pipe", "weight": "0.426" }
+        },
+        "sr": {
+            "name": "Cev fi 35",
+            "description": "Visokokvalitetni aluminijumski profil cevi.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Cev", "weight": "0.426" }
+        }
+    },
+    "PIPE-50": {
+        "image": "../assets/images/products/PipeProfiles/50.webp",
+        "tech_image": "../assets/images/products/PipeProfiles/tech/50.webp",
+        "extra_images": [],
+        "code": "PIPE-50",
+        "en": {
+            "name": "Pipe Profil with a diameter of 50",
+            "description": "High-quality aluminium pipe profile.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Pipe", "weight": "0.496" }
+        },
+        "sr": {
+            "name": "Cev fi 50",
+            "description": "Visokokvalitetni aluminijumski profil cevi.",
+            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Cev", "weight": "0.496" }
+        }
+    }
+}
