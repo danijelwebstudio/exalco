@@ -51,8 +51,15 @@
                 <span class="email"><i class="fas fa-envelope"></i> info@exalaluminium.com</span>
             </div>
             <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
                 <div class="lang-search">
-                    <a href="products-en.html">EN</a><span class="divider">|</span><a href="#" class="lang-active">SR</a>
+                    <a href="products-sr.html" class="lang-active">SR</a>
+                    <span class="divider">|</span>
+                    <a href="products.html">EN</a>
+
                 </div>
             </div>
         </div>
@@ -61,17 +68,27 @@
     <header class="main-header">
         <div class="container">
             <div class="logo-wrapper">
-                <a href="../index.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Logo"></a>
-                <a href="../index.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Logo"></a>
+                
+                <a href="../index.html" class="logo-item">
+                    <img src="../assets/images/EXAL.webp" alt="EXALCO Logo" class="logo-img-2">
+                </a>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Početna</a></li>
-                    <li><a href="about-us-sr.html">O Nama</a></li>
-                    <li><a href="products-sr.html" class="active">Proizvodi</a></li>
-                    <li><a href="gallery-sr.html">Galerija</a></li>
-                    <li><a href="contact-sr.html">Kontakt</a></li>
+                    <li><a href="../index.html" class="active">Početna</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#">Kompanija <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/about-us-sr.html">O Nama</a></li>
+                            <li><a href="../pages/ceo-message-sr.html">Poruka Direktora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products-sr.html">Proizvodi<i></i></a></li>
+                    <li><a href="../pages/gallery-sr.html">Galerija</a></li>
+                    <li><a href="../pages/contact-sr.html">Kontakt</a></li>
                 </ul>
+                <div class="header-search"><i class="fas fa-search"></i></div>
                 <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             </nav>
         </div>
@@ -91,7 +108,7 @@
 
                 <div class="system-card reveal">
                     <div class="card-trigger" onclick="toggleDropdown(this)">
-                        <div class="card-img-container"><img src="../assets/images/hinged doors.jpg" class="card-img"></div>
+                        <div class="card-img-container"><img src="../assets/images/hinged doors.webp" class="card-img"></div>
                         <div class="card-header-bar">
                             <h3 class="card-title">Okretni Sistemi</h3>
                             <i class="fas fa-chevron-down card-icon"></i>
@@ -109,7 +126,6 @@
                                     <a href="products-list-sr.html?series=w60" class="tag-link">W60</a>
                                     <a href="products-list-sr.html?series=w69" class="tag-link">W69</a>
                                     <a href="products-list-sr.html?series=th60" class="tag-link">TH60</a>
-                                    
                                 </div>
                             </div>
                             <div class="sub-group">
@@ -128,7 +144,7 @@
 
                 <div class="system-card reveal">
                     <div class="card-trigger" onclick="toggleDropdown(this)">
-                        <div class="card-img-container"><img src="../assets/images/sliding system.jpg" class="card-img"></div>
+                        <div class="card-img-container"><img src="../assets/images/sliding system.webp" class="card-img"></div>
                         <div class="card-header-bar">
                             <h3 class="card-title">Klizni Sistemi</h3>
                             <i class="fas fa-chevron-down card-icon"></i>
@@ -140,16 +156,15 @@
                                 <span class="sub-title">Podizno-Klizni (Termički)</span>
                                 <div class="tags-wrap">
                                     <a href="products-list-sr.html?series=hs96" class="tag-link">HS96</a>
-                                   
                                     <a href="products-list-sr.html?series=ths77" class="tag-link">THS 77</a>
                                 </div>
                             </div>
                             <div class="sub-group">
                                 <span class="sub-title">Klizni (Hladni)</span>
                                 <div class="tags-wrap">
-                                    <a href="products-list-sr.html?series=60sliding" class="tag-link">60 Sliding</a>
-                                    <a href="products-list-sr.html?series=newsliding" class="tag-link">New Sliding</a>
-                                     <a href="products-list-sr.html?series=sliding92" class="tag-link">Sliding 92</a>
+                                    <a href="products-list-sr.html?series=60sliding" class="tag-link">Serija 60 Klizni</a>
+                                    <a href="products-list-sr.html?series=newsliding" class="tag-link">Serija Novi Klizni</a>
+                                    <a href="products-list-sr.html?series=sliding92" class="tag-link">Serija 92 Klizni</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +173,7 @@
 
                 <div class="system-card reveal">
                     <div class="card-trigger" onclick="toggleDropdown(this)">
-                        <div class="card-img-container"><img src="../assets/images/Curtain Wall.png" class="card-img"></div>
+                        <div class="card-img-container"><img src="../assets/images/Curtain Wall.webp" class="card-img"></div>
                         <div class="card-header-bar">
                             <h3 class="card-title">Fasadni Sistemi</h3>
                             <i class="fas fa-chevron-down card-icon"></i>
@@ -167,10 +182,10 @@
                     <div class="card-dropdown">
                         <div class="dropdown-inner">
                             <div class="tags-wrap">
-                                <a href="products-list-sr.html?series=facecap" class="tag-link">Standardna (Facecap)</a>
-                                <a href="products-list-sr.html?series=frameless" class="tag-link">Strukturalna (Frameless)</a>
-                                <a href="products-list-sr.html?series=uchennel" class="tag-link">U-Channel</a>
-                                <a href="products-list-sr.html?series=rainforce" class="tag-link">Rainforce</a>
+                                <a href="products-list-sr.html?series=facecap" class="tag-link">Standardne (Facecap)</a>
+                                <a href="products-list-sr.html?series=frameless" class="tag-link">Strukturalne (Bez rama)</a>
+                                <a href="products-list-sr.html?series=uchennel" class="tag-link">U-Profili</a>
+                                <a href="products-list-sr.html?series=rainforce" class="tag-link">Rainforce Sistemi</a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +193,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=verandah" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Verandah System.png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Verandah System.webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Zimske Bašte</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -187,7 +202,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=rollup" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Roll-Up & Blades (Roletne i Brisoleji).png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Roll-Up & Blades (Roletne i Brisoleji).webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Roletne i Brisoleji</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -196,7 +211,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=gridesystem" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Gride System (Mreže  Komarnici).png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Gride System (Mreže  Komarnici).webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Mreže i Komarnici</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -205,7 +220,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=partition" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Partition System (Pregradni zidovi).png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Partition System (Pregradni zidovi).webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Pregradni Zidovi</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -214,7 +229,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=handrail" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Hand Rail.png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Hand Rail.webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Ograde i Rukohvati</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -223,7 +238,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=automatic_door" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Automatic Door (Automatska vrata).png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Automatic Door (Automatska vrata).webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Automatska Vrata</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -232,7 +247,7 @@
 
                 <div class="system-card reveal">
                     <a href="products-list-sr.html?series=pipe_profiles" class="full-link"></a>
-                    <div class="card-img-container"><img src="../assets/images/Pipe Profiles (Cijevni profili).png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Pipe Profiles (Cijevni profili).webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Cijevni Profili</h3>
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -241,7 +256,7 @@
 
                 <div class="system-card reveal">
                     <div class="full-link" style="cursor: default;"></div>
-                    <div class="card-img-container"><img src="../assets/images/Ceramic Profile.png" class="card-img"></div>
+                    <div class="card-img-container"><img src="../assets/images/Ceramic Profile.webp" class="card-img"></div>
                     <div class="card-header-bar">
                         <h3 class="card-title">Profili za Keramiku</h3>
                         <span style="font-size:12px; color:#999; font-weight:600;">Uskoro</span>
@@ -252,30 +267,68 @@
         </div>
     </section>
 
-    <footer class="main-footer">
+   
+
+   
+    <footer class="main-footer reveal">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-col">
-                    <h4>O Nama</h4>
+                    <h4>O Kompaniji EXAL</h4>
                     <div class="footer-line"></div>
-                    <p>Lider u proizvodnji aluminijumskih profila.</p>
+                    <p>Kompanija EXALCO, poznata je kao jedan od najuglednijih brendova
+                        u industriji aluminijumskih profila kroz proizvodnju različitih vrsta istih.</p>
                 </div>
+
+                <div class="footer-col">
+                    <h4>Brzi Pristup</h4>
+                    <div class="footer-line"></div>
+                    <ul class="footer-links">
+                         <li><a href="../index.html">Početna</a></li>
+                        <li><a href="about-us-sr.html">O Nama</a></li>
+                        <li><a href="ceo-message-sr.html">Poruka Direktora</a></li>
+                        <li><a href="products-sr.html">Proizvodi</a></li>
+                        <li><a href="gallery-sr.html">Galerija</a></li>
+                        <li><a href="contact-sr.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
                 <div class="footer-col">
                     <h4>Kontakt</h4>
                     <div class="footer-line"></div>
                     <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Banja Luka / Laktaši, BiH</li>
                         <li><i class="fas fa-phone"></i> +387 65 000 000</li>
                         <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
                     </ul>
+                    
+                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Exal Aluminium</p>
+                <p>Sva prava zadržana. | Dizajn i hosting: Danijel Zorić</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+
 
     <script src="../js/main.js"></script>
 

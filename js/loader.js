@@ -1,40 +1,72 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. Proveri koji je jezik stranice
+    const currentLang = document.documentElement.lang || 'sr'; 
+
     const params = new URLSearchParams(window.location.search);
     const seriesParam = params.get('series'); 
     
     const grid = document.getElementById('product-grid');
     const title = document.getElementById('series-title');
 
+    // Ako nema serije u URL-u
     if (!seriesParam) {
-        if(title) title.innerText = "Greška";
+        if(title) title.innerText = currentLang === 'sr' ? "Izaberite seriju" : "Select a Series";
         return;
     }
 
     const fileName = seriesParam.toLowerCase(); 
 
-    // --- REČNIK ZA PREVOD NASLOVA ---
-    const seriesTranslations = {
-        "automatic_door": "Automatska Vrata",
-        "uchennel": "U-Channel Sistemi",
-        "rollup": "Roletne i Brisoleji",
-        "handrail": "Ograde i Rukohvati",
-        "pipe_profiles": "Cijevni Profili",
-        "gridesystem": "Mreže i Komarnici",
-        "partition": "Pregradni Zidovi",
-        "verandah": "Zimske Bašte",
-        "facecap": "Fasade (Facecap)",
-        "frameless": "Strukturalne Fasade",
-        "rainforce": "Rainforce Sistemi",
-        "hs96": "HS96 Podizno-Klizni",
-        // Za ostale ostavi default (W55, EX55 itd.)
+    // --- REČNIK LEPIH NAZIVA (OVO JE ONO ŠTO SI TRAŽIO) ---
+    const seriesNames = {
+        // --- OKRETNI ---
+        "ex55": { sr: "EX55 Serija", en: "EX55 Series" },
+        "ex64": { sr: "EX64 Serija", en: "EX64 Series" },
+        "ex74": { sr: "EX74 Serija", en: "EX74 Series" },
+        "w55": { sr: "W55 Serija", en: "W55 Series" },
+        "w60": { sr: "W60 Serija", en: "W60 Series" },
+        "w69": { sr: "W69 Serija", en: "W69 Series" },
+        "th60": { sr: "TH60 Serija", en: "TH60 Series" },
+        "e55": { sr: "E55 Serija", en: "E55 Series" },
+        "59series": { sr: "Serija 59", en: "59 Series" },
+        "47series": { sr: "Serija 47", en: "47 Series" },
+        "lightaldox": { sr: "Light Aldox", en: "Light Aldox" },
+        "heavyaldox": { sr: "Heavy Aldox", en: "Heavy Aldox" },
+
+        // --- KLIZNI ---
+        "hs96": { sr: "HS96 Podizno-Klizni", en: "HS96 Lift & Slide" },
+        "ths77": { sr: "THS 77 Podizno-Klizni", en: "THS 77 Lift & Slide" },
+        "60sliding": { sr: "Serija 60 Klizni", en: "60 Sliding Series" },
+        "newsliding": { sr: "Serija Novi Klizni", en: "New Sliding Series" },
+        "sliding92": { sr: "Serija 92 Klizni", en: "92 Sliding Series" },
+
+        // --- FASADE ---
+        "facecap": { sr: "Standardna Fasada (Facecap)", en: "Standard Curtain Wall(Facecap)" },
+        "frameless": { sr: "Strukturalna Fasada (Bez rama)", en: "Structural Curtain Wall(Frameless)" },
+        "uchennel": { sr: "U-Profili", en: "U-Channel" },
+        "rainforce": { sr: "Rainforce Sistemi", en: "Rainforce Systems" },
+
+        // --- OSTALO ---
+        "verandah": { sr: "Zimske Bašte", en: "Winter Gardens(Verandah)" },
+        "rollup": { sr: "Roletne i Brisoleji", en: "Rolling Shutters" },
+        "gridesystem": { sr: "Mreže i Komarnici", en: "Insect Screens" },
+        "partition": { sr: "Pregradni Zidovi", en: "Partition Systems" },
+        "handrail": { sr: "Ograde i Rukohvati", en: "Handrails" },
+        "automatic_door": { sr: "Automatska Vrata", en: "Automatic Doors" },
+        "pipe_profiles": { sr: "Cijevni Profili", en: "Pipe Profiles" }
     };
 
-    // Postavljanje naslova (Ako ima prevod koristi ga, ako ne, samo poveća slova)
+    // Postavljanje lepog naslova
     if(title) {
-        title.innerText = seriesTranslations[fileName] || (seriesParam.toUpperCase() + " Serija");
+        if (seriesNames[fileName]) {
+            // Ako imamo lep naziv u rečniku, koristi njega
+            title.innerText = seriesNames[fileName][currentLang];
+        } else {
+            // Ako nemamo (za svaki slučaj), napiši samo kod velikim slovima
+            title.innerText = seriesParam.toUpperCase();
+        }
     }
 
-    // Učitavanje podataka
+    // Učitavanje JSON podataka
     fetch(`../data/${fileName}.json`)
         .then(response => {
             if (!response.ok) throw new Error("Fajl nije pronađen");
@@ -44,21 +76,17 @@ document.addEventListener("DOMContentLoaded", () => {
             let htmlContent = "";
 
             if (Object.keys(products).length === 0) {
-                grid.innerHTML = "<div class='loading-msg'>Nema proizvoda u ovoj seriji.</div>";
+                grid.innerHTML = currentLang === 'sr' ? "<div class='loading-msg'>Nema proizvoda.</div>" : "<div class='loading-msg'>No products found.</div>";
                 return;
             }
 
             Object.values(products).forEach(product => {
-                // Forsiramo SRPSKI ("sr"), ako ga nema, tek onda "en"
-                let pData = product.sr || product.en;
-                
-                // Ako u JSON-u pod "sr" piše engleski, ovde će izaći engleski.
-                // Moraš prevesti tekst unutar JSON fajlova.
-                
-                let name = pData ? pData.name : "Proizvod";
+                let pData = product[currentLang] || product.en;
+                let name = pData ? pData.name : "Product";
+                let btnText = currentLang === 'sr' ? "Saznaj Više" : "Read More";
 
-                // Link ka detaljima
-                let detailLink = `product-detail-sr.html?series=${fileName}&code=${product.code}`;
+                let detailPage = currentLang === 'sr' ? 'product-detail-sr.html' : 'product-detail.html';
+                let detailLink = `${detailPage}?series=${fileName}&code=${product.code}`;
 
                 htmlContent += `
                 <div class="profile-card reveal">
@@ -71,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <h3 class="profile-name">${name}</h3>
                         </div>
                         <div class="read-more-btn">
-                            Saznaj Više <i class="fas fa-arrow-right"></i>
+                            ${btnText} <i class="fas fa-arrow-right" style="margin-left:5px;"></i>
                         </div>
                     </a>
                 </div>
@@ -82,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error(error);
-            grid.innerHTML = `<div class='loading-msg'>Greška: Podaci za <b>${fileName}</b> nisu pronađeni.</div>`;
+            let errMsg = currentLang === 'sr' ? "Greška pri učitavanju ili nema proizvoda." : "Error loading data.";
+            grid.innerHTML = `<div class='loading-msg'>${errMsg}</div>`;
         });
 });

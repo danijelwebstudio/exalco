@@ -74,8 +74,7 @@ img { max-width: 100%; display: block; }
 
 .main-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .logo-wrapper { display: flex; align-items: center; gap: 15px; }
-.logo-img-1 { height: 55px; width: auto; }
-.logo-img-2 { height: 45px; width: auto; }
+.logo-img-2 { height: 50px; width: auto; }
 
 /* NAVIGACIJA */
 .navbar { display: flex; align-items: center; gap: 20px; }
@@ -709,4 +708,177 @@ img { max-width: 100%; display: block; }
     .product-detail-wrapper { flex-direction: column; gap: 30px; }
     .main-image-container { height: 300px; }
     .detail-title { font-size: 24px; }
+}
+
+/* =================================================================
+   PREMIUM STIL ZA LISTU PROIZVODA (SIGURAN KOD - NE KVARI INDEX)
+   ================================================================= */
+
+/* 1. GRID RASPORED (4 Desktop, 2 Mobilni) - FORSIRANO */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important; /* Uvek 4 na velikom */
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    align-items: stretch;
+}
+
+/* 2. DIZAJN KARTICE - MODERAN IZGLED */
+.profile-card {
+    background: #ffffff;
+    border: 1px solid #edf2f7; /* Vrlo nežna ivica */
+    border-radius: 12px;       /* Zaobljeniji uglovi */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    /* Smooth tranzicija za sve */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02); /* Skroz blaga senka u startu */
+}
+
+/* HOVER EFEKAT NA KARTICU */
+.profile-card:hover {
+    transform: translateY(-7px); /* Kartica ide malo gore */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Jaka, meka senka */
+    border-color: #004085; /* Ivica postaje plava */
+}
+
+/* 3. PROSTOR ZA SLIKU */
+.card-img-wrapper {
+    height: 240px; /* Malo viši prostor za sliku */
+    padding: 30px; /* Više prostora oko slike */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-bottom: 1px solid #f7f7f7;
+    position: relative;
+    overflow: hidden; /* Bitno za zoom efekat */
+}
+
+.profile-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease; /* Sporiji, lepši zoom */
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.05)); /* Mala senka ispod samog profila */
+}
+
+/* ZOOM EFEKAT NA SLIKU */
+.profile-card:hover .profile-img {
+    transform: scale(1.12); /* Slika se uvećava */
+}
+
+/* 4. INFO DEO (NAZIV I KOD) */
+.card-info {
+    padding: 25px 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* KOD BADGE (Ono plavo "Code: 1234") */
+.code-badge {
+    background: #f0f7ff;
+    color: #004085;
+    padding: 6px 14px;
+    border-radius: 50px; /* Pilula oblik */
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    border: 1px solid #dce9f9;
+}
+
+/* NAZIV PROIZVODA */
+.profile-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+    line-height: 1.5;
+    text-transform: uppercase; /* Velika slova deluju urednije */
+}
+
+/* 5. DUGME "SAZNAJ VIŠE" */
+.read-more-btn {
+    margin-top: auto; /* Gura dugme na samo dno */
+    padding: 15px;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
+    color: #004085;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.read-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+/* Hover na dugme (kad pređeš preko cele kartice) */
+.profile-card:hover .read-more-btn {
+    background: #004085;
+    color: #ffffff;
+}
+
+.profile-card:hover .read-more-btn i {
+    transform: translateX(5px); /* Strelica ide desno */
+}
+
+/* 6. LINK PREKO CELE KARTICE */
+.profile-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* =================================================================
+   RESPONSIVE (MOBILNI - DA NE BUDE SITNO)
+   ================================================================= */
+@media (max-width: 992px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* FIKSNO 2 KOLONE */
+        gap: 15px; /* Manji razmak */
+        margin-top: 20px;
+    }
+
+    .card-img-wrapper {
+        height: 160px; /* Manja visina slike na telefonu */
+        padding: 15px;
+    }
+
+    .card-info {
+        padding: 15px 10px;
+    }
+
+    .profile-name {
+        font-size: 13px; /* Malo manji font da stane u red */
+    }
+
+    .code-badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    
+    .read-more-btn {
+        padding: 12px;
+        font-size: 11px;
+    }
 }

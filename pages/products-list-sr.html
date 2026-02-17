@@ -7,38 +7,56 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/main.css">
     
-    <style>
-        .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; margin-bottom: 80px; align-items: start; }
-        .profile-card { background: #fff; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
-        .profile-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-color: #0056b3; }
-        .card-img-wrapper { height: 220px; padding: 20px; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-bottom: 1px solid #eee; }
-        .profile-img { max-width: 100%; max-height: 100%; object-fit: contain; }
-        .card-info { padding: 20px; text-align: center; }
-        .code-badge { background: #e3f2fd; color: #0056b3; padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 12px; display:inline-block; margin-bottom:10px; }
-        .profile-name { font-size: 16px; font-weight: 700; color: #333; margin: 0; }
-        .prod-desc { font-size: 13px; color: #666; margin-top: 8px; line-height: 1.4; }
-        .back-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; color: #555; text-decoration: none; font-weight: 600; padding: 8px 16px; background: #fff; border: 1px solid #ccc; border-radius: 4px; transition: 0.3s; }
-        .back-btn:hover { background: #0056b3; color: white; border-color: #0056b3; }
-        .loading-msg { text-align: center; width: 100%; padding: 50px; font-size: 18px; color: #666; grid-column: 1/-1; }
-    </style>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+
+   <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="phone"><i class="fas fa-phone-alt"></i> +387 65 000 000</span>
+                <span class="email"><i class="fas fa-envelope"></i> info@exalaluminium.com</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="lang-search">
+                    <a href="products-list-sr.html" class="lang-active">SR</a>
+                    <span class="divider">|</span>
+                    <a href="products-list.html">EN</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="main-header">
         <div class="container">
             <div class="logo-wrapper">
-                <a href="../index.html" class="logo-item"><img src="../assets/images/kosar-logo-min.png" alt="Logo"></a>
-                <a href="../index.html" class="logo-item"><img src="../assets/images/EXAL.jpg" alt="Logo"></a>
+                
+                <a href="../index.html" class="logo-item">
+                    <img src="../assets/images/EXAL.webp" alt="EXALCO Logo" class="logo-img-2">
+                </a>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Početna</a></li>
-                    <li><a href="about-us-sr.html">O Nama</a></li>
-                    <li><a href="products-sr.html" class="active">Proizvodi</a></li>
-                    <li><a href="contact-sr.html">Kontakt</a></li>
+                    <li><a href="../index.html" class="active">Početna</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#">Kompanija <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/about-us-sr.html">O Nama</a></li>
+                            <li><a href="../pages/ceo-message-sr.html">Poruka Direktora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products-sr.html">Proizvodi<i></i></a></li>
+                    <li><a href="../pages/gallery-sr.html">Galerija</a></li>
+                    <li><a href="../pages/contact-sr.html">Kontakt</a></li>
                 </ul>
+                <div class="header-search"><i class="fas fa-search"></i></div>
                 <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             </nav>
         </div>
@@ -59,11 +77,68 @@
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="container" style="text-align: center; padding: 20px;">
-            <p>&copy; 2026 Exal Aluminium</p>
+   
+
+   
+    <footer class="main-footer reveal">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h4>O Kompaniji EXAL</h4>
+                    <div class="footer-line"></div>
+                    <p>Kompanija EXALCO, poznata je kao jedan od najuglednijih brendova
+                        u industriji aluminijumskih profila kroz proizvodnju različitih vrsta istih.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Brzi Pristup</h4>
+                    <div class="footer-line"></div>
+                    <ul class="footer-links">
+                         <li><a href="../index.html">Početna</a></li>
+                        <li><a href="about-us-sr.html">O Nama</a></li>
+                        <li><a href="ceo-message-sr.html">Poruka Direktora</a></li>
+                        <li><a href="products-sr.html">Proizvodi</a></li>
+                        <li><a href="gallery-sr.html">Galerija</a></li>
+                        <li><a href="contact-sr.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-line"></div>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Banja Luka / Laktaši, BiH</li>
+                        <li><i class="fas fa-phone"></i> +387 65 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
+                    </ul>
+                    
+                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Sva prava zadržana. | Dizajn i hosting: Danijel Zorić</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
 
     <script src="../js/main.js"></script>
     <script src="../js/loader.js"></script>

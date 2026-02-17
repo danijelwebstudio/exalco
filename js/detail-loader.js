@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Čitamo URL (npr. ?series=w55&code=1010)
+    // 1. Proveri jezik (sr ili en)
+    const currentLang = document.documentElement.lang || 'sr'; 
+
     const params = new URLSearchParams(window.location.search);
     const series = params.get('series');
     const code = params.get('code');
@@ -7,87 +9,77 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById('detail-container');
     const backLink = document.getElementById('back-link');
 
-    // Namesti dugme "Nazad" da vodi na tačnu seriju
+    // Namesti dugme "Nazad" (na odgovarajuću listu)
+    let listPage = currentLang === 'sr' ? 'products-list-sr.html' : 'products-list.html';
+    let mainPage = currentLang === 'sr' ? 'products-sr.html' : 'products.html';
+
     if(series) {
-        backLink.href = `products-list-sr.html?series=${series}`;
+        backLink.href = `${listPage}?series=${series}`;
     } else {
-        backLink.href = "products-sr.html";
+        backLink.href = mainPage;
     }
 
     if (!series || !code) {
-        container.innerHTML = "<h2>Greška: Nije izabran proizvod.</h2>";
+        container.innerHTML = "<h2>Greška / Error</h2>";
         return;
     }
 
-    // 2. Učitavamo JSON
+    // Učitaj JSON
     fetch(`../data/${series.toLowerCase()}.json`)
         .then(res => res.json())
         .then(data => {
             const product = data[code];
 
             if (!product) {
-                container.innerHTML = "<h2>Proizvod nije pronađen.</h2>";
+                container.innerHTML = currentLang === 'sr' ? "<h2>Proizvod nije pronađen.</h2>" : "<h2>Product not found.</h2>";
                 return;
             }
 
-            // Podaci (Srpski)
-            const pData = product.sr || product.en;
-            const name = pData.name;
-            const desc = pData.description || "";
+            // --- PAMETAN ODABIR JEZIKA ---
+            const pData = product[currentLang] || product.en;
             const details = pData.details || {};
-
-            // Slike (Glavna + Tehnička)
-            const mainImg = product.image;
-            const techImg = product.tech_image || ""; 
             
-            // Generisanje HTML-a
-            let detailsHtml = `
+            // Prevodi labela za tabelu
+            const labels = {
+                dim: currentLang === 'sr' ? "Dimenzije" : "Dimensions",
+                brand: currentLang === 'sr' ? "Brend" : "Brand",
+                mat: currentLang === 'sr' ? "Materijal" : "Material",
+                type: currentLang === 'sr' ? "Tip" : "Type",
+                weight: currentLang === 'sr' ? "Težina" : "Weight",
+                info: currentLang === 'sr' ? "Dodatne Informacije" : "Additional Information"
+            };
+
+            const row = (k, v) => v && v !== "-" ? `<tr><td class="spec-key">${k}</td><td>${v}</td></tr>` : "";
+
+            const html = `
             <div class="detail-left">
                 <div class="main-image-container">
-                    <img id="main-display-img" src="${mainImg}" alt="${name}" class="detail-img">
-                </div>
-                <div class="gallery-thumbs">
-                    <img src="${mainImg}" class="thumb-img active" onclick="changeImage(this.src, this)">
-                    ${techImg ? `<img src="${techImg}" class="thumb-img" onclick="changeImage(this.src, this)">` : ''}
+                    <img src="${product.image}" class="detail-img">
                 </div>
             </div>
 
             <div class="detail-right">
-                <h1 class="detail-title">${name}</h1>
+                <h1 class="detail-title">${pData.name}</h1>
                 <span class="detail-code">Code: ${product.code}</span>
-                <p>${desc}</p>
+                <p class="detail-desc">${pData.description || ""}</p>
 
-                <div class="section-header">Dodatne Informacije</div>
-                
+                <div class="section-header">${labels.info}</div>
                 <table class="spec-table">
                     <tbody>
-                        ${createRow("Dimenzije", details.dimensions)}
-                        ${createRow("Brend", details.brand || "Exalco")}
-                        ${createRow("Materijal", details.material || "Aluminijum")}
-                        ${createRow("Tip", details.type)}
-                        ${createRow("Težina", details.weight ? details.weight + " kg/m" : "")}
+                        ${row(labels.dim, details.dimensions)}
+                        ${row(labels.brand, details.brand || "Exalco")}
+                        ${row(labels.mat, details.material || "Aluminium")}
+                        ${row(labels.type, details.type)}
+                        ${row(labels.weight, details.weight)}
                     </tbody>
                 </table>
             </div>
             `;
 
-            container.innerHTML = detailsHtml;
+            container.innerHTML = html;
         })
         .catch(err => {
             console.error(err);
-            container.innerHTML = "<h2>Greška pri učitavanju podataka.</h2>";
+            container.innerHTML = "<h2>Error loading data.</h2>";
         });
 });
-
-// Pomoćna funkcija za tabelu
-function createRow(key, value) {
-    if (!value || value === "-") return "";
-    return `<tr><td class="spec-key">${key}</td><td>${value}</td></tr>`;
-}
-
-// Funkcija za menjanje slike (Glavna <-> Tehnička)
-window.changeImage = function(src, thumb) {
-    document.getElementById('main-display-img').src = src;
-    document.querySelectorAll('.thumb-img').forEach(img => img.classList.remove('active'));
-    thumb.classList.add('active');
-}

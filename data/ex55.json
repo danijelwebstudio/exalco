@@ -4,815 +4,407 @@
         "tech_image": "../assets/images/products/EX55/tech/20071.webp",
         "extra_images": [],
         "code": "20071",
-        "en": {
-            "name": "Average mullion Profil code 20071",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.425" }
-        },
-        "sr": {
-            "name": "Average mullion Profil code 20071",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.425" }
-        }
+        "en": { "name": "Average mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.425" } },
+        "sr": { "name": "Srednja T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.425" } }
     },
     "20101": {
         "image": "../assets/images/products/EX55/20101.webp",
         "tech_image": "../assets/images/products/EX55/tech/20101.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20101",
-        "en": {
-            "name": "Average twisting mullion Profil code 20101",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.75" }
-        },
-        "sr": {
-            "name": "Average twisting mullion Profil code 20101",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.75" }
-        }
+        "en": { "name": "Average twisting mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.75" } },
+        "sr": { "name": "Srednja T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.75" } }
     },
     "30080": {
         "image": "../assets/images/products/EX55/30080.webp",
         "tech_image": "../assets/images/products/EX55/tech/30080.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "30080",
-        "en": {
-            "name": "Average vent Profil code 30080",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "63*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.496" }
-        },
-        "sr": {
-            "name": "Average vent Profil code 30080",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "63*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.496" }
-        }
+        "en": { "name": "Average vent Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "63*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.496" } },
+        "sr": { "name": "Srednje Krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "63*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.496" } }
     },
     "15c-40100": {
         "image": "../assets/images/products/EX55/15c-40100.webp",
         "tech_image": "../assets/images/products/EX55/tech/15c-40100.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "15c-40100",
-        "en": {
-            "name": "Corner Profil code 15c-40100",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.865" }
-        },
-        "sr": {
-            "name": "Corner Profil code 15c-40100",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.865" }
-        }
+        "en": { "name": "Corner Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.865" } },
+        "sr": { "name": "Ugaoni Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.865" } }
     },
     "40100": {
         "image": "../assets/images/products/EX55/40100.webp",
         "tech_image": "../assets/images/products/EX55/tech/40100.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "40100",
-        "en": {
-            "name": "Corner Profil code 40100",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.125" }
-        },
-        "sr": {
-            "name": "Corner Profil code 40100",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.125" }
-        }
+        "en": { "name": "Corner Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.125" } },
+        "sr": { "name": "Ugaoni Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.125" } }
     },
     "60135": {
         "image": "../assets/images/products/EX55/60135.webp",
         "tech_image": "../assets/images/products/EX55/tech/60135.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "60135",
-        "en": {
-            "name": "Door Profil without threshold code 60135",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "2.436" }
-        },
-        "sr": {
-            "name": "Door Profil without threshold code 60135",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "2.436" }
-        }
+        "en": { "name": "Door Profil without threshold", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "2.436" } },
+        "sr": { "name": "Profil vrata (bez praga)", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "2.436" } }
     },
     "40077": {
         "image": "../assets/images/products/EX55/40077.webp",
         "tech_image": "../assets/images/products/EX55/tech/40077.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "40077",
-        "en": {
-            "name": "Double Rickety Axial Tube Profil code 40077",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Double Rickety Axial Tube Profil code 40077",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Double Rickety Axial Tube Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "Cevni Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     },
     "40077-2": {
         "image": "../assets/images/products/EX55/40076.webp",
         "tech_image": "../assets/images/products/EX55/tech/40076.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "40077",
-        "en": {
-            "name": "Double Rickety Axial Tube Profil code 40077-2",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Double Rickety Axial Tube Profil code 40077",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Double Rickety Axial Tube Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "Cevni Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     },
     "PC-135": {
         "image": "../assets/images/products/EX55/PC-135.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-135.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-135",
-        "en": {
-            "name": "Fixer PC-135",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "13.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.256" }
-        },
-        "sr": {
-            "name": "Fixer PC-135",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "13.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.256" }
-        }
+        "en": { "name": "Fixer PC-135", "description": "High-quality aluminium profile.", "details": { "dimensions": "13.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.256" } },
+        "sr": { "name": "Spojnica PC-135", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "13.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.256" } }
     },
     "PC-141": {
         "image": "../assets/images/products/EX55/PC-141.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-141.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-141",
-        "en": {
-            "name": "Fixer PC-141",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "14.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.307" }
-        },
-        "sr": {
-            "name": "Fixer PC-141",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "14.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.307" }
-        }
+        "en": { "name": "Fixer PC-141", "description": "High-quality aluminium profile.", "details": { "dimensions": "14.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.307" } },
+        "sr": { "name": "Spojnica PC-141", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "14.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.307" } }
     },
     "PC-153": {
         "image": "../assets/images/products/EX55/PC-153.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-153.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-153",
-        "en": {
-            "name": "Fixer PC-153",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "15.3", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.344" }
-        },
-        "sr": {
-            "name": "Fixer PC-153",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "15.3", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.344" }
-        }
+        "en": { "name": "Fixer PC-153", "description": "High-quality aluminium profile.", "details": { "dimensions": "15.3", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.344" } },
+        "sr": { "name": "Spojnica PC-153", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "15.3", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.344" } }
     },
     "PC-178": {
         "image": "../assets/images/products/EX55/PC-178.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-178.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-178",
-        "en": {
-            "name": "Fixer PC-178",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "17.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.507" }
-        },
-        "sr": {
-            "name": "Fixer PC-178",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "17.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.507" }
-        }
+        "en": { "name": "Fixer PC-178", "description": "High-quality aluminium profile.", "details": { "dimensions": "17.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.507" } },
+        "sr": { "name": "Spojnica PC-178", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "17.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.507" } }
     },
     "PC-184": {
         "image": "../assets/images/products/EX55/PC-184.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-184.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-184",
-        "en": {
-            "name": "Fixer PC-184",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "18.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.546" }
-        },
-        "sr": {
-            "name": "Fixer PC-184",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "18.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.546" }
-        }
+        "en": { "name": "Fixer PC-184", "description": "High-quality aluminium profile.", "details": { "dimensions": "18.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.546" } },
+        "sr": { "name": "Spojnica PC-184", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "18.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.546" } }
     },
     "PC-195": {
         "image": "../assets/images/products/EX55/PC-195.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-195.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-195",
-        "en": {
-            "name": "Fixer PC-195",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "19.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.618" }
-        },
-        "sr": {
-            "name": "Fixer PC-195",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "19.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.618" }
-        }
+        "en": { "name": "Fixer PC-195", "description": "High-quality aluminium profile.", "details": { "dimensions": "19.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.618" } },
+        "sr": { "name": "Spojnica PC-195", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "19.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.618" } }
     },
     "PC-205": {
         "image": "../assets/images/products/EX55/PC-205.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-205.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-205",
-        "en": {
-            "name": "Fixer PC-205",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "20.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.684" }
-        },
-        "sr": {
-            "name": "Fixer PC-205",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "20.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.684" }
-        }
+        "en": { "name": "Fixer PC-205", "description": "High-quality aluminium profile.", "details": { "dimensions": "20.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.684" } },
+        "sr": { "name": "Spojnica PC-205", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "20.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.684" } }
     },
     "PC-235": {
         "image": "../assets/images/products/EX55/PC-235.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-235.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-235",
-        "en": {
-            "name": "Fixer PC-235",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "23.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.88" }
-        },
-        "sr": {
-            "name": "Fixer PC-235",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "23.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.88" }
-        }
+        "en": { "name": "Fixer PC-235", "description": "High-quality aluminium profile.", "details": { "dimensions": "23.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.88" } },
+        "sr": { "name": "Spojnica PC-235", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "23.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.88" } }
     },
     "PC-241": {
         "image": "../assets/images/products/EX55/PC-241.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-241.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-241",
-        "en": {
-            "name": "Fixer PC-241",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "24.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.919" }
-        },
-        "sr": {
-            "name": "Fixer PC-241",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "24.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.919" }
-        }
+        "en": { "name": "Fixer PC-241", "description": "High-quality aluminium profile.", "details": { "dimensions": "24.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "3.919" } },
+        "sr": { "name": "Spojnica PC-241", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "24.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "3.919" } }
     },
     "PC-278": {
         "image": "../assets/images/products/EX55/PC-278.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-278.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-278",
-        "en": {
-            "name": "Fixer PC-278",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "27.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.162" }
-        },
-        "sr": {
-            "name": "Fixer PC-278",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "27.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "4.162" }
-        }
+        "en": { "name": "Fixer PC-278", "description": "High-quality aluminium profile.", "details": { "dimensions": "27.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.162" } },
+        "sr": { "name": "Spojnica PC-278", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "27.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "4.162" } }
     },
     "PC-284": {
         "image": "../assets/images/products/EX55/PC-284.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-284.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-284",
-        "en": {
-            "name": "Fixer PC-284",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "28.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.202" }
-        },
-        "sr": {
-            "name": "Fixer PC-284",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "28.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "4.202" }
-        }
+        "en": { "name": "Fixer PC-284", "description": "High-quality aluminium profile.", "details": { "dimensions": "28.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.202" } },
+        "sr": { "name": "Spojnica PC-284", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "28.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "4.202" } }
     },
     "PC-405": {
         "image": "../assets/images/products/EX55/PC-405.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-405.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-405",
-        "en": {
-            "name": "Fixer PC-405",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "40.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.101" }
-        },
-        "sr": {
-            "name": "Fixer PC-405",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.101" }
-        }
+        "en": { "name": "Fixer PC-405", "description": "High-quality aluminium profile.", "details": { "dimensions": "40.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.101" } },
+        "sr": { "name": "Spojnica PC-405", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "40.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.101" } }
     },
     "PC-431": {
         "image": "../assets/images/products/EX55/PC-431.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-431.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-431",
-        "en": {
-            "name": "Fixer PC-431",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "43.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.191" }
-        },
-        "sr": {
-            "name": "Fixer PC-431",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "43.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.191" }
-        }
+        "en": { "name": "Fixer PC-431", "description": "High-quality aluminium profile.", "details": { "dimensions": "43.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.191" } },
+        "sr": { "name": "Spojnica PC-431", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "43.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.191" } }
     },
     "PC-435": {
         "image": "../assets/images/products/EX55/PC-435.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-435.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-435",
-        "en": {
-            "name": "Fixer PC-435",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "43.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.196" }
-        },
-        "sr": {
-            "name": "Fixer PC-435",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "43.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.196" }
-        }
+        "en": { "name": "Fixer PC-435", "description": "High-quality aluminium profile.", "details": { "dimensions": "43.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.196" } },
+        "sr": { "name": "Spojnica PC-435", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "43.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.196" } }
     },
     "PC-441": {
         "image": "../assets/images/products/EX55/PC-441.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-441.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-441",
-        "en": {
-            "name": "Fixer PC-441",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "44.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.217" }
-        },
-        "sr": {
-            "name": "Fixer PC-441",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "44.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.217" }
-        }
+        "en": { "name": "Fixer PC-441", "description": "High-quality aluminium profile.", "details": { "dimensions": "44.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.217" } },
+        "sr": { "name": "Spojnica PC-441", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "44.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.217" } }
     },
     "PC-478": {
         "image": "../assets/images/products/EX55/PC-478.webp",
         "tech_image": "../assets/images/products/EX55/tech/PC-478.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "PC-478",
-        "en": {
-            "name": "Fixer PC-478",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "47.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.26" }
-        },
-        "sr": {
-            "name": "Fixer PC-478",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "47.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.26" }
-        }
+        "en": { "name": "Fixer PC-478", "description": "High-quality aluminium profile.", "details": { "dimensions": "47.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "5.26" } },
+        "sr": { "name": "Spojnica PC-478", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "47.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "5.26" } }
     },
     "10048": {
         "image": "../assets/images/products/EX55/10048.webp",
         "tech_image": "../assets/images/products/EX55/tech/10048.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "10058",
-        "en": {
-            "name": "Frame Profil code 10058",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*48", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.146" }
-        },
-        "sr": {
-            "name": "Frame Profil code 10058",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*48", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.146" }
-        }
+        "en": { "name": "Frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*48", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.146" } },
+        "sr": { "name": "Štok Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*48", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.146" } }
     },
     "10058": {
         "image": "../assets/images/products/EX55/10058.webp",
         "tech_image": "../assets/images/products/EX55/tech/10058.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "10058",
-        "en": {
-            "name": "Frame Profil code 10058",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*58", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.322" }
-        },
-        "sr": {
-            "name": "Frame Profil code 10058",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*58", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.322" }
-        }
+        "en": { "name": "Frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*58", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.322" } },
+        "sr": { "name": "Štok Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*58", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.322" } }
     },
     "10078": {
         "image": "../assets/images/products/EX55/10078.webp",
         "tech_image": "../assets/images/products/EX55/tech/10078.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "10078",
-        "en": {
-            "name": "Frame Profil code 10078",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*78", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.647" }
-        },
-        "sr": {
-            "name": "Frame Profil code 10078",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*78", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.647" }
-        }
+        "en": { "name": "Frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*78", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.647" } },
+        "sr": { "name": "Štok Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*78", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.647" } }
     },
     "22110": {
         "image": "../assets/images/products/EX55/22110.webp",
         "tech_image": "../assets/images/products/EX55/tech/22110.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "22110",
-        "en": {
-            "name": "Hidden Border frame Profil code 22110",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*110", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.452" }
-        },
-        "sr": {
-            "name": "Hidden Border frame Profil code 22110",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*110", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.452" }
-        }
+        "en": { "name": "Hidden Border frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*110", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.452" } },
+        "sr": { "name": "Skriveni Štok Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*110", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.452" } }
     },
     "12088": {
         "image": "../assets/images/products/EX55/12088.webp",
         "tech_image": "../assets/images/products/EX55/tech/12088.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "12088",
-        "en": {
-            "name": "Hidden frame Profil code 12088",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*88", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.349" }
-        },
-        "sr": {
-            "name": "Hidden frame Profil code 12088",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*88", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.349" }
-        }
+        "en": { "name": "Hidden frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*88", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.349" } },
+        "sr": { "name": "Skriveni Štok Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*88", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.349" } }
     },
     "42150": {
         "image": "../assets/images/products/EX55/42150.webp",
         "tech_image": "../assets/images/products/EX55/tech/42150.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "42150",
-        "en": {
-            "name": "Hidden vent mullian Profil code 42150",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*150", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.704" }
-        },
-        "sr": {
-            "name": "Hidden vent mullian Profil code 42150",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*150", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.704" }
-        }
+        "en": { "name": "Hidden vent mullian Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*150", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.704" } },
+        "sr": { "name": "T-Prečka za skriveno krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*150", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.704" } }
     },
     "32070": {
         "image": "../assets/images/products/EX55/32070.webp",
         "tech_image": "../assets/images/products/EX55/tech/32070.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "32070",
-        "en": {
-            "name": "Hidden vent Profil code 32070",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*67.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.22" }
-        },
-        "sr": {
-            "name": "Hidden vent Profil code 32070",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*67.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.22" }
-        }
+        "en": { "name": "Hidden vent Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*67.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.22" } },
+        "sr": { "name": "Profil skrivenog krila", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*67.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.22" } }
     },
     "20100": {
         "image": "../assets/images/products/EX55/20100.webp",
         "tech_image": "../assets/images/products/EX55/tech/20100.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20100",
-        "en": {
-            "name": "large mullion Profil code 20100",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.75" }
-        },
-        "sr": {
-            "name": "large mullion Profil code 20100",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.75" }
-        }
+        "en": { "name": "large mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.75" } },
+        "sr": { "name": "Velika T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.75" } }
     },
     "20135": {
         "image": "../assets/images/products/EX55/20135.webp",
         "tech_image": "../assets/images/products/EX55/tech/20135.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20135",
-        "en": {
-            "name": "large mullion Profil code 20135",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "2.319" }
-        },
-        "sr": {
-            "name": "large mullion Profil code 20135",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "2.319" }
-        }
+        "en": { "name": "large mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "2.319" } },
+        "sr": { "name": "Velika T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*135", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "2.319" } }
     },
     "20081": {
         "image": "../assets/images/products/EX55/20081.webp",
         "tech_image": "../assets/images/products/EX55/tech/20081.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20081",
-        "en": {
-            "name": "large twisting mullion Profil code 20081",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.425" }
-        },
-        "sr": {
-            "name": "large twisting mullion Profil code 20081",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.425" }
-        }
+        "en": { "name": "large twisting mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.425" } },
+        "sr": { "name": "Velika T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.425" } }
     },
     "30100": {
         "image": "../assets/images/products/EX55/30100.webp",
         "tech_image": "../assets/images/products/EX55/tech/30100.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "30100",
-        "en": {
-            "name": "large vent Profil code 30100",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "63*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.822" }
-        },
-        "sr": {
-            "name": "large vent Profil code 30100",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "63*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.822" }
-        }
+        "en": { "name": "large vent Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "63*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.822" } },
+        "sr": { "name": "Veliko Krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "63*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.822" } }
     },
     "40061": {
         "image": "../assets/images/products/EX55/40061.webp",
         "tech_image": "../assets/images/products/EX55/tech/40061.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "40061",
-        "en": {
-            "name": "Overhang Profil code 40061",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*61", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.255" }
-        },
-        "sr": {
-            "name": "Overhang Profil code 40061",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*61", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.255" }
-        }
+        "en": { "name": "Overhang Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*61", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.255" } },
+        "sr": { "name": "Okapnica Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*61", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.255" } }
     },
     "50010": {
         "image": "../assets/images/products/EX55/50010.webp",
         "tech_image": "../assets/images/products/EX55/tech/50010.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50010",
-        "en": {
-            "name": "Rickety double sheet 50010",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "10", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.273" }
-        },
-        "sr": {
-            "name": "Rickety double sheet 50010",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "10", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.273" }
-        }
+        "en": { "name": "Rickety double sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "10", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.273" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "10", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.273" } }
     },
     "50015": {
         "image": "../assets/images/products/EX55/50015.webp",
         "tech_image": "../assets/images/products/EX55/tech/50015.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50015",
-        "en": {
-            "name": "Rickety double sheet 50015",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "15", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.282" }
-        },
-        "sr": {
-            "name": "Rickety double sheet 50015",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "15", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.282" }
-        }
+        "en": { "name": "Rickety double sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "15", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.282" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "15", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.282" } }
     },
     "50020": {
         "image": "../assets/images/products/EX55/50020.webp",
         "tech_image": "../assets/images/products/EX55/tech/50020.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50020",
-        "en": {
-            "name": "Rickety double sheet 50020",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "20", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.326" }
-        },
-        "sr": {
-            "name": "Rickety double sheet 50020",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "20", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.326" }
-        }
+        "en": { "name": "Rickety double sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "20", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.326" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "20", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.326" } }
     },
     "50025": {
         "image": "../assets/images/products/EX55/50025.webp",
         "tech_image": "../assets/images/products/EX55/tech/50025.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50025",
-        "en": {
-            "name": "Rickety double sheet 50025",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "25", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.346" }
-        },
-        "sr": {
-            "name": "Rickety double sheet 50025",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "25", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.346" }
-        }
+        "en": { "name": "Rickety double sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "25", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.346" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "25", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.346" } }
     },
     "50030": {
         "image": "../assets/images/products/EX55/50030.webp",
         "tech_image": "../assets/images/products/EX55/tech/50030.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50030",
-        "en": {
-            "name": "Rickety single sheet 50030",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "30", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.367" }
-        },
-        "sr": {
-            "name": "Rickety single sheet 50030",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "30", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.367" }
-        }
+        "en": { "name": "Rickety single sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "30", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.367" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "30", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.367" } }
     },
     "50035": {
         "image": "../assets/images/products/EX55/50035.webp",
         "tech_image": "../assets/images/products/EX55/tech/50035.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50035",
-        "en": {
-            "name": "Rickety single sheet 50035",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "35", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.387" }
-        },
-        "sr": {
-            "name": "Rickety single sheet 50035",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "35", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.387" }
-        }
+        "en": { "name": "Rickety single sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "35", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.387" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "35", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.387" } }
     },
     "50040": {
         "image": "../assets/images/products/EX55/50040.webp",
         "tech_image": "../assets/images/products/EX55/tech/50040.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "50040",
-        "en": {
-            "name": "Rickety single sheet 50040",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "40", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.407" }
-        },
-        "sr": {
-            "name": "Rickety single sheet 50040",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.407" }
-        }
+        "en": { "name": "Rickety single sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "40", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.407" } },
+        "sr": { "name": "Lajsna za staklo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "40", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.407" } }
     },
     "20070": {
         "image": "../assets/images/products/EX55/20070.webp",
         "tech_image": "../assets/images/products/EX55/tech/20070.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20070",
-        "en": {
-            "name": "Small mullion Profil code 20070",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.249" }
-        },
-        "sr": {
-            "name": "Small mullion Profil code 20070",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.249" }
-        }
+        "en": { "name": "Small mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.249" } },
+        "sr": { "name": "Mala T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.249" } }
     },
     "20071-2": {
         "image": "../assets/images/products/EX55/20080.webp",
         "tech_image": "../assets/images/products/EX55/tech/20080.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "20071",
-        "en": {
-            "name": "Small twisting mullion Profil code 20071",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.249" }
-        },
-        "sr": {
-            "name": "Small twisting mullion Profil code 20071",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.249" }
-        }
+        "en": { "name": "Small twisting mullion Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.249" } },
+        "sr": { "name": "Mala T-Prečka", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "55*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.249" } }
     },
     "30070": {
         "image": "../assets/images/products/EX55/30070.webp",
         "tech_image": "../assets/images/products/EX55/tech/30070.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "30070",
-        "en": {
-            "name": "small vent Profil code 30070",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "63*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.334" }
-        },
-        "sr": {
-            "name": "small vent Profil code 30070",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "63*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.334" }
-        }
+        "en": { "name": "small vent Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "63*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.334" } },
+        "sr": { "name": "Malo Krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "63*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.334" } }
     },
     "40075": {
         "image": "../assets/images/products/EX55/40075.webp",
         "tech_image": "../assets/images/products/EX55/tech/40075.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "40075",
-        "en": {
-            "name": "Thermal Break Axial Tube Profil code 40075",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.376" }
-        },
-        "sr": {
-            "name": "Thermal Break Axial Tube Profil code 40075",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.376" }
-        }
+        "en": { "name": "Thermal Break Axial Tube Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.376" } },
+        "sr": { "name": "Cevni Profil sa termoprekidom", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.376" } }
     },
     "22150": {
         "image": "../assets/images/products/EX55/22150.webp",
         "tech_image": "../assets/images/products/EX55/tech/22150.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "22150",
-        "en": {
-            "name": "Hidden vent mullian Profil code 22150",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Hidden vent mullian Profil code 22150",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Hidden vent mullian Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "T-Prečka za skriveno krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     },
     "42040": {
         "image": "../assets/images/products/EX55/42040.webp",
         "tech_image": "../assets/images/products/EX55/tech/42040.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "42040",
-        "en": {
-            "name": "Hidden vent adaptor Profil code 42040",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Hidden vent adaptor Profil code 42040",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Hidden vent adaptor Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "Adapter za skriveno krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     },
     "15058": {
         "image": "../assets/images/products/EX55/15058.webp",
         "tech_image": "../assets/images/products/EX55/tech/15058.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "15058",
-        "en": {
-            "name": "Binding the suppressed Profil code 15058",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Binding the suppressed Profil code 15058",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Binding the suppressed Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "Štulp Profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     },
     "DOUBLE-SHEET": {
         "image": "../assets/images/products/EX55/DOUBLE-SHEET.webp",
         "tech_image": "../assets/images/products/EX55/tech/DOUBLE-SHEET.webp",
-        "extra_images": [],
+        "extra_images": [], 
         "code": "DOUBLE-SHEET",
-        "en": {
-            "name": "Double sheet",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
-        },
-        "sr": {
-            "name": "Double sheet",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
+        "en": { "name": "Double sheet", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" } },
+        "sr": { "name": "Panel profil", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" } }
     }
 }

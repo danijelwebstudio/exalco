@@ -5,255 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        /* Raspored elemenata */
-        .details-wrapper { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 40px; 
-            margin: 50px 0; 
-            align-items: flex-start;
-        }
-        .details-left { 
-            flex: 1; 
-            min-width: 300px; 
-            max-width: 600px; /* Ograničimo širinu da slike ne budu ogromne */
-        }
-        .details-right { 
-            flex: 1; 
-            min-width: 300px; 
-        }
-
-        /* SWIPER STILOVI (Slider) */
-        .swiper {
-            width: 100%;
-            height: 400px; /* Fiksna visina za slider */
-            border: 1px solid #eee;
-            border-radius: 12px;
-            background: #fff;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #fff;
-        }
-
-        .swiper-slide img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain; /* Da se slika ne razvuče */
-            padding: 20px;
-        }
-
-        /* Boja strelica i tačkica */
-        .swiper-button-next, .swiper-button-prev {
-            color: #333; /* Tamna boja strelica */
-            transform: scale(0.7); /* Malo manje strelice */
-        }
-        .swiper-pagination-bullet-active {
-            background: #333;
-        }
-
-        /* Tabela stilovi */
-        .info-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .info-table th, .info-table td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
-        .info-table th { width: 40%; color: #555; font-weight: 600; background: #f9f9f9; }
-        
-        /* Za mobilni */
-        @media (max-width: 768px) {
-            .swiper {
-                height: 300px; /* Manja visina na telefonu */
-            }
-            .details-wrapper {
-                flex-direction: column; /* Jedno ispod drugog */
-                gap: 20px;
-            }
-            .details-left {
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-
-        .error-msg { color: red; text-align: center; margin-top: 50px; }
-    </style>
+    
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-    <div class="top-bar"><div class="container" style="color:white;">EXAL ALUMINIUM</div></div>
-    
-    <div class="container" style="margin-top: 20px;">
-        <a id="back-link" href="#" style="font-weight:bold; color:#333; text-decoration:none; display: inline-flex; align-items: center; gap: 8px;">
-            <i class="fas fa-arrow-left"></i> <span id="back-text">Back to Catalog</span>
-        </a>
+   <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="phone"><i class="fas fa-phone-alt"></i> +387 65 000 000</span>
+                <span class="email"><i class="fas fa-envelope"></i> info@exalaluminium.com</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="lang-search">
+                    <a href="product-detail-sr.html">SR</a>
+                    <span class="divider">|</span>
+                    <a href="product-details.html" class="lang-active">EN</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <section class="page-header" style="padding: 40px 0; background: #f4f4f4; margin-top: 20px;">
+    <header class="main-header">
         <div class="container">
-            <h1 id="display-name" style="margin: 0; color: #333;">Loading...</h1>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container" id="main-content">
-            <div class="details-wrapper">
+            <div class="logo-wrapper">
                 
-                <div class="details-left">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper" id="swiper-wrapper">
-                            </div>
-                        
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        
-                        <div class="swiper-pagination"></div>
-                    </div>
+                <a href="../index-en.html" class="logo-item">
+                    <img src="../assets/images/EXAL.webp" alt="EXALCO Logo" class="logo-img-2">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index-en.html">Home</a></li>
                     
-                    <p style="text-align: center; font-size: 12px; color: #888; margin-top: 10px;">
-                        <i class="fas fa-hand-pointer"></i> Swipe to see technical drawing
-                    </p>
-                </div>
+                    <li class="dropdown">
+                        <a href="#">Company <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/about-us.html">About Us</a></li>
+                            <li><a href="../pages/ceo-message.html">CEO Message</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="header-search"><i class="fas fa-search"></i></div>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
 
-                <div class="details-right">
-                    <h2 id="display-title" style="margin-top: 0;">Loading...</h2>
-                    <p style="color: #d32f2f; font-weight: bold; font-size: 18px; margin: 10px 0;">
-                        Code: <span id="display-code">---</span>
-                    </p>
-                    <p id="display-desc" style="line-height: 1.6; color: #666;">...</p>
+    <div class="container" style="margin-top: 40px;">
+        <a id="back-link" href="products.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back to catalog</a>
+    </div>
 
-                    <h3 id="specs-title" style="margin-top: 30px; border-bottom: 2px solid #333; padding-bottom: 10px;">Additional Information</h3>
-                    <table class="info-table">
-                        <tr><th id="lbl-dim">Dimensions</th> <td id="t-dim">-</td></tr>
-                        <tr><th id="lbl-brand">Brand</th> <td id="t-brand">-</td></tr>
-                        <tr><th id="lbl-mat">Material</th> <td id="t-mat">-</td></tr>
-                        <tr><th id="lbl-oper">Operation</th> <td id="t-oper">-</td></tr>
-                        <tr><th id="lbl-type">Type</th> <td id="t-type">-</td></tr>
-                        <tr><th id="lbl-weight">Weight (kg/m)</th> <td id="t-weight">-</td></tr>
-                    </table>
-                </div>
+    <section class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div class="product-detail-wrapper" id="detail-container">
+                <div style="width:100%; text-align:center; padding: 50px;">Loading data...</div>
             </div>
         </div>
     </section>
 
-    <script src="../js/products-data.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <div class="full-width-map reveal">
+        <iframe 
+            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
 
-    <script>
-    // 1. Čitamo URL parametre
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    let lang = params.get('lang');
-    if (!lang) lang = 'en';
-
-    // Postavljanje linka za nazad
-    const backLink = document.getElementById('back-link');
-    if (lang === 'sr') {
-        backLink.href = "../pages/products-sr.html"; // Prilagodi putanju ako treba
-        document.getElementById('back-text').innerText = "Nazad na katalog";
-    } else {
-        backLink.href = "../pages/products.html"; // Prilagodi putanju ako treba
-    }
-
-    // 2. Glavna logika
-    if (typeof productsDatabase === 'undefined') {
-        document.getElementById('main-content').innerHTML = "<h2 class='error-msg'>GREŠKA: products-data.js nije učitan!</h2>";
-    } else if (!id) {
-        document.getElementById('main-content').innerHTML = "<h2 class='error-msg'>Nije izabran proizvod.</h2>";
-        document.getElementById('display-name').innerText = "Catalog";
-    } else {
-        const product = productsDatabase[id];
-
-        if (product) {
-            const content = product[lang] || product['en'];
-
-            // --- PUNJENJE TEKSTA ---
-            document.title = content.name + " - EXAL";
-            document.getElementById('display-name').innerText = content.name;
-            document.getElementById('display-title').innerText = content.name;
-            document.getElementById('display-desc').innerText = content.description;
-            document.getElementById('display-code').innerText = product.code;
-
-            // --- PUNJENJE SLIDER-a (SLIKE) ---
-            const swiperWrapper = document.getElementById('swiper-wrapper');
-            swiperWrapper.innerHTML = ''; // Očisti prethodno
-
-            // A. Glavna slika (uvek postoji)
-            swiperWrapper.innerHTML += `
-                <div class="swiper-slide">
-                    <img src="${product.image}" alt="${content.name}">
+   
+   <footer class="main-footer reveal">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h4>About EXALCO Company</h4>
+                    <div class="footer-line"></div>
+                    <p>Company EXALCO, is known as one of the most reputable brands
+                        in the aluminum profile industry through the production of various types of them.</p>
                 </div>
-            `;
 
-            // B. Dodatne slike (OVO JE NOVI DEO KOJI JE FALIO) ✅
-            if (product.extra_images && product.extra_images.length > 0) {
-                product.extra_images.forEach(imgUrl => {
-                    swiperWrapper.innerHTML += `
-                        <div class="swiper-slide">
-                            <img src="${imgUrl}" alt="Detail View">
-                        </div>
-                    `;
-                });
-            }
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-line"></div>
+                    <ul class="footer-links">
+                        <li><a href="../index-en.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="ceo-message.html">CEO's Message</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
-            // C. Tehnička slika (samo ako postoji)
-            if (product.tech_image && product.tech_image.trim() !== "") {
-                swiperWrapper.innerHTML += `
-                    <div class="swiper-slide">
-                        <img src="${product.tech_image}" alt="Technical Drawing">
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-line"></div>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Banja Luka / Laktaši, BiH</li>
+                        <li><i class="fas fa-phone"></i> +387 65 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@exalaluminium.com</li>
+                    </ul>
+                    
+                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=44.869333,17.248278&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                `;
-            }
+                </div>
+            </div>
+        </div>
 
-            // --- INICIJALIZACIJA SWIPER-a ---
-            var swiper = new Swiper(".mySwiper", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true, 
-                },
-                loop: true, 
-                spaceBetween: 30, 
-            });
+        <div class="footer-bottom">
+            <div class="container">
+                <p>All rights reserved. | Design and hosting: Danijel Zorić</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-            // --- PUNJENJE TABELE ---
-            if (content.details) {
-                document.getElementById('t-dim').innerText = content.details.dimensions || "-";
-                document.getElementById('t-brand').innerText = content.details.brand || "-";
-                document.getElementById('t-mat').innerText = content.details.material || "-";
-                document.getElementById('t-oper').innerText = content.details.operation || "-";
-                document.getElementById('t-type').innerText = content.details.type || "-";
-                document.getElementById('t-weight').innerText = content.details.weight || "-";
-            }
-
-            // Prevod Labels (Srpski)
-            if (lang === 'sr') {
-                document.getElementById('specs-title').innerText = "Dodatne Informacije";
-                document.getElementById('lbl-dim').innerText = "Dimenzije";
-                document.getElementById('lbl-brand').innerText = "Brend";
-                document.getElementById('lbl-mat').innerText = "Materijal";
-                document.getElementById('lbl-oper').innerText = "Operacija";
-                document.getElementById('lbl-type').innerText = "Tip";
-                document.getElementById('lbl-weight').innerText = "Težina (kg/m)";
-            }
-
-        } else {
-            document.getElementById('main-content').innerHTML = "<h2 class='error-msg'>Proizvod nije pronađen.</h2>";
-        }
-    }
-</script>
     <script src="../js/main.js"></script>
+    <script src="../js/detail-loader.js"></script> 
 </body>
 </html>
