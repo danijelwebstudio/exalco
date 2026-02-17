@@ -298,6 +298,27 @@ img { max-width: 100%; display: block; }
 .search-item { display: block; padding: 15px 20px; border-bottom: 1px solid #eee; color: #333; text-align: left; transition: 0.2s; }
 .search-item:hover { background-color: #f0f4f8; padding-left: 25px; color: var(--primary-color); }
 
+
+/* --- NOVI GRID ZA LISTU PROIZVODA (Ovo si tražio) --- */
+.catalog-grid {
+    display: grid;
+    /* Desktop: 4 kolone jednake širine */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    align-items: stretch; /* Da kartice budu iste visine */
+}
+
+/* RESPONSIVE ZA LISTU (MOBILNI) */
+@media (max-width: 992px) {
+    .catalog-grid {
+        /* Mobilni: 2 kolone */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+    }
+}
+
 /* =========================================
    6. RESPONSIVENESS (MOBILNI FIX)
    ========================================= */
@@ -570,17 +591,16 @@ img { max-width: 100%; display: block; }
     width: 100%;
     text-align: center;
     padding: 12px;
-    margin-top: auto; /* Gura dugme na dno kartice */
+    margin-top: auto; /* Gura dugme na samo dno */
     background: #fff;
     border-top: 1px solid #eee;
-    color: var(--primary-color);
+    color: #004085; /* Tvoja plava boja */
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
     cursor: pointer;
 }
-
 .read-more-btn:hover {
     background: var(--primary-color);
     color: #fff;
@@ -608,4 +628,85 @@ img { max-width: 100%; display: block; }
     .detail-title {
         font-size: 24px;
     }
+}
+
+/* =========================================
+   NOVO: STILOVI ZA DETALJNU STRANICU
+   ========================================= */
+
+/* Raspored - Dve kolone */
+.product-detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.detail-left { flex: 1; min-width: 300px; }
+.detail-right { flex: 1; min-width: 300px; }
+
+/* Velika slika */
+.main-image-container {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    height: 400px; /* Fiksna visina */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.detail-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+/* Male sličice (Thumbnails) */
+.gallery-thumbs { display: flex; gap: 10px; margin-top: 15px; justify-content: center; }
+
+.thumb-img {
+    width: 70px; height: 70px; border: 1px solid #ddd;
+    border-radius: 4px; cursor: pointer; object-fit: contain;
+    padding: 5px; transition: 0.3s; background: #fff;
+}
+.thumb-img.active, .thumb-img:hover { border-color: #004085; box-shadow: 0 0 0 2px rgba(0, 64, 133, 0.2); }
+
+/* Naslovi i Kod */
+.detail-title { font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #222; }
+.detail-code { 
+    font-size: 18px; color: #e74c3c; /* Crvena boja */ 
+    font-weight: bold; margin-bottom: 20px; 
+    display: inline-block; background: #f9f9f9; 
+    padding: 5px 15px; border-radius: 4px; 
+}
+.detail-desc { color: #666; margin-bottom: 30px; font-size: 16px; }
+
+/* Tabela Specifikacija */
+.section-header { 
+    background: #f8f9fa; padding: 12px 20px; font-weight: bold; 
+    border-left: 5px solid #004085; margin-top: 30px; margin-bottom: 20px; 
+    text-transform: uppercase; font-size: 14px; 
+}
+
+.spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.spec-table tr { border-bottom: 1px solid #eee; }
+.spec-table td { padding: 15px 10px; font-size: 15px; color: #555; }
+.spec-key { font-weight: 600; width: 40%; color: #333; }
+
+/* Dugme Nazad */
+.back-btn { 
+    display: inline-flex; align-items: center; gap: 8px; 
+    color: #666; font-weight: 600; text-decoration: none; 
+    font-size: 14px; margin-bottom: 20px; transition: 0.3s; 
+}
+.back-btn:hover { color: #004085; transform: translateX(-5px); }
+
+/* Responsive za detalje */
+@media (max-width: 768px) {
+    .product-detail-wrapper { flex-direction: column; gap: 30px; }
+    .main-image-container { height: 300px; }
+    .detail-title { font-size: 24px; }
 }

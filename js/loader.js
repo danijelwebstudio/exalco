@@ -1,24 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Čitamo koja je serija izabrana (npr. W55)
     const params = new URLSearchParams(window.location.search);
     const seriesParam = params.get('series'); 
     
     const grid = document.getElementById('product-grid');
     const title = document.getElementById('series-title');
 
-    // Ako nema serije u linku
     if (!seriesParam) {
         if(title) title.innerText = "Greška";
-        if(grid) grid.innerHTML = "<div class='loading-msg' style='color:red'>Greška: Nije izabrana serija.</div>";
         return;
     }
 
     const fileName = seriesParam.toLowerCase(); 
-    
-    // Postavi naslov (npr. W55 SERIJA)
-    if(title) title.innerText = seriesParam.toUpperCase() + " Serija";
 
-    // 2. Učitavamo podatke iz JSON fajla
+    // --- REČNIK ZA PREVOD NASLOVA ---
+    const seriesTranslations = {
+        "automatic_door": "Automatska Vrata",
+        "uchennel": "U-Channel Sistemi",
+        "rollup": "Roletne i Brisoleji",
+        "handrail": "Ograde i Rukohvati",
+        "pipe_profiles": "Cijevni Profili",
+        "gridesystem": "Mreže i Komarnici",
+        "partition": "Pregradni Zidovi",
+        "verandah": "Zimske Bašte",
+        "facecap": "Fasade (Facecap)",
+        "frameless": "Strukturalne Fasade",
+        "rainforce": "Rainforce Sistemi",
+        "hs96": "HS96 Podizno-Klizni",
+        // Za ostale ostavi default (W55, EX55 itd.)
+    };
+
+    // Postavljanje naslova (Ako ima prevod koristi ga, ako ne, samo poveća slova)
+    if(title) {
+        title.innerText = seriesTranslations[fileName] || (seriesParam.toUpperCase() + " Serija");
+    }
+
+    // Učitavanje podataka
     fetch(`../data/${fileName}.json`)
         .then(response => {
             if (!response.ok) throw new Error("Fajl nije pronađen");
@@ -32,33 +48,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // 3. Pravimo kartice
             Object.values(products).forEach(product => {
-                // Uzimamo srpski naziv (ili engleski ako nema)
+                // Forsiramo SRPSKI ("sr"), ako ga nema, tek onda "en"
                 let pData = product.sr || product.en;
-                let name = pData ? pData.name : "Proizvod";
                 
-                // --- KLJUČNI DEO: PRAVIMO LINK ---
-                // Ovo vodi na novu stranicu i prenosi podatke (serija i kod)
-                let link = `product-detail-sr.html?series=${fileName}&code=${product.code}`;
+                // Ako u JSON-u pod "sr" piše engleski, ovde će izaći engleski.
+                // Moraš prevesti tekst unutar JSON fajlova.
+                
+                let name = pData ? pData.name : "Proizvod";
+
+                // Link ka detaljima
+                let detailLink = `product-detail-sr.html?series=${fileName}&code=${product.code}`;
 
                 htmlContent += `
                 <div class="profile-card reveal">
-                    <a href="${link}" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; height:100%;">
-                        
+                    <a href="${detailLink}" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; height:100%;">
                         <div class="card-img-wrapper">
                             <img src="${product.image}" alt="${name}" class="profile-img" loading="lazy" onerror="this.src='../assets/images/placeholder.png'">
                         </div>
-                        
                         <div class="card-info">
                             <span class="code-badge">${product.code}</span>
                             <h3 class="profile-name">${name}</h3>
                         </div>
-
-                        <div class="read-more-btn" style="margin-top:auto; padding:15px; text-align:center; background:#f8f9fa; border-top:1px solid #eee; font-weight:bold; font-size:12px; text-transform:uppercase; color:#0056b3;">
-                            Saznaj Više <i class="fas fa-arrow-right" style="margin-left:5px;"></i>
+                        <div class="read-more-btn">
+                            Saznaj Više <i class="fas fa-arrow-right"></i>
                         </div>
-
                     </a>
                 </div>
                 `;
@@ -68,6 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error(error);
-            grid.innerHTML = `<div class='loading-msg'>Greška: Nismo našli podatke za <b>${fileName}</b>. Proveri da li fajl postoji u folderu data.</div>`;
+            grid.innerHTML = `<div class='loading-msg'>Greška: Podaci za <b>${fileName}</b> nisu pronađeni.</div>`;
         });
 });
