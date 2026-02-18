@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Proveri jezik (sr ili en)
     const currentLang = document.documentElement.lang || 'sr'; 
 
     const params = new URLSearchParams(window.location.search);
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById('detail-container');
     const backLink = document.getElementById('back-link');
 
-    // Namesti dugme "Nazad" (na odgovarajuću listu)
     let listPage = currentLang === 'sr' ? 'products-list-sr.html' : 'products-list.html';
     let mainPage = currentLang === 'sr' ? 'products-sr.html' : 'products.html';
 
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Učitaj JSON
     fetch(`../data/${series.toLowerCase()}.json`)
         .then(res => res.json())
         .then(data => {
@@ -35,18 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // --- PAMETAN ODABIR JEZIKA ---
             const pData = product[currentLang] || product.en;
             const details = pData.details || {};
             
-            // Prevodi labela za tabelu
             const labels = {
                 dim: currentLang === 'sr' ? "Dimenzije" : "Dimensions",
                 brand: currentLang === 'sr' ? "Brend" : "Brand",
                 mat: currentLang === 'sr' ? "Materijal" : "Material",
                 type: currentLang === 'sr' ? "Tip" : "Type",
-                weight: currentLang === 'sr' ? "Težina" : "Weight",
-                info: currentLang === 'sr' ? "Dodatne Informacije" : "Additional Information"
+                weight: currentLang === 'sr' ? "Težina (kg/m)" : "Weight (kg/m)",
+                info: currentLang === 'sr' ? "Tehničke Specifikacije" : "Technical Specifications",
+                tech: currentLang === 'sr' ? "Tehnički Prikaz" : "Technical View"
             };
 
             const row = (k, v) => v && v !== "-" ? `<tr><td class="spec-key">${k}</td><td>${v}</td></tr>` : "";
@@ -54,13 +50,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const html = `
             <div class="detail-left">
                 <div class="main-image-container">
-                    <img src="${product.image}" class="detail-img">
+                    <img src="${product.image}" class="detail-img" id="main-product-img">
+                </div>
+                <div class="gallery-thumbs" style="margin-top: 20px; display: flex; gap: 10px; justify-content: center;">
+                    <img src="${product.image}" style="width:70px; cursor:pointer; border:1px solid #ddd;" onclick="document.getElementById('main-product-img').src=this.src">
+                    ${product.tech_image ? `<img src="${product.tech_image}" style="width:70px; cursor:pointer; border:1px solid #ddd;" onclick="document.getElementById('main-product-img').src=this.src">` : ''}
                 </div>
             </div>
 
             <div class="detail-right">
                 <h1 class="detail-title">${pData.name}</h1>
-                <span class="detail-code">Code: ${product.code}</span>
+                <span class="detail-code">Kod: ${product.code}</span>
                 <p class="detail-desc">${pData.description || ""}</p>
 
                 <div class="section-header">${labels.info}</div>
@@ -73,6 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${row(labels.weight, details.weight)}
                     </tbody>
                 </table>
+
+                ${product.tech_image ? `
+                    <div class="section-header" style="margin-top:40px;">${labels.tech}</div>
+                    <div class="tech-draw-container" style="background:#fff; padding:20px; border:1px solid #eee; border-radius:8px; text-align:center;">
+                        <img src="${product.tech_image}" alt="Tech View" style="max-width:100%; height:auto;">
+                    </div>
+                ` : ''}
             </div>
             `;
 

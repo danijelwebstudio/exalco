@@ -85,7 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 let name = pData ? pData.name : "Product";
                 let btnText = currentLang === 'sr' ? "Saznaj Više" : "Read More";
 
-                let detailPage = currentLang === 'sr' ? 'product-detail-sr.html' : 'product-detail.html';
+             
+let detailPage = (currentLang === 'en') ? 'product-detail.html' : 'product-detail-sr.html';
                 let detailLink = `${detailPage}?series=${fileName}&code=${product.code}`;
 
                 htmlContent += `
