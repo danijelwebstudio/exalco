@@ -37,12 +37,12 @@
         "extra_images": [],
         "code": "300",
         "en": {
-            "name": "Grid Profil code 300",
+            "name": "Grid Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "38.5*16.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         },
         "sr": {
-            "name": "Profil rešetke code 300",
+            "name": "Profil rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "38.5*16.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         }
@@ -53,12 +53,12 @@
         "extra_images": [],
         "code": "301",
         "en": {
-            "name": "Grid Profil code 301",
+            "name": "Grid Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "38.5*16", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         },
         "sr": {
-            "name": "Profil rešetke code 301",
+            "name": "Profil rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "38.5*16", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         }
@@ -85,12 +85,12 @@
         "extra_images": [],
         "code": "302",
         "en": {
-            "name": "Rail grid Profil code 302",
+            "name": "Rail grid Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "52.4*16", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.545" }
         },
         "sr": {
-            "name": "Profil šine rešetke code 302",
+            "name": "Profil šine rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "52.4*16", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.545" }
         }

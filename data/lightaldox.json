@@ -181,12 +181,12 @@
         "extra_images": [],
         "code": "5930",
         "en": {
-            "name": "Srtap Profil code 5930",
+            "name": "Srtap Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Pokrivna lajsna code 5930",
+            "name": "Pokrivna lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }

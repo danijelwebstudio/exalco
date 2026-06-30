@@ -81,30 +81,35 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             Object.values(products).forEach(product => {
-                let pData = product[currentLang] || product.en;
-                let name = pData ? pData.name : "Product";
-                let btnText = currentLang === 'sr' ? "Saznaj Više" : "Read More";
+                // ... unutar Object.values(products).forEach(product =>) ...
 
-             
+// ... unutar Object.values(products).forEach(product =>) ...
+let pData = product[currentLang] || product.en;
+let name = pData ? pData.name : "Product";
+let btnText = currentLang === 'sr' ? "Saznaj Više" : "Read More";
+
+// SEO Alt Atribut šablon koji je tražen
+const listAlt = `${name} kod ${product.code} - aluminijumski profil`;
+
 let detailPage = (currentLang === 'en') ? 'product-detail.html' : 'product-detail-sr.html';
-                let detailLink = `${detailPage}?series=${fileName}&code=${product.code}`;
+let detailLink = `${detailPage}?series=${fileName}&code=${product.code}`;
 
-                htmlContent += `
-                <div class="profile-card reveal">
-                    <a href="${detailLink}" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; height:100%;">
-                        <div class="card-img-wrapper">
-                            <img src="${product.image}" alt="${name}" class="profile-img" loading="lazy" onerror="this.src='../assets/images/placeholder.png'">
-                        </div>
-                        <div class="card-info">
-                            <span class="code-badge">${product.code}</span>
-                            <h3 class="profile-name">${name}</h3>
-                        </div>
-                        <div class="read-more-btn">
-                            ${btnText} <i class="fas fa-arrow-right" style="margin-left:5px;"></i>
-                        </div>
-                    </a>
-                </div>
-                `;
+htmlContent += `
+<div class="profile-card reveal">
+    <a href="${detailLink}" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; height:100%;">
+        <div class="card-img-wrapper">
+            <img src="${product.image}" alt="${listAlt}" class="profile-img" loading="lazy" onerror="this.src='../assets/images/placeholder.png'">
+        </div>
+        <div class="card-info">
+            <span class="code-badge">${product.code}</span>
+            <h3 class="profile-name">${name}</h3>
+        </div>
+        <div class="read-more-btn">
+            ${btnText} <i class="fas fa-arrow-right" style="margin-left:5px;"></i>
+        </div>
+    </a>
+</div>
+`;
             });
 
             if(grid) grid.innerHTML = htmlContent;
