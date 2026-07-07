@@ -1,6 +1,6 @@
 {
     "Binding the suppressed 3cm": {
-        "image": "../assets/images/products/3cm.webp",
+        "image": "../assets/images/products/60SeriesSliding/3cm.webp",
         "tech_image": "../assets/images/products/60SeriesSliding/tech/3cm.webp",
         "extra_images": [],
         "code": "Binding the suppressed 3cm",
@@ -37,12 +37,12 @@
         "extra_images": [],
         "code": "SL05",
         "en": {
-            "name": "Fram Profil code SL05",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL05",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -53,12 +53,12 @@
         "extra_images": [],
         "code": "SL06",
         "en": {
-            "name": "Fram Profil code SL06",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL06",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -69,12 +69,12 @@
         "extra_images": [],
         "code": "SL07",
         "en": {
-            "name": "Fram Profil code SL07",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL07",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -85,12 +85,12 @@
         "extra_images": [],
         "code": "SL08",
         "en": {
-            "name": "Fram Profil code SL08",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL08",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -101,12 +101,12 @@
         "extra_images": [],
         "code": "SL09",
         "en": {
-            "name": "Fram Profil code SL09",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL09",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -117,12 +117,12 @@
         "extra_images": [],
         "code": "SL60",
         "en": {
-            "name": "Fram Profil code SL60",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL60",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -133,12 +133,12 @@
         "extra_images": [],
         "code": "SL65",
         "en": {
-            "name": "Fram Profil code SL65",
+            "name": "Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code SL65",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -149,12 +149,12 @@
         "extra_images": [],
         "code": "SL20",
         "en": {
-            "name": "Gap Profil code SL20",
+            "name": "Gap Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Pokrivni profil code SL20",
+            "name": "Pokrivni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -165,12 +165,12 @@
         "extra_images": [],
         "code": "SL50",
         "en": {
-            "name": "Large sliding vent Profil code SL50",
+            "name": "Large sliding vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Veliko klizno krilo code SL50",
+            "name": "Veliko klizno krilo",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -181,12 +181,12 @@
         "extra_images": [],
         "code": "SL25",
         "en": {
-            "name": "Mullian Profil code SL25",
+            "name": "Mullian Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "T-profil (Stub) code SL25",
+            "name": "T-profil (Stub)",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -213,12 +213,12 @@
         "extra_images": [],
         "code": "SL30",
         "en": {
-            "name": "Singele walled glass Profil code SL30",
+            "name": "Singele walled glass Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil za jednostruko staklo code SL30",
+            "name": "Profil za jednostruko staklo",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -229,12 +229,12 @@
         "extra_images": [],
         "code": "SL45",
         "en": {
-            "name": "The middle four vent Profil code SL45",
+            "name": "The middle four vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Srednji profil za četiri krila code SL45",
+            "name": "Srednji profil za četiri krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -245,12 +245,12 @@
         "extra_images": [],
         "code": "SL15",
         "en": {
-            "name": "vent Profil code SL15",
+            "name": "vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila code SL15",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -261,12 +261,12 @@
         "extra_images": [],
         "code": "SL55",
         "en": {
-            "name": "vent Profil code SL55",
+            "name": "vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila code SL55",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -277,12 +277,12 @@
         "extra_images": [],
         "code": "SL55T",
         "en": {
-            "name": "vent Profil code SL55T",
+            "name": "vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila code SL55T",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -293,12 +293,12 @@
         "extra_images": [],
         "code": "SL69",
         "en": {
-            "name": "vent Profil code SL69",
+            "name": "vent Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila code SL69",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -309,12 +309,12 @@
         "extra_images": [],
         "code": "SL70",
         "en": {
-            "name": "Wide Fram Profil code SL70",
+            "name": "Wide Fram Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Široki štok profil code SL70",
+            "name": "Široki štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -325,12 +325,12 @@
         "extra_images": [],
         "code": "SL35",
         "en": {
-            "name": "Vent grid Profil code SL35",
+            "name": "Vent grid Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila sa mrežom code SL35",
+            "name": "Profil krila sa mrežom",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -341,12 +341,12 @@
         "extra_images": [],
         "code": "13-134-051",
         "en": {
-            "name": "Rail Profil -134-051",
+            "name": "Rail Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil šine-134-051",
+            "name": "Profil šine",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -357,12 +357,12 @@
         "extra_images": [],
         "code": "13-134-050",
         "en": {
-            "name": "Wheel ballbearing under Profil -134-050",
+            "name": "Wheel ballbearing under Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil za donje točkiće-134-050",
+            "name": "Profil za donje točkiće",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }

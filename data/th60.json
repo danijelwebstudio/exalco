@@ -5,12 +5,12 @@
         "extra_images": [],
         "code": "T60-108-00",
         "en": {
-            "name": "Engraving frame code T60-108-00",
+            "name": "Engraving frame",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Okvir za graviranje code T60-108-00",
+            "name": "Okvir za graviranje",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -21,12 +21,12 @@
         "extra_images": [],
         "code": "T60-101-00",
         "en": {
-            "name": "Frame Profil code T60-101-00",
+            "name": "Frame Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Štok profil code T60-101-00",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -37,12 +37,12 @@
         "extra_images": [],
         "code": "T60-303-00",
         "en": {
-            "name": "Mullion Profil code T60-303-00",
+            "name": "Mullion Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "T-profil (Stub) code T60-303-00",
+            "name": "T-profil (Stub)",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -85,12 +85,12 @@
         "extra_images": [],
         "code": "T60-204-00",
         "en": {
-            "name": "Vent door Profil code T60-204-00",
+            "name": "Vent door Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila za vrata code T60-204-00",
+            "name": "Profil krila za vrata",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -101,12 +101,12 @@
         "extra_images": [],
         "code": "T60-203-00",
         "en": {
-            "name": "Vent window Profil code T60-203-00",
+            "name": "Vent window Profil",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil krila za prozor code T60-203-00",
+            "name": "Profil krila za prozor",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }

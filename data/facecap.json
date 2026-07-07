@@ -80,7 +80,7 @@
         }
     },
     "26141": {
-        "image": "../assets/images/products/Facecap/",
+        "image": "../assets/images/products/Facecap/26141.webp",
         "tech_image": "../assets/images/products/Facecap/tech/26141.webp",
         "extra_images": [],
         "code": "26141",
@@ -239,6 +239,9 @@
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
+
+
+
     "2659": {
         "image": "../assets/images/products/Facecap/2659.webp",
         "tech_image": "../assets/images/products/Facecap/tech/2659.webp",
@@ -255,6 +258,9 @@
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
+
+
+
     "2657": {
         "image": "../assets/images/products/Facecap/2657.webp",
         "tech_image": "../assets/images/products/Facecap/tech/2657.webp",
@@ -319,9 +325,13 @@
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
-    "2659_adaptor": {
-        "image": "../assets/images/products/Facecap/2659.webp",
-        "tech_image": "../assets/images/products/Facecap/tech/2659.webp",
+
+
+
+
+    "2659-2": {
+        "image": "../assets/images/products/Facecap/2659-2.webp",
+        
         "extra_images": [],
         "code": "2659",
         "en": {
@@ -335,6 +345,9 @@
             "details": { "dimensions": "29.7*34.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.97" }
         }
     },
+
+
+
     "26483": {
         "image": "../assets/images/products/Facecap/26483.webp",
         "tech_image": "../assets/images/products/Facecap/tech/26483.webp",

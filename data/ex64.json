@@ -296,10 +296,10 @@
         "sr": { "name": "Krilo za unutrašnje otvaranje", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "72*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "2.042" } }
     },
     "39100-F": {
-        "image": "../assets/images/products/EX64/49050.F.webp",
+        "image": "../assets/images/products/EX64/49050.webp",
         "tech_image": "../assets/images/products/EX64/tech/49050.webp",
         "extra_images": [], 
-        "code": "39100",
+        "code": "39100-F",
         "en": { "name": "Inside vent frame Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "64*54", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.306" } },
         "sr": { "name": "Ram unutrašnjeg krila", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "64*54", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.306" } }
     },
@@ -327,7 +327,7 @@
         "en": { "name": "Large vent Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "64*100", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.912" } },
         "sr": { "name": "Veliko Krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "64*100", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.912" } }
     },
-    "30100_alt": {
+    "30100-2": {
         "image": "../assets/images/products/EX64/30100-2.webp",
         "tech_image": "../assets/images/products/EX64/tech/30100.webp",
         "extra_images": [], 

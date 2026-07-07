@@ -16,8 +16,8 @@
         }
     },
     "S-D-E-03": {
-        "image": "../assets/images/products/Verandah/S-D-E-03.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S-D-E-03.webp",
+        "image": "../assets/images/products/Verandah/S.D.E-03.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-03.webp",
         "extra_images": [],
         "code": "S-D-E-03",
         "en": {
@@ -48,8 +48,8 @@
         }
     },
     "S-D-E-02": {
-        "image": "../assets/images/products/Verandah/S-D-E-02.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S-D-E-02.webp",
+        "image": "../assets/images/products/Verandah/S.D.E-02.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-02.webp",
         "extra_images": [],
         "code": "S-D-E-02",
         "en": {
@@ -145,7 +145,7 @@
     },
     "S-D-E-06": {
         "image": "../assets/images/products/Verandah/S-D-E-06.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S-D-E-06.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-06.webp",
         "extra_images": [],
         "code": "S-D-E-06",
         "en": {
@@ -160,8 +160,8 @@
         }
     },
     "S-D-E-04": {
-        "image": "../assets/images/products/Verandah/S-D-E-04.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S-D-E-04.webp",
+        "image": "../assets/images/products/Verandah/S.D.E-04.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-04.webp",
         "extra_images": [],
         "code": "S-D-E-04",
         "en": {
@@ -176,8 +176,8 @@
         }
     },
     "S-D-E-05": {
-        "image": "../assets/images/products/Verandah/S-D-E-05.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S-D-E-05.webp",
+        "image": "../assets/images/products/Verandah/S.D.E-05.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-06.webp",
         "extra_images": [],
         "code": "S-D-E-05",
         "en": {
