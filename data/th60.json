@@ -1,7 +1,7 @@
 {
     "T60-108-00": {
         "image": "../assets/images/products/TH60/T60-108-00.webp",
-        "tech_image": "../assets/images/products/TH60/tech/T60-108-00.webp",
+        "tech_image": "../assets/images/products/TH60/tech/TH60-108-00.webp",
         "extra_images": [],
         "code": "T60-108-00",
         "en": {
@@ -17,7 +17,7 @@
     },
     "T60-101-00": {
         "image": "../assets/images/products/TH60/T60-101-00.webp",
-        "tech_image": "../assets/images/products/TH60/tech/T60-101-00.webp",
+        "tech_image": "../assets/images/products/TH60/tech/TH60-101-00.webp",
         "extra_images": [],
         "code": "T60-101-00",
         "en": {
@@ -33,7 +33,7 @@
     },
     "T60-303-00": {
         "image": "../assets/images/products/TH60/T60-303-00.webp",
-        "tech_image": "../assets/images/products/TH60/tech/T60-303-00.webp",
+        "tech_image": "../assets/images/products/TH60/tech/TH60-303-00.webp",
         "extra_images": [],
         "code": "T60-303-00",
         "en": {
@@ -81,7 +81,7 @@
     },
     "T60-204-00": {
         "image": "../assets/images/products/TH60/T60-204-00.webp",
-        "tech_image": "../assets/images/products/TH60/tech/T60-204-00.webp",
+        "tech_image": "../assets/images/products/TH60/tech/TH60-204-00.webp",
         "extra_images": [],
         "code": "T60-204-00",
         "en": {
@@ -97,7 +97,7 @@
     },
     "T60-203-00": {
         "image": "../assets/images/products/TH60/T60-203-00.webp",
-        "tech_image": "../assets/images/products/TH60/tech/T60-203-00.webp",
+        "tech_image": "../assets/images/products/TH60/tech/TH60-203-00.webp",
         "extra_images": [],
         "code": "T60-203-00",
         "en": {

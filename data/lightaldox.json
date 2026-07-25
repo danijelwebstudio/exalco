@@ -5,12 +5,12 @@
         "extra_images": [],
         "code": "AL06",
         "en": {
-            "name": "Corner Profil code AL06",
+            "name": "Corner Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "65.4*65.3", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.663" }
         },
         "sr": {
-            "name": "Ugaoni profil code AL06",
+            "name": "Ugaoni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "65.4*65.3", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.663" }
         }
@@ -21,12 +21,12 @@
         "extra_images": [],
         "code": "AL01",
         "en": {
-            "name": "Frame Profil code AL01",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45.5*40.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.456" }
         },
         "sr": {
-            "name": "Štok profil code AL01",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "45.5*40.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.456" }
         }
@@ -37,28 +37,28 @@
         "extra_images": [],
         "code": "AL40",
         "en": {
-            "name": "Frame Profil code AL40",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45.7*60.2", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.466" }
         },
         "sr": {
-            "name": "Štok profil code AL40",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "45.7*60.2", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.466" }
         }
     },
-    "AL51_mullion": {
+    "AL51-stub": {
         "image": "../assets/images/products/LightAldox/AL51.webp",
         "tech_image": "../assets/images/products/LightAldox/tech/AL51.webp",
         "extra_images": [],
-        "code": "AL51",
+        "code": "AL51-stub",
         "en": {
-            "name": "Mullian Profil code AL51",
+            "name": "Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "40.6*59", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.552" }
         },
         "sr": {
-            "name": "T-profil (Stub) code AL51",
+            "name": "T-profil (Stub)",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "40.6*59", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.552" }
         }
@@ -69,12 +69,12 @@
         "extra_images": [],
         "code": "AL60",
         "en": {
-            "name": "Mullian Profil code AL60",
+            "name": "Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45.7*76.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.651" }
         },
         "sr": {
-            "name": "T-profil (Stub) code AL60",
+            "name": "T-profil (Stub)",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "45.7*76.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.651" }
         }
@@ -85,28 +85,28 @@
         "extra_images": [],
         "code": "AL50",
         "en": {
-            "name": "Vent Profil code AL50",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45.5*76.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.651" }
         },
         "sr": {
-            "name": "Profil krila code AL50",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "45.5*76.8", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.651" }
         }
     },
-    "AL51_vent": {
-        "image": "../assets/images/products/LightAldox/AL51.webp",
-        "tech_image": "../assets/images/products/LightAldox/tech/AL51.webp",
+    "AL51-krilo": {
+        "image": "../assets/images/products/LightAldox/AL51 VENT.webp",
+        "tech_image": "../assets/images/products/LightAldox/tech/AL51 VENT.webp",
         "extra_images": [],
-        "code": "AL51",
+        "code": "AL51-krilo",
         "en": {
-            "name": "Vent Profil code AL51",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45.5*59", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.59" }
         },
         "sr": {
-            "name": "Profil krila code AL51",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "45.5*59", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.59" }
         }
@@ -117,7 +117,7 @@
         "extra_images": [],
         "code": "panel-profil-2",
         "en": {
-            "name": "Panel Profil",
+            "name": "Panel Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -128,12 +128,12 @@
         }
     },
     "panel-profil": {
-        "image": "../assets/images/products/LightAldox/Panel-profil.webp",
+        "image": "../assets/images/products/LightAldox/Panel profil.webp",
         "tech_image": "../assets/images/products/LightAldox/tech/Panel profil.webp",
         "extra_images": [],
         "code": "panel-profil",
         "en": {
-            "name": "Panel Profil",
+            "name": "Panel Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -149,12 +149,12 @@
         "extra_images": [],
         "code": "AL30",
         "en": {
-            "name": "Rickety singel sheet Profil code AL30",
+            "name": "Single Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna code AL30",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -165,12 +165,12 @@
         "extra_images": [],
         "code": "AL20",
         "en": {
-            "name": "Rickety double sheet Profil code AL20",
+            "name": "Double Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Dupla staklena lajsna code AL20",
+            "name": "Dupla staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -181,7 +181,7 @@
         "extra_images": [],
         "code": "5930",
         "en": {
-            "name": "Srtap Profil",
+            "name": "Cover Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },

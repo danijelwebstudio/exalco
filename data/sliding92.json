@@ -5,7 +5,7 @@
         "extra_images": [],
         "code": "SL-2801",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "95*40.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.081" }
         },
@@ -21,7 +21,7 @@
         "extra_images": [],
         "code": "SL-2802",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.989" }
         },
@@ -37,7 +37,7 @@
         "extra_images": [],
         "code": "SL-2803",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "45*37.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.73" }
         },
@@ -53,7 +53,7 @@
         "extra_images": [],
         "code": "SL-2805",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "75.7*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.989" }
         },
@@ -69,7 +69,7 @@
         "extra_images": [],
         "code": "SL-2815",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "95.3*42.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.107" }
         },
@@ -85,7 +85,7 @@
         "extra_images": [],
         "code": "SL-2816",
         "en": {
-            "name": "Frame Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "92.3*41.2", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.202" }
         },
@@ -101,7 +101,7 @@
         "extra_images": [],
         "code": "SL-2804",
         "en": {
-            "name": "Vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "28*80", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.84" }
         },
@@ -117,7 +117,7 @@
         "extra_images": [],
         "code": "SL-2806",
         "en": {
-            "name": "Vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "28*61", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.84" }
         },
@@ -133,7 +133,7 @@
         "extra_images": [],
         "code": "SL-2807",
         "en": {
-            "name": "Vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -149,7 +149,7 @@
         "extra_images": [],
         "code": "SL-2810",
         "en": {
-            "name": "Vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "28*29.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.87" }
         },
@@ -165,7 +165,7 @@
         "extra_images": [],
         "code": "SL-2814",
         "en": {
-            "name": "Grid Profil",
+            "name": "Grid Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -181,7 +181,7 @@
         "extra_images": [],
         "code": "SL-2813",
         "en": {
-            "name": "Handled Vent Profil",
+            "name": "Handled Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -197,7 +197,7 @@
         "extra_images": [],
         "code": "SL-2809",
         "en": {
-            "name": "Interlock Profil",
+            "name": "Interlock Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },

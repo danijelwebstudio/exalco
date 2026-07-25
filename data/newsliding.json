@@ -5,12 +5,12 @@
         "extra_images": [],
         "code": "417",
         "en": {
-            "name": "Code 417",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "28.5*39.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.567" }
         },
         "sr": {
-            "name": "Kod 417",
+            "name": "Štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "28.5*39.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.567" }
         }
@@ -21,12 +21,12 @@
         "extra_images": [],
         "code": "418",
         "en": {
-            "name": "Code 418",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "15.5*70", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.698" }
         },
         "sr": {
-            "name": "Kod 418",
+            "name": "Profil krila",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "15.5*70", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.698" }
         }
@@ -37,12 +37,12 @@
         "extra_images": [],
         "code": "419",
         "en": {
-            "name": "Code 419",
+            "name": "Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "33.9*15.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.398" }
         },
         "sr": {
-            "name": "Kod 419",
+            "name": "T-profil (Stub)",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "33.9*15.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.398" }
         }
@@ -53,12 +53,12 @@
         "extra_images": [],
         "code": "420",
         "en": {
-            "name": "Code 420",
+            "name": "Cover Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "25*15", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.247" }
         },
         "sr": {
-            "name": "Kod 420",
+            "name": "Pokrivni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "25*15", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.247" }
         }
@@ -69,12 +69,12 @@
         "extra_images": [],
         "code": "422",
         "en": {
-            "name": "Code 422",
+            "name": "Sliding Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "110.5*23", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.773" }
         },
         "sr": {
-            "name": "Kod 422",
+            "name": "Klizni štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "110.5*23", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.773" }
         }
@@ -85,12 +85,12 @@
         "extra_images": [],
         "code": "423",
         "en": {
-            "name": "Code 423",
+            "name": "Sliding Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "110.5*37", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "1.003" }
         },
         "sr": {
-            "name": "Kod 423",
+            "name": "Klizni štok profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "110.5*37", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.003" }
         }
@@ -101,12 +101,12 @@
         "extra_images": [],
         "code": "424",
         "en": {
-            "name": "Code 424",
+            "name": "Panel Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "113.9*10", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Kod 424",
+            "name": "Panel profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "113.9*10", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }

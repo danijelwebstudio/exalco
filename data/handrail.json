@@ -5,14 +5,14 @@
         "extra_images": [],
         "code": "BTS-H-72",
         "en": {
-            "name": "Handrail Profil code BTS-H-72",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Rukohvat profil code BTS-H-72",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BTS-H-86": {
@@ -21,14 +21,14 @@
         "extra_images": [],
         "code": "BTS-H-86",
         "en": {
-            "name": "Handrail Profil code BTS-H-86",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Rukohvat profil code BTS-H-86",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BTS-K72-113": {
@@ -37,14 +37,14 @@
         "extra_images": [],
         "code": "BTS-K72-113",
         "en": {
-            "name": "Profil code BTS-K72-113",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil code BTS-K72-113",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BTS-K72-108": {
@@ -53,14 +53,14 @@
         "extra_images": [],
         "code": "BTS-K72-108",
         "en": {
-            "name": "Profil code BTS-K72-108",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil code BTS-K72-108",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BTS-K72-114": {
@@ -69,14 +69,14 @@
         "extra_images": [],
         "code": "BTS-K72-114",
         "en": {
-            "name": "Profil code BTS-K72-114",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil code BTS-K72-114",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "dafni-cover-profil": {
@@ -85,62 +85,62 @@
         "extra_images": [],
         "code": "dafni-cover-profil",
         "en": {
-            "name": "Dafni cover Profil",
+            "name": "Dafni Cover Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
             "name": "Dafni pokrivni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BTS-D-36": {
         "image": "../assets/images/products/HandRail/BTS-D-36.webp",
-        "tech_image": "../assets/images/products/HandRail/tech/BTS-D-36.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "BTS-D-36",
         "en": {
-            "name": "Profil code BTS-D-36",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "23.7*24.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.816" }
         },
         "sr": {
-            "name": "Profil code BTS-D-36",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "23.7*24.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.816" }
+            "details": { "dimensions": "23.7*24.1", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.816" }
         }
     },
     "BTS-H-53": {
         "image": "../assets/images/products/HandRail/BTS-H-53.webp",
-        "tech_image": "../assets/images/products/HandRail/tech/BTS-H-53.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "BTS-H-53",
         "en": {
-            "name": "Profil code BTS-H-53",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "52.9*21.3", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.78" }
         },
         "sr": {
-            "name": "Profil code BTS-H-53",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "52.9*21.3", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.78" }
+            "details": { "dimensions": "52.9*21.3", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.78" }
         }
     },
     "BTS-K-50": {
         "image": "../assets/images/products/HandRail/BTS-K-50.webp",
-        "tech_image": "../assets/images/products/HandRail/tech/BTS-K-50.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "BTS-K-50",
         "en": {
-            "name": "Profil code BTS-K-50",
+            "name": "Handrail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "14.8*50", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.26" }
         },
         "sr": {
-            "name": "Profil code BTS-K-50",
+            "name": "Rukohvat profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "14.8*50", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.26" }
+            "details": { "dimensions": "14.8*50", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.26" }
         }
     }
 }

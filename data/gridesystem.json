@@ -5,14 +5,14 @@
         "extra_images": [],
         "code": "RO10",
         "en": {
-            "name": "Frame with Profile code RO10",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "32.2*27.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.344" }
         },
         "sr": {
-            "name": "Ram sa profilom code RO10",
+            "name": "Ram sa profilom",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "32.2*27.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.344" }
+            "details": { "dimensions": "32.2*27.7", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.344" }
         }
     },
     "RO15": {
@@ -21,46 +21,46 @@
         "extra_images": [],
         "code": "RO15",
         "en": {
-            "name": "Frame with Profile code RO15",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "24*27.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.298" }
         },
         "sr": {
-            "name": "Ram sa profilom code RO15",
+            "name": "Ram sa profilom",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "24*27.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.298" }
+            "details": { "dimensions": "24*27.7", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.298" }
         }
     },
     "300": {
         "image": "../assets/images/products/GrideSystem/300.webp",
-        "tech_image": "../assets/images/products/GrideSystem/tech/300.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "300",
         "en": {
-            "name": "Grid Profil",
+            "name": "Grid Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "38.5*16.5", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         },
         "sr": {
             "name": "Profil rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "38.5*16.5", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
+            "details": { "dimensions": "38.5*16.5", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         }
     },
     "301": {
         "image": "../assets/images/products/GrideSystem/301.webp",
-        "tech_image": "../assets/images/products/GrideSystem/tech/301.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "301",
         "en": {
-            "name": "Grid Profil",
+            "name": "Grid Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "38.5*16", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         },
         "sr": {
             "name": "Profil rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "38.5*16", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
+            "details": { "dimensions": "38.5*16", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.33" }
         }
     },
     "RO35": {
@@ -69,30 +69,30 @@
         "extra_images": [],
         "code": "RO35",
         "en": {
-            "name": "Horizontal plisse rail Profile code RO35",
+            "name": "Horizontal Plisse Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "19*54", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.388" }
         },
         "sr": {
-            "name": "Horizontalna plise šina code RO35",
+            "name": "Horizontalna plise šina",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "19*54", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.388" }
+            "details": { "dimensions": "19*54", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.388" }
         }
     },
     "302": {
         "image": "../assets/images/products/GrideSystem/302.webp",
-        "tech_image": "../assets/images/products/GrideSystem/tech/302.webp",
+        "tech_image": "",
         "extra_images": [],
         "code": "302",
         "en": {
-            "name": "Rail grid Profil",
+            "name": "Rail Grid Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "52.4*16", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.545" }
         },
         "sr": {
             "name": "Profil šine rešetke",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "52.4*16", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.545" }
+            "details": { "dimensions": "52.4*16", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.545" }
         }
     },
     "PA25": {
@@ -101,14 +101,14 @@
         "extra_images": [],
         "code": "PA25",
         "en": {
-            "name": "Vertical plisse rail Profile code PA25",
+            "name": "Vertical Plisse Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "28*32", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.398" }
         },
         "sr": {
-            "name": "Vertikalna plise šina code PA25",
+            "name": "Vertikalna plise šina",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "28*32", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.398" }
+            "details": { "dimensions": "28*32", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.398" }
         }
     },
     "RO30": {
@@ -117,14 +117,14 @@
         "extra_images": [],
         "code": "RO30",
         "en": {
-            "name": "Vertical rail Profile code RO30",
+            "name": "Vertical Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "32.4*25.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.295" }
         },
         "sr": {
-            "name": "Vertikalna šina code RO30",
+            "name": "Vertikalna šina",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "32.4*25.9", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.295" }
+            "details": { "dimensions": "32.4*25.9", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.295" }
         }
     }
 }

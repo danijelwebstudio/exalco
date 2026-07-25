@@ -5,12 +5,12 @@
         "extra_images": [],
         "code": "12123",
         "en": {
-            "name": "Sliding three rail frame Profil",
+            "name": "Three-Rail Sliding Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Kliizni štok sa tri šine",
+            "name": "Klizni štok sa tri šine",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -21,7 +21,7 @@
         "extra_images": [],
         "code": "10124",
         "en": {
-            "name": "Sliding two rail frame Profil",
+            "name": "Two-Rail Sliding Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -37,12 +37,12 @@
         "extra_images": [],
         "code": "12122",
         "en": {
-            "name": "Sliding rail frame Profil",
+            "name": "Single-Rail Sliding Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Klizni štok sa šinom",
+            "name": "Klizni štok sa jednom šinom",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -53,7 +53,7 @@
         "extra_images": [],
         "code": "20122",
         "en": {
-            "name": "Engraving lift frame Profil 20122",
+            "name": "Lift and Slide Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -69,7 +69,7 @@
         "extra_images": [],
         "code": "24122",
         "en": {
-            "name": "Engraving Profil with rail lift",
+            "name": "Frame Profile with Lift Rail",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -85,7 +85,7 @@
         "extra_images": [],
         "code": "20080",
         "en": {
-            "name": "Mullian vent Profil",
+            "name": "Vent Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -101,7 +101,7 @@
         "extra_images": [],
         "code": "30055",
         "en": {
-            "name": "Vent lift Profil",
+            "name": "Lift Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -117,7 +117,7 @@
         "extra_images": [],
         "code": "lift-balanser",
         "en": {
-            "name": "Lift balanser",
+            "name": "Lift Balancer",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -133,7 +133,7 @@
         "extra_images": [],
         "code": "30058",
         "en": {
-            "name": "Mullian fix frame",
+            "name": "Fixed Frame Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -149,7 +149,7 @@
         "extra_images": [],
         "code": "20100",
         "en": {
-            "name": "Mullian vent Profil",
+            "name": "Vent Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -165,7 +165,7 @@
         "extra_images": [],
         "code": "grid-vent-lift-profil",
         "en": {
-            "name": "Grid vent lift Profil",
+            "name": "Lift Vent Profile with Net",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -181,12 +181,12 @@
         "extra_images": [],
         "code": "13-134-051",
         "en": {
-            "name": "Rail Profil -134-051",
+            "name": "Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil šine-134-051",
+            "name": "Profil šine",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -197,7 +197,7 @@
         "extra_images": [],
         "code": "40022",
         "en": {
-            "name": "The middle four vent adaptor Profil",
+            "name": "Four-Vent Middle Adaptor Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -213,7 +213,7 @@
         "extra_images": [],
         "code": "40122",
         "en": {
-            "name": "Gap for fix frame Profil",
+            "name": "Cover Profile for Fixed Frame",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -229,7 +229,7 @@
         "extra_images": [],
         "code": "40053",
         "en": {
-            "name": "Gap for vent frame Profil",
+            "name": "Cover Profile for Vent Frame",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -245,7 +245,7 @@
         "extra_images": [],
         "code": "rail-profil",
         "en": {
-            "name": "Rail Profil",
+            "name": "Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -261,44 +261,44 @@
         "extra_images": [],
         "code": "50010",
         "en": {
-            "name": "Rickety Profil -15",
+            "name": "Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna-15",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "50015": {
         "image": "../assets/images/products/HS96/50015-15.webp",
-        "tech_image": "../assets/images/products/HS96/tech/50015-15.webp",
+        "tech_image": "../assets/images/products/HS96/tech/50015.webp",
         "extra_images": [],
         "code": "50015",
         "en": {
-            "name": "Rickety Profil -15",
+            "name": "Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna-15",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "50020": {
         "image": "../assets/images/products/HS96/50020-15.webp",
-        "tech_image": "../assets/images/products/HS96/tech/50020.webp",
+        "tech_image": "../assets/images/products/HS96/tech/50020-15.webp",
         "extra_images": [],
         "code": "50020",
         "en": {
-            "name": "Rickety Profil -15",
+            "name": "Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna-15",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -309,12 +309,12 @@
         "extra_images": [],
         "code": "50025",
         "en": {
-            "name": "Rickety Profil -15",
+            "name": "Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna-15",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -325,12 +325,12 @@
         "extra_images": [],
         "code": "50030",
         "en": {
-            "name": "Rickety Profil -15",
+            "name": "Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna-15",
+            "name": "Staklena lajsna",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -341,7 +341,7 @@
         "extra_images": [],
         "code": "double-rickety-grid-vent-profil",
         "en": {
-            "name": "Double Rickety grid vent Profil",
+            "name": "Double Glazing Bead for Vent with Net",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -357,12 +357,12 @@
         "extra_images": [],
         "code": "PC-120",
         "en": {
-            "name": "Fixer PC-120",
+            "name": "Corner Joint",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Spojnica PC-120",
+            "name": "Spojnica",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -373,12 +373,12 @@
         "extra_images": [],
         "code": "PC-135",
         "en": {
-            "name": "Fixer PC-135",
+            "name": "Corner Joint",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Spojnica PC-135",
+            "name": "Spojnica",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -389,12 +389,12 @@
         "extra_images": [],
         "code": "PC-320",
         "en": {
-            "name": "Fixer PC-320",
+            "name": "Corner Joint",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Spojnica PC-320",
+            "name": "Spojnica",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -405,12 +405,12 @@
         "extra_images": [],
         "code": "PC-405",
         "en": {
-            "name": "Fixer PC-405",
+            "name": "Corner Joint",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Spojnica PC-405",
+            "name": "Spojnica",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }

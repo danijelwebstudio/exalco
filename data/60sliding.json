@@ -1,11 +1,11 @@
 {
-    "Binding the suppressed 3cm": {
+    "3cm": {
         "image": "../assets/images/products/60SeriesSliding/3cm.webp",
         "tech_image": "../assets/images/products/60SeriesSliding/tech/3cm.webp",
         "extra_images": [],
-        "code": "Binding the suppressed 3cm",
+        "code": "3cm",
         "en": {
-            "name": "Binding the suppressed 3cm Profil",
+            "name": "Connection Profile 3cm",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -15,13 +15,13 @@
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
-    "Binding the suppressed 5cm": {
+    "5cm": {
         "image": "../assets/images/products/60SeriesSliding/5cm.webp",
         "tech_image": "../assets/images/products/60SeriesSliding/tech/5cm.webp",
         "extra_images": [],
-        "code": "Binding the suppressed 5cm",
+        "code": "5cm",
         "en": {
-            "name": "Binding the suppressed 5cm Profil",
+            "name": "Connection Profile 5cm",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "60*31", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.43" }
         },
@@ -37,7 +37,7 @@
         "extra_images": [],
         "code": "SL05",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -53,7 +53,7 @@
         "extra_images": [],
         "code": "SL06",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -69,7 +69,7 @@
         "extra_images": [],
         "code": "SL07",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -85,7 +85,7 @@
         "extra_images": [],
         "code": "SL08",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -101,7 +101,7 @@
         "extra_images": [],
         "code": "SL09",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -117,7 +117,7 @@
         "extra_images": [],
         "code": "SL60",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -133,7 +133,7 @@
         "extra_images": [],
         "code": "SL65",
         "en": {
-            "name": "Fram Profil",
+            "name": "Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -149,7 +149,7 @@
         "extra_images": [],
         "code": "SL20",
         "en": {
-            "name": "Gap Profil",
+            "name": "Gap Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -165,7 +165,7 @@
         "extra_images": [],
         "code": "SL50",
         "en": {
-            "name": "Large sliding vent Profil",
+            "name": "Large Sliding Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -181,7 +181,7 @@
         "extra_images": [],
         "code": "SL25",
         "en": {
-            "name": "Mullian Profil",
+            "name": "Mullion Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -194,15 +194,15 @@
     "SL31": {
         "image": "../assets/images/products/60SeriesSliding/SL31.webp",
         "tech_image": "../assets/images/products/60SeriesSliding/tech/SL31.webp",
-        "extra_images": [], 
+        "extra_images": [],
         "code": "SL31",
         "en": {
-            "name": "Rickety for Singele walled glass Profil code SL31",
+            "name": "Single Glazing Bead",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Staklena lajsna za jednostruko staklo code SL31",
+            "name": "Staklena lajsna za jednostruko staklo",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
@@ -213,7 +213,7 @@
         "extra_images": [],
         "code": "SL30",
         "en": {
-            "name": "Singele walled glass Profil",
+            "name": "Single-Walled Glass Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -229,7 +229,7 @@
         "extra_images": [],
         "code": "SL45",
         "en": {
-            "name": "The middle four vent Profil",
+            "name": "Four-Vent Middle Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -245,7 +245,7 @@
         "extra_images": [],
         "code": "SL15",
         "en": {
-            "name": "vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -261,7 +261,7 @@
         "extra_images": [],
         "code": "SL55",
         "en": {
-            "name": "vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -277,7 +277,7 @@
         "extra_images": [],
         "code": "SL55T",
         "en": {
-            "name": "vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -293,7 +293,7 @@
         "extra_images": [],
         "code": "SL69",
         "en": {
-            "name": "vent Profil",
+            "name": "Vent Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -309,7 +309,7 @@
         "extra_images": [],
         "code": "SL70",
         "en": {
-            "name": "Wide Fram Profil",
+            "name": "Wide Frame Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -325,7 +325,7 @@
         "extra_images": [],
         "code": "SL35",
         "en": {
-            "name": "Vent grid Profil",
+            "name": "Vent Grid Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -341,7 +341,7 @@
         "extra_images": [],
         "code": "13-134-051",
         "en": {
-            "name": "Rail Profil",
+            "name": "Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
@@ -357,7 +357,7 @@
         "extra_images": [],
         "code": "13-134-050",
         "en": {
-            "name": "Wheel ballbearing under Profil",
+            "name": "Wheel Ball Bearing Under Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },

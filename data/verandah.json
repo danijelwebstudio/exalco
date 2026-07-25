@@ -5,62 +5,14 @@
         "extra_images": [],
         "code": "BG-01",
         "en": {
-            "name": "Rail Profil code BG-01",
+            "name": "Rail Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "-" }
         },
         "sr": {
-            "name": "Profil šine code BG-01",
+            "name": "Profil šine",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
-        }
-    },
-    "S-D-E-03": {
-        "image": "../assets/images/products/Verandah/S.D.E-03.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-03.webp",
-        "extra_images": [],
-        "code": "S-D-E-03",
-        "en": {
-            "name": "Double Lateral Profil code S.D.E-03",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "36*18", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.35" }
-        },
-        "sr": {
-            "name": "Dvostruki bočni profil code S.D.E-03",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "36*18", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.35" }
-        }
-    },
-    "BG-16": {
-        "image": "../assets/images/products/Verandah/BG-16.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/BG-16.webp",
-        "extra_images": [],
-        "code": "BG-16",
-        "en": {
-            "name": "Double-sided sealing Profil code BG-16",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "19.1*24.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.216" }
-        },
-        "sr": {
-            "name": "Dvostruki zaptivni profil code BG-16",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "19.1*24.9", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.216" }
-        }
-    },
-    "S-D-E-02": {
-        "image": "../assets/images/products/Verandah/S.D.E-02.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-02.webp",
-        "extra_images": [],
-        "code": "S-D-E-02",
-        "en": {
-            "name": "Glass double stack Profil code S.D.E-02",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "40*40", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.748" }
-        },
-        "sr": {
-            "name": "Profil za dvostruko staklo code S.D.E-02",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40*40", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.748" }
+            "details": { "dimensions": "-", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "-" }
         }
     },
     "BG-05": {
@@ -69,14 +21,14 @@
         "extra_images": [],
         "code": "BG-05",
         "en": {
-            "name": "Glass stack Profil code BG-05",
+            "name": "Glass Stack Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "40*42.1", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.85" }
         },
         "sr": {
-            "name": "Profil držača stakla code BG-05",
+            "name": "Profil držača stakla",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40*42.1", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.85" }
+            "details": { "dimensions": "40*42.1", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.85" }
         }
     },
     "BG-06": {
@@ -85,14 +37,14 @@
         "extra_images": [],
         "code": "BG-06",
         "en": {
-            "name": "Glass stack Profil code BG-06",
+            "name": "Glass Stack Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "39*45", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.89" }
         },
         "sr": {
-            "name": "Profil držača stakla code BG-06",
+            "name": "Profil držača stakla",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "39*45", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.89" }
+            "details": { "dimensions": "39*45", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.89" }
         }
     },
     "BG-10": {
@@ -101,14 +53,14 @@
         "extra_images": [],
         "code": "BG-10",
         "en": {
-            "name": "Lateral Profil code BG-10",
+            "name": "Lateral Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "40*31.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.456" }
         },
         "sr": {
-            "name": "Bočni profil code BG-10",
+            "name": "Bočni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40*31.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.456" }
+            "details": { "dimensions": "40*31.6", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.456" }
         }
     },
     "BG-11": {
@@ -117,14 +69,14 @@
         "extra_images": [],
         "code": "BG-11",
         "en": {
-            "name": "Lateral Profil code BG-11",
+            "name": "Lateral Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "40*27", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.41" }
         },
         "sr": {
-            "name": "Bočni profil code BG-11",
+            "name": "Bočni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40*27", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.41" }
+            "details": { "dimensions": "40*27", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.41" }
         }
     },
     "BG-12": {
@@ -133,62 +85,14 @@
         "extra_images": [],
         "code": "BG-12",
         "en": {
-            "name": "Lateral Profil code BG-12",
+            "name": "Lateral Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "32*37.2", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.425" }
         },
         "sr": {
-            "name": "Bočni profil code BG-12",
+            "name": "Bočni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "32*37.2", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.425" }
-        }
-    },
-    "S-D-E-06": {
-        "image": "../assets/images/products/Verandah/S-D-E-06.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-06.webp",
-        "extra_images": [],
-        "code": "S-D-E-06",
-        "en": {
-            "name": "Sealant 90dgree Profil code S.D.E-06",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "36*42.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.52" }
-        },
-        "sr": {
-            "name": "Zaptivni profil 90 stepeni code S.D.E-06",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "36*42.6", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.52" }
-        }
-    },
-    "S-D-E-04": {
-        "image": "../assets/images/products/Verandah/S.D.E-04.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-04.webp",
-        "extra_images": [],
-        "code": "S-D-E-04",
-        "en": {
-            "name": "Sealant midle Profil code S.D.E-04",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "35*21", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.361" }
-        },
-        "sr": {
-            "name": "Srednji zaptivni profil code S.D.E-04",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "35*21", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.361" }
-        }
-    },
-    "S-D-E-05": {
-        "image": "../assets/images/products/Verandah/S.D.E-05.webp",
-        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-06.webp",
-        "extra_images": [],
-        "code": "S-D-E-05",
-        "en": {
-            "name": "Sealant wall end Profil code S.D.E-05",
-            "description": "High-quality aluminium profile.",
-            "details": { "dimensions": "40*21", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.4" }
-        },
-        "sr": {
-            "name": "Zidni zaptivni profil code S.D.E-05",
-            "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "40*21", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.4" }
+            "details": { "dimensions": "32*37.2", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.425" }
         }
     },
     "BG-15": {
@@ -197,14 +101,110 @@
         "extra_images": [],
         "code": "BG-15",
         "en": {
-            "name": "Single edge sealing Profil code BG-15",
+            "name": "Single Edge Sealing Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "8.1*22.7", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.215" }
         },
         "sr": {
-            "name": "Jednostrani zaptivni profil code BG-15",
+            "name": "Jednostrani zaptivni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
-            "details": { "dimensions": "8.1*22.7", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.215" }
+            "details": { "dimensions": "8.1*22.7", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.215" }
+        }
+    },
+    "BG-16": {
+        "image": "../assets/images/products/Verandah/BG-16.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/BG-16.webp",
+        "extra_images": [],
+        "code": "BG-16",
+        "en": {
+            "name": "Double-Sided Sealing Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "19.1*24.9", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.216" }
+        },
+        "sr": {
+            "name": "Dvostruki zaptivni profil",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "19.1*24.9", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.216" }
+        }
+    },
+    "S.D.E-02": {
+        "image": "../assets/images/products/Verandah/S.D.E-02.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-02.webp",
+        "extra_images": [],
+        "code": "S.D.E-02",
+        "en": {
+            "name": "Glass Double Stack Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "40*40", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.748" }
+        },
+        "sr": {
+            "name": "Profil za dvostruko staklo",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "40*40", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.748" }
+        }
+    },
+    "S.D.E-03": {
+        "image": "../assets/images/products/Verandah/S.D.E-03.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-03.webp",
+        "extra_images": [],
+        "code": "S.D.E-03",
+        "en": {
+            "name": "Double Lateral Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "36*18", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.35" }
+        },
+        "sr": {
+            "name": "Dvostruki bočni profil",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "36*18", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.35" }
+        }
+    },
+    "S.D.E-04": {
+        "image": "../assets/images/products/Verandah/S.D.E-04.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-04.webp",
+        "extra_images": [],
+        "code": "S.D.E-04",
+        "en": {
+            "name": "Sealant Middle Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "35*21", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.361" }
+        },
+        "sr": {
+            "name": "Srednji zaptivni profil",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "35*21", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.361" }
+        }
+    },
+    "S.D.E-05": {
+        "image": "../assets/images/products/Verandah/S.D.E-05.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-05.webp",
+        "extra_images": [],
+        "code": "S.D.E-05",
+        "en": {
+            "name": "Sealant Wall End Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "40*21", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.4" }
+        },
+        "sr": {
+            "name": "Zidni zaptivni profil",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "40*21", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.4" }
+        }
+    },
+    "S.D.E-06": {
+        "image": "../assets/images/products/Verandah/S.D.E-06.webp",
+        "tech_image": "../assets/images/products/Verandah/tech/S.D.E-06.webp",
+        "extra_images": [],
+        "code": "S.D.E-06",
+        "en": {
+            "name": "Sealant 90-Degree Profile",
+            "description": "High-quality aluminium profile.",
+            "details": { "dimensions": "36*42.6", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.52" }
+        },
+        "sr": {
+            "name": "Zaptivni profil 90 stepeni",
+            "description": "Visokokvalitetni aluminijumski profil.",
+            "details": { "dimensions": "36*42.6", "brand": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.52" }
         }
     }
 }

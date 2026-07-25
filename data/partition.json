@@ -5,12 +5,12 @@
         "extra_images": [],
         "code": "P-59",
         "en": {
-            "name": "Partition Profil code P-59",
+            "name": "Partition Profile",
             "description": "High-quality aluminium profile.",
             "details": { "dimensions": "59*41.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.891" }
         },
         "sr": {
-            "name": "Pregradni profil code P-59",
+            "name": "Pregradni profil",
             "description": "Visokokvalitetni aluminijumski profil.",
             "details": { "dimensions": "59*41.4", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "0.891" }
         }
