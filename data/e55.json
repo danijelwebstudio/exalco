@@ -1170,8 +1170,8 @@
         }
     },
     "double-sheet": {
-        "image": "../assets/images/products/E55/Double Sheet.webp",
-        "tech_image": "../assets/images/products/E55/tech/Double Sheet.webp",
+        "image": "../assets/images/products/E55/Double sheet.webp",
+        "tech_image": "../assets/images/products/E55/tech/Double sheet.webp",
         "extra_images": [],
         "code": "Double Sheet",
         "en": {
