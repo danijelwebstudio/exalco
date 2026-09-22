@@ -24,8 +24,8 @@
         "sr": { "name": "Srednje Krilo", "description": "Visokokvalitetni aluminijumski profil.", "details": { "dimensions": "63*80", "brand": "Exalco", "material": "Aluminijum", "operation": "Standard", "type": "Standard", "weight": "1.496" } }
     },
     "15c-40100": {
-        "image": "../assets/images/products/EX55/15c-40100.webp",
-        "tech_image": "../assets/images/products/EX55/tech/15c-40100.webp",
+        "image": "../assets/images/products/EX55/15C-40100.webp",
+        "tech_image": "../assets/images/products/EX55/tech/15C-40100.webp",
         "extra_images": [], 
         "code": "15c-40100",
         "en": { "name": "Corner Profil", "description": "High-quality aluminium profile.", "details": { "dimensions": "-", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "0.865" } },
