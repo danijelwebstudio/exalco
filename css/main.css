@@ -268,7 +268,18 @@ img { max-width: 100%; display: block; }
 .footer-links a:hover { color: var(--white); padding-left: 10px; }
 .contact-info li { display: flex; gap: 15px; margin-bottom: 15px; }
 .footer-bottom { background-color: #151515; padding: 25px 0; border-top: 1px solid #2a2a2a; }
-.footer-bottom .container { display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bottom p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
 .footer-social { display: flex; gap: 10px; }
 .footer-social a { width: 36px; height: 36px; background-color: #333; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
 .footer-social a:hover { background-color: var(--primary-color); transform: translateY(-3px); }
