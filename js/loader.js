@@ -8,6 +8,98 @@ document.addEventListener("DOMContentLoaded", () => {
     const grid = document.getElementById('product-grid');
     const title = document.getElementById('series-title');
 
+    const intro = document.getElementById('series-intro');
+    const BASE_URL = 'https://exalcoaluminium.com';
+
+    // =====================================================
+    // SEO HELPERS
+    // =====================================================
+    function setMetaName(name, content) {
+        let tag = document.head.querySelector(`meta[name="${name}"]`);
+
+        if (!tag) {
+            tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            document.head.appendChild(tag);
+        }
+
+        tag.setAttribute('content', content);
+    }
+
+    function setMetaProperty(property, content) {
+        let tag = document.head.querySelector(`meta[property="${property}"]`);
+
+        if (!tag) {
+            tag = document.createElement('meta');
+            tag.setAttribute('property', property);
+            document.head.appendChild(tag);
+        }
+
+        tag.setAttribute('content', content);
+    }
+
+    function setHeadLink(rel, href, hreflang = null) {
+        let selector = `link[rel="${rel}"]`;
+
+        if (hreflang) {
+            selector += `[hreflang="${hreflang}"]`;
+        } else if (rel === 'canonical') {
+            selector += ':not([hreflang])';
+        }
+
+        let link = document.head.querySelector(selector);
+
+        if (!link) {
+            link = document.createElement('link');
+            link.setAttribute('rel', rel);
+
+            if (hreflang) {
+                link.setAttribute('hreflang', hreflang);
+            }
+
+            document.head.appendChild(link);
+        }
+
+        link.setAttribute('href', href);
+    }
+
+    function setFallbackSeo() {
+        const isSr = currentLang === 'sr';
+
+        document.title = isSr
+            ? 'Aluminijumski sistemi i profili | EXALCO'
+            : 'Aluminium Systems & Profiles | EXALCO';
+
+        const description = isSr
+            ? 'Pregledajte EXALCO aluminijumske sisteme i dostupne serije profila.'
+            : 'Browse EXALCO aluminium systems and available profile series.';
+
+        setMetaName('description', description);
+        setMetaName('robots', 'noindex, follow');
+
+        const canonicalUrl = isSr
+            ? `${BASE_URL}/pages/products-sr.html`
+            : `${BASE_URL}/pages/products.html`;
+
+        setHeadLink('canonical', canonicalUrl);
+
+        setMetaProperty('og:title', document.title);
+        setMetaProperty('og:description', description);
+        setMetaProperty('og:type', 'website');
+        setMetaProperty('og:url', canonicalUrl);
+
+        setMetaName('twitter:card', 'summary');
+        setMetaName('twitter:title', document.title);
+        setMetaName('twitter:description', description);
+
+        if (intro) {
+            intro.textContent = isSr
+                ? 'Izaberite sistem ili seriju da biste pregledali dostupne profile.'
+                : 'Choose a system or series to browse the available profiles.';
+        }
+    }
+
+
     // =====================================================
     // PROMJENA JEZIKA - ZADRŽAVA ISTU SERIJU
     // =====================================================
@@ -40,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     : "Select a Series";
         }
 
+        setFallbackSeo();
         return;
     }
 
@@ -195,6 +288,110 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // =====================================================
+    // DINAMIČKI SEO ZA SVAKU SERIJU
+    // =====================================================
+    const seriesGroups = {
+        hinged: [
+            'ex55', 'ex64', 'ex74', 'w55', 'w60', 'w69',
+            'th60', 'e55', '59series', '47series',
+            'lightaldox', 'heavyaldox'
+        ],
+        sliding: [
+            'hs96', 'ths77', '60sliding', 'newsliding', 'sliding92'
+        ],
+        facade: [
+            'facecap', 'frameless', 'uchennel', 'rainforce'
+        ],
+        other: [
+            'verandah', 'rollup', 'gridesystem', 'partition',
+            'handrail', 'automatic_door', 'pipe_profiles'
+        ]
+    };
+
+    function getSeriesGroup(seriesId) {
+        return Object.keys(seriesGroups).find(group =>
+            seriesGroups[group].includes(seriesId)
+        ) || 'other';
+    }
+
+    function applySeriesSeo(seriesId, names) {
+        if (!names) {
+            setFallbackSeo();
+            return;
+        }
+
+        const displayName =
+            names[currentLang] ||
+            names.en ||
+            names.sr ||
+            seriesId.toUpperCase();
+
+        const isSr = currentLang === 'sr';
+        const group = getSeriesGroup(seriesId);
+
+        const titleText = isSr
+            ? `${displayName} | Aluminijumski profili | EXALCO`
+            : `${displayName} | Aluminium Profiles | EXALCO`;
+
+        let description;
+
+        if (isSr) {
+            if (group === 'hinged') {
+                description = `Pregledajte ${displayName} u ponudi EXALCO: dostupne aluminijumske profile za okretne sisteme, šifre proizvoda, dimenzije, tehničke crteže i specifikacije.`;
+            } else if (group === 'sliding') {
+                description = `Pregledajte ${displayName} u ponudi EXALCO: dostupne aluminijumske profile za klizne sisteme, šifre proizvoda, dimenzije, tehničke crteže i specifikacije.`;
+            } else if (group === 'facade') {
+                description = `Pregledajte ${displayName} u ponudi EXALCO: dostupne aluminijumske profile za fasadne sisteme, šifre proizvoda, dimenzije, tehničke crteže i specifikacije.`;
+            } else {
+                description = `Pregledajte ${displayName} u ponudi EXALCO: dostupne profile, šifre proizvoda, dimenzije, tehničke crteže i specifikacije.`;
+            }
+        } else {
+            if (group === 'hinged') {
+                description = `Explore ${displayName} from EXALCO: available aluminium profiles for hinged systems, product codes, dimensions, technical drawings and specifications.`;
+            } else if (group === 'sliding') {
+                description = `Explore ${displayName} from EXALCO: available aluminium profiles for sliding systems, product codes, dimensions, technical drawings and specifications.`;
+            } else if (group === 'facade') {
+                description = `Explore ${displayName} from EXALCO: available aluminium profiles for curtain wall systems, product codes, dimensions, technical drawings and specifications.`;
+            } else {
+                description = `Explore ${displayName} from EXALCO: available profiles, product codes, dimensions, technical drawings and specifications.`;
+            }
+        }
+
+        const srUrl =
+            `${BASE_URL}/pages/products-list-sr.html?series=${encodeURIComponent(seriesId)}`;
+
+        const enUrl =
+            `${BASE_URL}/pages/products-list.html?series=${encodeURIComponent(seriesId)}`;
+
+        const canonicalUrl = isSr ? srUrl : enUrl;
+
+        document.title = titleText;
+
+        setMetaName('description', description);
+        setMetaName('robots', 'index, follow');
+
+        setHeadLink('canonical', canonicalUrl);
+        setHeadLink('alternate', srUrl, 'sr');
+        setHeadLink('alternate', enUrl, 'en');
+        setHeadLink('alternate', enUrl, 'x-default');
+
+        setMetaProperty('og:title', titleText);
+        setMetaProperty('og:description', description);
+        setMetaProperty('og:type', 'website');
+        setMetaProperty('og:url', canonicalUrl);
+
+        setMetaName('twitter:card', 'summary');
+        setMetaName('twitter:title', titleText);
+        setMetaName('twitter:description', description);
+
+        if (intro) {
+            intro.textContent = isSr
+                ? `Pregledajte dostupne profile za ${displayName}. Otvorite proizvod za šifru, dimenzije, tehnički crtež i dostupne specifikacije.`
+                : `Browse the available profiles for ${displayName}. Open a product to view its code, dimensions, technical drawing and available specifications.`;
+        }
+    }
+
+    // =====================================================
     // NASLOV SERIJE
     // =====================================================
     if (title) {
@@ -206,6 +403,8 @@ document.addEventListener("DOMContentLoaded", () => {
             title.innerText = seriesParam.toUpperCase();
         }
     }
+
+    applySeriesSeo(fileName, seriesNames[fileName]);
 
     // =====================================================
     // UČITAVANJE JSON PODATAKA
