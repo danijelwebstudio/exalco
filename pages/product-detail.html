@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <title>Loading... | EXALCO Aluminium Systems</title>
+    <title>EXALCO Aluminium Profile | Product Specifications</title>
 <meta name="description" content="Detailed specifications of EXALCO aluminium profiles and systems.">
 
 <meta property="og:title" content="EXALCO">
@@ -26,6 +26,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
+    <!-- EXALCO: product-specific canonical & language alternatives (query-based static template) -->
+    <script>
+      (() => {
+        const params = new URLSearchParams(window.location.search);
+        const rawSeries = params.get('series');
+        const rawCode = params.get('code');
+        if (!rawSeries || !rawCode || !/^[a-z0-9_-]+$/i.test(rawSeries)) return;
+        const series = rawSeries.toLowerCase();
+        const query = `?series=${encodeURIComponent(series)}&code=${encodeURIComponent(rawCode)}`;
+        const base = 'https://exalcoaluminium.com/pages/';
+        const srUrl = `${base}product-detail-sr.html${query}`;
+        const enUrl = `${base}product-detail.html${query}`;
+        const isSr = document.documentElement.lang.toLowerCase().startsWith('sr');
+        const addLink = (rel, href, lang) => {
+          const link = document.createElement('link');
+          link.rel = rel;
+          link.href = href;
+          if (lang) link.hreflang = lang;
+          document.head.appendChild(link);
+        };
+        addLink('canonical', isSr ? srUrl : enUrl);
+        addLink('alternate', srUrl, 'sr');
+        addLink('alternate', enUrl, 'en');
+        addLink('alternate', enUrl, 'x-default');
+      })();
+    </script>
   <script src="/js/analytics.js"></script>
 </head>
 <body>

@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
 
-    const series = params.get('series');
+    const rawSeries = params.get('series');
+    const series = rawSeries ? rawSeries.toLowerCase() : null;
     const code = params.get('code');
 
     const container =
@@ -63,14 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // =====================================================
     // PROVJERA PARAMETARA
     // =====================================================
-    if (!series || !code) {
-        if (container) {
-            container.innerHTML =
-                currentLang === 'sr'
-                    ? "<h2>Proizvod nije pronađen.</h2>"
-                    : "<h2>Product not found.</h2>";
-        }
-
+    if (!series || !code || !/^[a-z0-9_-]+$/i.test(series)) {
+        // Bare template URLs are not product pages; send visitors to the catalog.
+        window.location.replace(mainPage);
         return;
     }
 
@@ -91,13 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const product = data[code];
 
             if (!product) {
+                const metaRobots = document.head.querySelector('meta[name="robots"]') || document.createElement('meta');
+                metaRobots.name = 'robots';
+                metaRobots.content = 'noindex, follow';
+                if (!metaRobots.parentNode) document.head.appendChild(metaRobots);
+                document.head.querySelector('link[rel="canonical"]')?.remove();
                 if (container) {
-                    container.innerHTML =
-                        currentLang === 'sr'
-                            ? "<h2>Proizvod nije pronađen.</h2>"
-                            : "<h2>Product not found.</h2>";
+                    container.innerHTML = currentLang === 'sr'
+                        ? "<h2>Proizvod nije pronađen.</h2>"
+                        : "<h2>Product not found.</h2>";
                 }
-
                 return;
             }
 
@@ -118,81 +117,96 @@ document.addEventListener("DOMContentLoaded", () => {
                 pData.details || {};
 
             // =====================================================
-            // SEO
+            // SEO ZA KONKRETAN PROIZVOD (bez izmišljanja specifikacija)
             // =====================================================
-            const pageTitle =
-                currentLang === 'sr'
-                    ? `${productName} ${displayCode} | EXALCO Aluminijumski Sistemi`
-                    : `${productName} ${displayCode} | EXALCO Aluminium Systems`;
+            const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (ch) => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[ch]));
+            const isSr = currentLang === 'sr';
+            const seriesLabel = series.toUpperCase();
+            const dimension = details.dimensions ? String(details.dimensions) : '';
+            const weight = details.weight ? String(details.weight) : '';
+            const originalDescription = String(pData.description || '').trim();
+            const isGenericDescription = /^(high-quality aluminium profile|visokokvalitetni aluminijumski profil)\.?$/i
+                .test(originalDescription);
 
+            // Unique, verifiable information from each product's own JSON record.
+            const identityLine = isSr
+                ? `${productName} (${displayCode}), serija ${seriesLabel}, EXALCO aluminijumski profil.`
+                : `${productName} (${displayCode}), ${seriesLabel} series, EXALCO aluminium profile.`;
+            const facts = [
+                dimension ? (isSr ? `Dimenzije: ${dimension}.` : `Dimensions: ${dimension}.`) : '',
+                weight ? (isSr ? `Težina: ${weight}.` : `Weight: ${weight}.`) : ''
+            ].filter(Boolean).join(' ');
+            const uniqueDescription = `${identityLine} ${facts}`.trim();
+            const visibleDescription = originalDescription && !isGenericDescription
+                ? `${originalDescription} ${identityLine} ${facts}`.trim()
+                : uniqueDescription;
+            const seoDescription = visibleDescription.length > 210
+                ? uniqueDescription
+                : visibleDescription;
+
+            const pageTitle = isSr
+                ? `${productName} ${displayCode} | ${seriesLabel} | EXALCO`
+                : `${productName} ${displayCode} | ${seriesLabel} | EXALCO`;
             document.title = pageTitle;
 
-            const metaDesc =
-                document.querySelector(
-                    'meta[name="description"]'
-                );
-
-            if (metaDesc) {
-                const fallbackDescription =
-                    currentLang === 'sr'
-                        ? `Tehničke specifikacije za ${productName}, kod ${displayCode}.`
-                        : `Technical specifications for ${productName}, code ${displayCode}.`;
-
-                metaDesc.setAttribute(
-                    "content",
-                    pData.description || fallbackDescription
-                );
-            }
-
-            const updateMeta = (
-                selector,
-                attr,
-                content
-            ) => {
-                const tag =
-                    document.querySelector(selector);
-
-                if (tag) {
-                    tag.setAttribute(attr, content);
+            const setMeta = (selector, field, value, attrs) => {
+                let tag = document.head.querySelector(selector);
+                if (!tag) {
+                    tag = document.createElement('meta');
+                    Object.entries(attrs).forEach(([k, v]) => tag.setAttribute(k, v));
+                    document.head.appendChild(tag);
                 }
+                tag.setAttribute(field, value);
             };
 
-            // Pravilan apsolutni URL slike
-            const absoluteImageUrl =
-                new URL(
-                    product.image,
-                    window.location.href
-                ).href;
+            const base = 'https://exalcoaluminium.com/pages/';
+            const query = `?series=${encodeURIComponent(series)}&code=${encodeURIComponent(code)}`;
+            const srUrl = `${base}product-detail-sr.html${query}`;
+            const enUrl = `${base}product-detail.html${query}`;
+            const canonicalUrl = isSr ? srUrl : enUrl;
+            const setLink = (rel, href, lang) => {
+                const selector = lang
+                    ? `link[rel="${rel}"][hreflang="${lang}"]`
+                    : `link[rel="${rel}"]`;
+                let link = document.head.querySelector(selector);
+                if (!link) {
+                    link = document.createElement('link');
+                    link.rel = rel;
+                    if (lang) link.hreflang = lang;
+                    document.head.appendChild(link);
+                }
+                link.href = href;
+            };
+            setLink('canonical', canonicalUrl);
+            setLink('alternate', srUrl, 'sr');
+            setLink('alternate', enUrl, 'en');
+            setLink('alternate', enUrl, 'x-default');
 
-            updateMeta(
-                'meta[property="og:title"]',
-                "content",
-                pageTitle
-            );
+            setMeta('meta[name="description"]', 'content', seoDescription,
+                { name: 'description' });
+            setMeta('meta[property="og:title"]', 'content', pageTitle,
+                { property: 'og:title' });
+            setMeta('meta[property="og:description"]', 'content', seoDescription,
+                { property: 'og:description' });
+            setMeta('meta[property="og:url"]', 'content', canonicalUrl,
+                { property: 'og:url' });
+            setMeta('meta[property="og:type"]', 'content', 'product',
+                { property: 'og:type' });
+            setMeta('meta[name="twitter:title"]', 'content', pageTitle,
+                { name: 'twitter:title' });
+            setMeta('meta[name="twitter:description"]', 'content', seoDescription,
+                { name: 'twitter:description' });
 
-            updateMeta(
-                'meta[property="og:image"]',
-                "content",
-                absoluteImageUrl
-            );
-
-            updateMeta(
-                'meta[property="og:description"]',
-                "content",
-                pData.description || ""
-            );
-
-            updateMeta(
-                'meta[name="twitter:title"]',
-                "content",
-                pageTitle
-            );
-
-            updateMeta(
-                'meta[name="twitter:description"]',
-                "content",
-                pData.description || ""
-            );
+            // Correct public image URL, resolving relative to the product page.
+            const absoluteImageUrl = product.image
+                ? new URL(product.image, window.location.href).href
+                : '';
+            if (absoluteImageUrl) {
+                setMeta('meta[property="og:image"]', 'content', absoluteImageUrl,
+                    { property: 'og:image' });
+            }
 
             // =====================================================
             // PREVOD LABELA
@@ -417,7 +431,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
 
                     <p class="detail-desc">
-                        ${pData.description || ""}
+                        ${esc(visibleDescription)}
                     </p>
 
                     <div class="section-header">
