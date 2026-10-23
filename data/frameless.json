@@ -145,7 +145,7 @@
     },
     "106": {
         "image": "../assets/images/products/Frameless/106.webp",
-        "tech_image": "../assets/images/products/Frameless/tech/106.webp",
+        "tech_image": "../assets/images/products/Frameless/tech/FS-106.webp",
         "extra_images": [],
         "code": "106",
         "en": {
@@ -161,7 +161,7 @@
     },
     "135": {
         "image": "../assets/images/products/Frameless/135.webp",
-        "tech_image": "../assets/images/products/Frameless/tech/135.webp",
+        "tech_image": "../assets/images/products/Frameless/tech/FS-135.webp",
         "extra_images": [],
         "code": "135",
         "en": {
@@ -177,7 +177,7 @@
     },
     "140": {
         "image": "../assets/images/products/Frameless/140.webp",
-        "tech_image": "../assets/images/products/Frameless/tech/140.webp",
+        "tech_image": "../assets/images/products/Frameless/tech/FS-140.webp",
         "extra_images": [],
         "code": "140",
         "en": {
@@ -193,7 +193,7 @@
     },
     "165": {
         "image": "../assets/images/products/Frameless/165.webp",
-        "tech_image": "../assets/images/products/Frameless/tech/165.webp",
+        "tech_image": "../assets/images/products/Frameless/tech/FS-165.webp",
         "extra_images": [],
         "code": "165",
         "en": {
@@ -209,7 +209,7 @@
     },
     "210": {
         "image": "../assets/images/products/Frameless/210.webp",
-        "tech_image": "../assets/images/products/Frameless/tech/210.webp",
+        "tech_image": "../assets/images/products/Frameless/tech/FS-210.webp",
         "extra_images": [],
         "code": "210",
         "en": {

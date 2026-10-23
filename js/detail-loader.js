@@ -84,14 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         .then(data => {
-            const product = data[code];
+            const product = Object.prototype.hasOwnProperty.call(data, code) ? data[code] : null;
 
             if (!product) {
                 const metaRobots = document.head.querySelector('meta[name="robots"]') || document.createElement('meta');
                 metaRobots.name = 'robots';
                 metaRobots.content = 'noindex, follow';
                 if (!metaRobots.parentNode) document.head.appendChild(metaRobots);
-                document.head.querySelector('link[rel="canonical"]')?.remove();
+                document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach(link => link.remove());
                 if (container) {
                     container.innerHTML = currentLang === 'sr'
                         ? "<h2>Proizvod nije pronađen.</h2>"
@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }[ch]));
             const isSr = currentLang === 'sr';
             const seriesLabel = series.toUpperCase();
-            const dimension = details.dimensions ? String(details.dimensions) : '';
-            const weight = details.weight ? String(details.weight) : '';
+            const dimension = details.dimensions && details.dimensions !== '-' ? String(details.dimensions) : '';
+            const weight = details.weight && details.weight !== '-' ? String(details.weight) : '';
             const originalDescription = String(pData.description || '').trim();
             const isGenericDescription = /^(high-quality aluminium profile|visokokvalitetni aluminijumski profil)\.?$/i
                 .test(originalDescription);
@@ -139,6 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 weight ? (isSr ? `Težina: ${weight}.` : `Weight: ${weight}.`) : ''
             ].filter(Boolean).join(' ');
             const uniqueDescription = `${identityLine} ${facts}`.trim();
+            const drawingContext = isSr
+                ? `Prikaz u katalogu serije ${seriesLabel}. Tehnički crtež, kada je dostupan, odnosi se na ovaj kataloški zapis; ista šifra u drugoj seriji nije potvrda zamjenjivosti.`
+                : `Listed in the ${seriesLabel} series catalog. The technical drawing, when available, belongs to this catalog entry; the same code in another series does not establish interchangeability.`;
             const visibleDescription = originalDescription && !isGenericDescription
                 ? `${originalDescription} ${identityLine} ${facts}`.trim()
                 : uniqueDescription;
@@ -260,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </td>
 
                         <td>
-                            ${value}
+                            ${esc(value)}
                         </td>
                     </tr>
                 `;
@@ -274,164 +277,63 @@ document.addEventListener("DOMContentLoaded", () => {
             // =====================================================
             // SLIKE
             // =====================================================
-            const imagesArray = [
-                product.image
-            ];
-
-            if (product.tech_image) {
-                imagesArray.push(
-                    product.tech_image
-                );
-            }
+            const assetPolicy = window.EXALCO_ASSETS;
+            const available = path => assetPolicy ? assetPolicy.available(path) : Boolean(path);
+            const gallery = [];
+            const addImage = (src, kind) => {
+                if (available(src) && !gallery.some(image => image.src === src)) {
+                    gallery.push({ src, kind });
+                }
+            };
+            addImage(product.image, 'profile');
+            addImage(product.tech_image, 'drawing');
+            (product.extra_images || []).forEach(src => addImage(src, 'profile'));
+            const hasDrawing = gallery.some(image => image.kind === 'drawing');
+            if (!gallery.length) gallery.push({
+                src: '../assets/images/product-unavailable.svg', kind: 'unavailable'
+            });
+            const imageAlt = image => image.kind === 'drawing'
+                ? (isSr ? `${productName} ${displayCode}, serija ${seriesLabel} — tehnički crtež`
+                        : `${productName} ${displayCode}, ${seriesLabel} series — technical drawing`)
+                : image.kind === 'unavailable'
+                    ? (isSr ? 'Slika nije dostupna' : 'Image unavailable')
+                    : `${productName} ${displayCode} | ${seriesLabel}`;
 
             // =====================================================
             // HTML PROIZVODA
             // =====================================================
             const html = `
                 <div class="detail-left">
-
-                    <div
-                        class="main-image-container"
-                        style="
-                            position:relative;
-                            display:flex;
-                            align-items:center;
-                            justify-content:center;
-                        "
-                    >
-
-                        ${
-                            imagesArray.length > 1
-                                ? `
-                                    <button
-                                        id="prev-pic"
-                                        style="
-                                            position:absolute;
-                                            left:10px;
-                                            background:rgba(0,64,133,0.7);
-                                            color:white;
-                                            border:none;
-                                            width:35px;
-                                            height:35px;
-                                            border-radius:50%;
-                                            cursor:pointer;
-                                            display:flex;
-                                            align-items:center;
-                                            justify-content:center;
-                                            z-index:10;
-                                            transition:0.3s;
-                                        "
-                                    >
-                                        <i class="fas fa-chevron-left"></i>
-                                    </button>
-                                `
-                                : ''
-                        }
-
-                        <img
-                            src="${product.image}"
-                            class="detail-img"
-                            id="main-product-img"
-                            alt="${seoAltDetail}"
-                            style="
-                                max-width:100%;
-                                height:auto;
-                                transition:opacity 0.3s ease;
-                            "
-                        >
-
-                        ${
-                            imagesArray.length > 1
-                                ? `
-                                    <button
-                                        id="next-pic"
-                                        style="
-                                            position:absolute;
-                                            right:10px;
-                                            background:rgba(0,64,133,0.7);
-                                            color:white;
-                                            border:none;
-                                            width:35px;
-                                            height:35px;
-                                            border-radius:50%;
-                                            cursor:pointer;
-                                            display:flex;
-                                            align-items:center;
-                                            justify-content:center;
-                                            z-index:10;
-                                            transition:0.3s;
-                                        "
-                                    >
-                                        <i class="fas fa-chevron-right"></i>
-                                    </button>
-                                `
-                                : ''
-                        }
-
+                    <div class="main-image-container" style="position:relative;display:flex;align-items:center;justify-content:center;gap:10px;">
+                        <button id="prev-pic" type="button" aria-label="${isSr ? 'Prethodna slika' : 'Previous image'}" ${gallery.length < 2 ? 'hidden' : ''}>❮</button>
+                        <img src="${esc(gallery[0].src)}" class="detail-img" id="main-product-img"
+                             alt="${esc(imageAlt(gallery[0]))}" style="max-width:100%;height:auto;">
+                        <button id="next-pic" type="button" aria-label="${isSr ? 'Sljedeća slika' : 'Next image'}" ${gallery.length < 2 ? 'hidden' : ''}>❯</button>
                     </div>
-
-                    <div
-                        class="gallery-thumbs"
-                        style="
-                            margin-top:20px;
-                            display:flex;
-                            gap:10px;
-                            justify-content:center;
-                        "
-                    >
-
-                        <img
-                            src="${product.image}"
-                            alt="${productName}"
-                            class="thumb-item active-thumb"
-                            style="
-                                width:70px;
-                                height:70px;
-                                object-fit:contain;
-                                cursor:pointer;
-                                border:2px solid #004085;
-                                padding:2px;
-                            "
-                            data-index="0"
-                        >
-
-                        ${
-                            product.tech_image
-                                ? `
-                                    <img
-                                        src="${product.tech_image}"
-                                        alt="${currentLang === 'sr' ? `${productName} tehnički crtež` : `${productName} technical drawing`}"
-                                        class="thumb-item"
-                                        style="
-                                            width:70px;
-                                            height:70px;
-                                            object-fit:contain;
-                                            cursor:pointer;
-                                            border:1px solid #ddd;
-                                            padding:2px;
-                                        "
-                                        data-index="1"
-                                    >
-                                `
-                                : ''
-                        }
-
+                    <div class="gallery-thumbs" style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                        ${gallery.map((image, index) => `<button type="button" class="thumb-item" data-index="${index}"
+                            aria-label="${esc(imageAlt(image))}" aria-pressed="${index === 0}"
+                            style="width:76px;height:76px;padding:2px;cursor:pointer;border:${index === 0 ? '2px solid #004085' : '1px solid #ddd'};background:white;">
+                            <img src="${esc(image.src)}" alt="${esc(imageAlt(image))}" style="width:100%;height:100%;object-fit:contain;">
+                        </button>`).join('')}
                     </div>
-
+                    ${hasDrawing ? '' : `<p class="drawing-unavailable">${isSr
+                        ? 'Tehnički crtež za ovaj kataloški zapis trenutno nije dostupan. Zatražite dokumentaciju od EXALCO tima.'
+                        : 'The technical drawing for this catalog entry is currently unavailable. Contact the EXALCO team for documentation.'}</p>`}
                 </div>
 
                 <div class="detail-right">
 
                     <h1 class="detail-title">
-                        ${productName}
+                        ${esc(productName)}
                     </h1>
 
                     <span class="detail-code">
-                        ${labels.code}: ${displayCode}
+                        ${labels.code}: ${esc(displayCode)}
                     </span>
 
                     <p class="detail-desc">
-                        ${esc(visibleDescription)}
+                        ${esc(visibleDescription)}</p><p class="detail-context">${esc(drawingContext)}
                     </p>
 
                     <div class="section-header">
@@ -479,124 +381,52 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // =====================================================
-            // SLIDER I THUMBNAILS
-            // =====================================================
-            if (imagesArray.length > 1) {
-                let currentIndex = 0;
-
-                const mainImg =
-                    document.getElementById(
-                        'main-product-img'
-                    );
-
-                const thumbs =
-                    document.querySelectorAll(
-                        '.thumb-item'
-                    );
-
-                const prevBtn =
-                    document.getElementById(
-                        'prev-pic'
-                    );
-
-                const nextBtn =
-                    document.getElementById(
-                        'next-pic'
-                    );
-
-                function updateGallery(index) {
-                    currentIndex = index;
-
-                    mainImg.style.opacity = '0.3';
-
-                    setTimeout(() => {
-                        mainImg.src =
-                            imagesArray[currentIndex];
-
-                        mainImg.style.opacity = '1';
-                    }, 150);
-
-                    thumbs.forEach(
-                        (thumb, i) => {
-                            if (i === currentIndex) {
-                                thumb.style.border =
-                                    '2px solid #004085';
-                            } else {
-                                thumb.style.border =
-                                    '1px solid #ddd';
-                            }
-                        }
-                    );
-                }
-
-                // PRETHODNA SLIKA
-                prevBtn.addEventListener(
-                    'click',
-                    () => {
-                        const index =
-                            currentIndex === 0
-                                ? imagesArray.length - 1
-                                : currentIndex - 1;
-
-                        updateGallery(index);
-                    }
-                );
-
-                // SLJEDEĆA SLIKA
-                nextBtn.addEventListener(
-                    'click',
-                    () => {
-                        const index =
-                            currentIndex ===
-                            imagesArray.length - 1
-                                ? 0
-                                : currentIndex + 1;
-
-                        updateGallery(index);
-                    }
-                );
-
-                // KLIK NA THUMBNAIL
-                thumbs.forEach(thumb => {
-                    thumb.addEventListener(
-                        'click',
-                        event => {
-                            const index =
-                                parseInt(
-                                    event.currentTarget.getAttribute(
-                                        'data-index'
-                                    ),
-                                    10
-                                );
-
-                            updateGallery(index);
-                        }
-                    );
-                });
-
-                // HOVER DUGMIĆA
-                [prevBtn, nextBtn].forEach(btn => {
-                    btn.addEventListener(
-                        'mouseenter',
-                        () => {
-                            btn.style.background =
-                                'rgba(0,64,133,1)';
-                        }
-                    );
-
-                    btn.addEventListener(
-                        'mouseleave',
-                        () => {
-                            btn.style.background =
-                                'rgba(0,64,133,0.7)';
-                        }
-                    );
+            // Keep image, technical-drawing label and selected thumbnail in sync.
+            const mainImg = document.getElementById('main-product-img');
+            const thumbs = Array.from(document.querySelectorAll('.thumb-item'));
+            const prevBtn = document.getElementById('prev-pic');
+            const nextBtn = document.getElementById('next-pic');
+            let currentIndex = 0;
+            const failed = new Set();
+            function updateGallery(index) {
+                currentIndex = index;
+                mainImg.src = gallery[index].src;
+                mainImg.alt = imageAlt(gallery[index]);
+                thumbs.forEach((thumb, i) => {
+                    thumb.setAttribute('aria-pressed', String(i === index));
+                    thumb.style.border = i === index ? '2px solid #004085' : '1px solid #ddd';
                 });
             }
+            function move(step) {
+                for (let n = 1; n <= gallery.length; n++) {
+                    const index = (currentIndex + step * n + gallery.length * n) % gallery.length;
+                    if (!failed.has(index)) { updateGallery(index); return; }
+                }
+            }
+            prevBtn.addEventListener('click', () => move(-1));
+            nextBtn.addEventListener('click', () => move(1));
+            thumbs.forEach((thumb, index) => thumb.addEventListener('click', () => {
+                if (!failed.has(index)) updateGallery(index);
+            }));
+            mainImg.addEventListener('error', () => {
+                failed.add(currentIndex);
+                if (thumbs[currentIndex]) thumbs[currentIndex].hidden = true;
+                // Do not replace a failed drawing with another product's image or label.
+                if (failed.size < gallery.length) move(1);
+                else if (!mainImg.src.endsWith('/product-unavailable.svg')) {
+                    mainImg.src = '../assets/images/product-unavailable.svg';
+                    mainImg.alt = isSr ? 'Slika nije dostupna' : 'Image unavailable';
+                }
+            });
         })
 
         .catch(error => {
             console.error(error);
+            const robots = document.head.querySelector('meta[name="robots"]') || document.createElement('meta');
+            robots.name = 'robots';
+            robots.content = 'noindex, follow';
+            if (!robots.parentNode) document.head.appendChild(robots);
+            document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach(link => link.remove());
 
             if (container) {
                 container.innerHTML =
