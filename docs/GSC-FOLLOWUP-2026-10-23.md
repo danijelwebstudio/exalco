@@ -1,6 +1,8 @@
 # Search Console posle produkcione objave
 
-Proverena produkciona verzija: commit 08ecfc1, objavljen kroz Coolify.
+Prvobitno proverena produkciona verzija: commit 08ecfc1, objavljen kroz
+Coolify. Nakon toga PR #2 je objavljen kao commit 49e49e9 sa početnim HTML
+katalogom i trajnim preusmerenjima; pogledati CATALOG-HTML-ROLLOUT.md.
 
 - EX55/PC-205 SR: Test live URL je 23.10.2026. pokazao "URL is available
   to Google" i "Page can be indexed". Zahtev za indeksiranje je prihvaćen
@@ -21,8 +23,13 @@ Proverena produkciona verzija: commit 08ecfc1, objavljen kroz Coolify.
   prijava za nastavak. Ne označavati ovaj URL kao završen.
 - Novi razlog "Google chose different canonical than user" nije označen
   kao rešen samo na osnovu uspešnog live testa.
-- Za /pages/ nije pokrenuta validacija 403: server preusmerenje još nije
-  primenjeno. Ne otvarati listanje direktorijuma kao SEO popravku.
+- Za /pages/ je server popravka objavljena i proverena: sada vraća 301 na
+  /pages/products-sr.html. Nije otvoreno listanje direktorijuma. GSC
+  validacija ovog 403 razloga još nije potvrđena kao pokrenuta.
 
-Coolify pristup je zaustavljen na standardnoj prijavi. Za server promene
-potrebna je prijavljena Coolify sesija; lozinke se ne šalju kroz chat.
+Coolify prijava je završena i server promene su objavljene. Ponovna Google
+prijava je zaustavljena na zahtevu za lozinku; bezbedni zahtev je istekao
+bez potvrđenog ishoda prijave. Nije potvrđen novi live test nakon PR-a #2
+niti završetak EX74/50030 zahteva. Preostali korak je ponovna prijava u
+Search Console, live test i pokretanje 403 validacije. Lozinke se ne šalju
+kroz chat.

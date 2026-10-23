@@ -2,10 +2,26 @@
 
 ## Status
 
-Ova promena je pripremljena i testirana lokalno; nije aktivirana na
-exalcoaluminium.com. Postojeći Static build u Coolifyju neće automatski
-koristiti Dockerfile.catalog. Potrebna je prijava u Coolify i promena build
-metoda. Ne menjati DNS, domen ili SSL sertifikat da bi se ova promena uvela.
+Objavljeno 23.10.2026. na exalcoaluminium.com, posle uspešne odvojene
+Coolify probe i spajanja PR-a #2. Produkcioni commit je
+49e49e9d65c527918fd8a792ac3c363c44b25d66. Coolify sada koristi Dockerfile
+build, /Dockerfile.catalog, root / i port 80. Produkcioni DNS i domeni
+nisu menjani. Prethodna uspešna verzija za povratak je 08ecfc1.
+
+Pet javnih kataloških URL-ova, uključujući sva tri nova GSC canonical
+primera, vraćaju HTTP 200 i početni HTML identičan lokalno testiranom.
+Produkcija nema X-Robots-Tag: noindex; probni hostname ima noindex.
+HTTP i www varijante, /index.html i /pages/ vraćaju 301. Nepostojeći
+proizvod vraća 404. Produkciona galerija i sr/en/x-default canonical
+oznake proverene su u pregledaču.
+
+Traefik labele produkcione aplikacije sada se održavaju ručno da bi www
+i HTTP preusmerenja bila trajna. Sačuvana je originalna konfiguracija.
+Postojeće TLS rute, sertifikati, port i servisi su očuvani; promenjena je
+trajnost www preusmerenja i dodat je zaseban exalco-permanent-https
+middleware, bez izmene zajedničkog redirect-to-https middleware-a.
+Pri budućoj promeni domena/porta treba uskladiti ove ručne labele; povratak
+na auto-generated režim zahteva ponovnu proveru trajnosti preusmerenja.
 
 ## Šta se menja
 
@@ -47,9 +63,11 @@ sa HTTP na HTTPS trajan (301/308), uz očuvanje putanje i query parametara.
 - Postojeći DOM test: 1.332 proizvoda/jezika, 56 serija, sedam neuspešnih
   ili nevažećih slučajeva i navigacija galerije; četiri Python testa.
 
-Docker daemon nije dostupan u radnom okruženju: nije izgrađena niti
-testirana konačna Docker slika. Zato je obavezna probna Coolify objava
-pre zamene produkcije. Slika koristi zvanične Node i nginx slike.
+Docker slika je zatim stvarno izgrađena i pokrenuta u Coolify probnoj
+aplikaciji, a nakon provere i u produkciji. Slika koristi zvanične Node i
+nginx slike. Probni HTTP testovi obuhvatili su pet reprezentativnih
+kataloških stranica, 301/404 odgovore i noindex, a pregled u HTTPS
+pregledaču potvrdio je galeriju i tehnički crtež.
 
 Lokalno ponavljanje:
 
