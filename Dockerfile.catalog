@@ -1,0 +1,12 @@
+FROM node:24-alpine AS catalog
+WORKDIR /site
+COPY package.json package-lock.json ./
+RUN npm ci --ignore-scripts --no-audit --no-fund
+COPY . .
+RUN npm run build:catalog
+
+FROM nginx:stable-alpine
+COPY --from=catalog /site/build/public /usr/share/nginx/html
+COPY --from=catalog /site/build/catalog-map.conf /etc/nginx/catalog-map.conf
+COPY deploy/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80

@@ -1,0 +1,12 @@
+{
+  "name": "exalco-catalog-build",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:catalog": "node scripts/prerender_catalog.cjs",
+    "test:catalog": "node tests/catalog-dom.cjs",
+    "test:prerender": "node tests/prerender-dom.cjs"
+  },
+  "engines": { "node": "^22.22.2 || ^24.15.0 || >=26.0.0" },
+  "devDependencies": { "jsdom": "30.1.1" }
+}
