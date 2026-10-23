@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Provjera jezika stranice
     const currentLang = (document.documentElement.lang || 'sr').toLowerCase().startsWith('en') ? 'en' : 'sr';
 
+    const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[ch]));
     const params = new URLSearchParams(window.location.search);
     const seriesParam = params.get('series');
 
@@ -81,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ? `${BASE_URL}/pages/products-sr.html`
             : `${BASE_URL}/pages/products.html`;
 
-        setHeadLink('canonical', canonicalUrl);
+        document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach(link => link.remove());
 
         setMetaProperty('og:title', document.title);
         setMetaProperty('og:description', description);
@@ -404,6 +407,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    if (!Object.prototype.hasOwnProperty.call(seriesNames, fileName)) {
+        setFallbackSeo();
+        if (grid) grid.textContent = currentLang === 'sr' ? 'Serija nije pronađena.' : 'Series not found.';
+        return;
+    }
     applySeriesSeo(fileName, seriesNames[fileName]);
 
     // =====================================================
@@ -483,21 +491,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
                             <div class="card-img-wrapper">
                                 <img
-                                    src="${product.image}"
-                                    alt="${listAlt}"
+                                    src="${esc(window.EXALCO_ASSETS && !window.EXALCO_ASSETS.available(product.image) ? window.EXALCO_ASSETS.placeholder : product.image)}"
+                                    alt="${esc(listAlt)}"
                                     class="profile-img"
                                     loading="lazy"
-                                    onerror="this.src='../assets/images/placeholder.png'"
+                                    onerror="this.onerror=null;this.src='../assets/images/product-unavailable.svg'"
                                 >
                             </div>
 
                             <div class="card-info">
                                 <span class="code-badge">
-                                    ${displayCode}
+                                    ${esc(displayCode)}
                                 </span>
 
                                 <h3 class="profile-name">
-                                    ${name}
+                                    ${esc(name)}
                                 </h3>
                             </div>
 
@@ -522,6 +530,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         .catch(error => {
             console.error(error);
+            setFallbackSeo();
 
             const errMsg =
                 currentLang === 'sr'
