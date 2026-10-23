@@ -96,6 +96,7 @@ def main():
                 assert parser.urls == [item['url']], (item['url'], parser.urls)
                 # Prevent a static file response accidentally downloading as octet-stream.
                 assert headers.get_content_type() == 'text/html', (item['url'], headers)
+                assert 'X-Robots-Tag' not in headers, item['url']
             sample = next(x for x in manifest if x['series'] == 'w60' and x.get('code') == '1039')
             for query in ['code=1039&series=w60', 'series=w60&code=1039&utm_source=test']:
                 status, _, body = get('/pages/product-detail.html?' + query)
@@ -120,6 +121,10 @@ def main():
             assert status == 301
             assert headers['Location'] == sample['url']
             assert get('/')[0] == 200, 'Homepage redirect loop'
+            for route in ['/', '/pages/product-detail.html?series=w60&code=1039']:
+                status, headers, _ = get(route, 'staging.example.invalid')
+                assert status == 200
+                assert headers['X-Robots-Tag'] == 'noindex, nofollow'
             assert get('/data/w60.json')[0] == 200, 'Browser hydration data'
             for path, content_type in [('/js/detail-loader.js', 'application/javascript'),
                                        ('/css/main.css', 'text/css'),
