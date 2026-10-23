@@ -137,7 +137,7 @@
     },
     "PC-278": {
         "image": "../assets/images/products/EX74/278.webp",
-        "tech_image": "../assets/images/products/EX74/tech/PC-278.webp",
+        "tech_image": "../assets/images/products/EX74/tech/278.webp",
         "extra_images": [], 
         "code": "PC-278",
         "en": { "name": "Fixer PC-278", "description": "High-quality aluminium profile.", "details": { "dimensions": "27.8", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.162" } },
@@ -145,7 +145,7 @@
     },
     "PC-284": {
         "image": "../assets/images/products/EX74/284.webp",
-        "tech_image": "../assets/images/products/EX74/tech/PC-284.webp",
+        "tech_image": "../assets/images/products/EX74/tech/284.webp",
         "extra_images": [], 
         "code": "PC-284",
         "en": { "name": "Fixer PC-284", "description": "High-quality aluminium profile.", "details": { "dimensions": "28.4", "brand": "Exalco", "material": "Aluminium", "operation": "Standard", "type": "Standard", "weight": "4.202" } },
