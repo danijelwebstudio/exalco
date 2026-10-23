@@ -1,0 +1,993 @@
+{
+  "summary": {
+    "series": 28,
+    "records": 666,
+    "missing_asset_references": 41,
+    "invalid_json_files": 1,
+    "repeated_codes": 139,
+    "sitemap_urls": 70
+  },
+  "counts": {
+    "47series": 11,
+    "59series": 14,
+    "60sliding": 23,
+    "automatic_door": 8,
+    "e55": 40,
+    "ex55": 51,
+    "ex64": 55,
+    "ex74": 50,
+    "facecap": 44,
+    "frameless": 24,
+    "gridesystem": 8,
+    "handrail": 9,
+    "heavyaldox": 10,
+    "hs96": 26,
+    "lightaldox": 12,
+    "newsliding": 7,
+    "partition": 1,
+    "pipe_profiles": 3,
+    "rainforce": 29,
+    "rollup": 9,
+    "sliding92": 13,
+    "th60": 7,
+    "ths77": 20,
+    "uchennel": 28,
+    "verandah": 13,
+    "w55": 55,
+    "w60": 48,
+    "w69": 48
+  },
+  "invalid_json": [
+    {
+      "file": "data/series75.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "missing_assets": [
+    {
+      "series": "60sliding",
+      "code": "SL05",
+      "field": "tech_image",
+      "path": "../assets/images/products/60SeriesSliding/tech/SL05.webp"
+    },
+    {
+      "series": "automatic_door",
+      "code": "DOS30-38-9",
+      "field": "tech_image",
+      "path": "../assets/images/products/AutomaticDoor/tech/dos30-38-9.webp"
+    },
+    {
+      "series": "e55",
+      "code": "1126",
+      "field": "image",
+      "path": "../assets/images/products/E55/1126.webp"
+    },
+    {
+      "series": "e55",
+      "code": "1126",
+      "field": "tech_image",
+      "path": "../assets/images/products/E55/tech/1126.webp"
+    },
+    {
+      "series": "e55",
+      "code": "PC-132",
+      "field": "image",
+      "path": "../assets/images/products/E55/PC-132.webp"
+    },
+    {
+      "series": "e55",
+      "code": "PC-132",
+      "field": "tech_image",
+      "path": "../assets/images/products/E55/tech/PC-132.webp"
+    },
+    {
+      "series": "e55",
+      "code": "PC-140",
+      "field": "image",
+      "path": "../assets/images/products/E55/PC-140.webp"
+    },
+    {
+      "series": "e55",
+      "code": "PC-140",
+      "field": "tech_image",
+      "path": "../assets/images/products/E55/tech/PC-140.webp"
+    },
+    {
+      "series": "e55",
+      "code": "1826",
+      "field": "image",
+      "path": "../assets/images/products/E55/1826.webp"
+    },
+    {
+      "series": "e55",
+      "code": "1826",
+      "field": "tech_image",
+      "path": "../assets/images/products/E55/tech/1826.webp"
+    },
+    {
+      "series": "ex55",
+      "code": "22150",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX55/tech/22150.webp"
+    },
+    {
+      "series": "ex55",
+      "code": "DOUBLE-SHEET",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX55/tech/DOUBLE-SHEET.webp"
+    },
+    {
+      "series": "ex64",
+      "code": "40075",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX64/tech/40075.webp"
+    },
+    {
+      "series": "ex64",
+      "code": "Double sheet",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX64/tech/Double sheet.webp"
+    },
+    {
+      "series": "ex74",
+      "code": "PC-278",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX74/tech/PC-278.webp"
+    },
+    {
+      "series": "ex74",
+      "code": "PC-284",
+      "field": "tech_image",
+      "path": "../assets/images/products/EX74/tech/PC-284.webp"
+    },
+    {
+      "series": "facecap",
+      "code": "2659-2",
+      "field": "tech_image",
+      "path": "../assets/images/products/Facecap/tech/2659-2.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "2659",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/2659.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "106",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/106.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "135",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/135.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "140",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/140.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "165",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/165.webp"
+    },
+    {
+      "series": "frameless",
+      "code": "210",
+      "field": "tech_image",
+      "path": "../assets/images/products/Frameless/tech/210.webp"
+    },
+    {
+      "series": "hs96",
+      "code": "PC-320",
+      "field": "tech_image",
+      "path": "../assets/images/products/HS96/tech/PC-320.webp"
+    },
+    {
+      "series": "partition",
+      "code": "P-59",
+      "field": "tech_image",
+      "path": "../assets/images/products/PartitionSystem/tech/P-59.webp"
+    },
+    {
+      "series": "pipe_profiles",
+      "code": "PIPE-19",
+      "field": "tech_image",
+      "path": "../assets/images/products/PipeProfiles/tech/19.webp"
+    },
+    {
+      "series": "pipe_profiles",
+      "code": "PIPE-35",
+      "field": "tech_image",
+      "path": "../assets/images/products/PipeProfiles/tech/35.webp"
+    },
+    {
+      "series": "pipe_profiles",
+      "code": "PIPE-50",
+      "field": "tech_image",
+      "path": "../assets/images/products/PipeProfiles/tech/50.webp"
+    },
+    {
+      "series": "rainforce",
+      "code": "2659",
+      "field": "tech_image",
+      "path": "../assets/images/products/Rainforce/tech/2659.webp"
+    },
+    {
+      "series": "rollup",
+      "code": "ROLL-UP-BLADES-PROFIL",
+      "field": "tech_image",
+      "path": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil.webp"
+    },
+    {
+      "series": "rollup",
+      "code": "ROLL-UP-BLADES-PROFIL-2",
+      "field": "tech_image",
+      "path": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil-2.webp"
+    },
+    {
+      "series": "rollup",
+      "code": "ROLL-UP-BLADES-PROFIL-3",
+      "field": "tech_image",
+      "path": "../assets/images/products/RollUpBlades/tech/Roll-up Blades Profil-3.webp"
+    },
+    {
+      "series": "th60",
+      "code": "T60-108-00",
+      "field": "tech_image",
+      "path": "../assets/images/products/TH60/tech/TH60-108-00.webp"
+    },
+    {
+      "series": "uchennel",
+      "code": "2659",
+      "field": "tech_image",
+      "path": "../assets/images/products/Uchennel/tech/2659.webp"
+    },
+    {
+      "series": "uchennel",
+      "code": "26483",
+      "field": "tech_image",
+      "path": "../assets/images/products/Uchennel/tech/26483.webp"
+    },
+    {
+      "series": "verandah",
+      "code": "BG-05",
+      "field": "tech_image",
+      "path": "../assets/images/products/Verandah/tech/BG-05.webp"
+    },
+    {
+      "series": "verandah",
+      "code": "BG-06",
+      "field": "tech_image",
+      "path": "../assets/images/products/Verandah/tech/BG-06.webp"
+    },
+    {
+      "series": "verandah",
+      "code": "S.D.E-02",
+      "field": "tech_image",
+      "path": "../assets/images/products/Verandah/tech/S.D.E-02.webp"
+    },
+    {
+      "series": "w55",
+      "code": "DOUBLE-SHEET",
+      "field": "tech_image",
+      "path": "../assets/images/products/W55/tech/Double sheet.webp"
+    },
+    {
+      "series": "w55",
+      "code": "PC-522",
+      "field": "tech_image",
+      "path": "../assets/images/products/W55/tech/522.webp"
+    },
+    {
+      "series": "w69",
+      "code": "PC-8",
+      "field": "tech_image",
+      "path": "../assets/images/products/W69/tech/PC-.webp"
+    }
+  ],
+  "repeated_codes": {
+    "3cm": [
+      "47series",
+      "60sliding"
+    ],
+    "5cm": [
+      "47series",
+      "60sliding"
+    ],
+    "5930": [
+      "47series",
+      "59series",
+      "lightaldox",
+      "ths77"
+    ],
+    "13-134-051": [
+      "60sliding",
+      "hs96"
+    ],
+    "13-134-050": [
+      "60sliding",
+      "ths77"
+    ],
+    "PC-132": [
+      "e55",
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1834": [
+      "e55",
+      "w55",
+      "w60"
+    ],
+    "20071": [
+      "ex55",
+      "ex64"
+    ],
+    "20101": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "30080": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "15c-40100": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "40100": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "60135": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "40077": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "40077-2": [
+      "ex55",
+      "ex64"
+    ],
+    "PC-135": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "PC-141": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-153": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-178": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-184": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-195": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-205": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-235": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-241": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-278": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-284": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-405": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "PC-431": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-435": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-441": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "PC-478": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "10048": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "10058": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "10078": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "22110": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "12088": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "42150": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "32070": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "20100": [
+      "ex55",
+      "hs96"
+    ],
+    "20135": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "20081": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "30100": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "40061": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "50010": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "50015": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "50020": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "50025": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "50030": [
+      "ex55",
+      "ex64",
+      "ex74",
+      "hs96"
+    ],
+    "50035": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "50040": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "20070": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "30070": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "40075": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "22150": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "42040": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "15058": [
+      "ex55",
+      "ex64",
+      "ex74"
+    ],
+    "DOUBLE-SHEET": [
+      "ex55",
+      "w55"
+    ],
+    "Double sheet": [
+      "ex64",
+      "ex74"
+    ],
+    "39100": [
+      "ex64",
+      "ex74"
+    ],
+    "39100-F": [
+      "ex64",
+      "ex74"
+    ],
+    "26121": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26123": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26124": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26125": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26127": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26141": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26145": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26453": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "2659": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "2657": [
+      "facecap",
+      "rainforce"
+    ],
+    "26508": [
+      "facecap",
+      "rainforce"
+    ],
+    "26483": [
+      "facecap",
+      "uchennel"
+    ],
+    "2658": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "2660": [
+      "facecap",
+      "rainforce"
+    ],
+    "2663": [
+      "facecap",
+      "rainforce"
+    ],
+    "2664": [
+      "facecap",
+      "rainforce"
+    ],
+    "2640": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26408": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26315": [
+      "facecap",
+      "uchennel"
+    ],
+    "26304": [
+      "facecap",
+      "uchennel"
+    ],
+    "26480": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26126": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26128": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "26011": [
+      "facecap",
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "106": [
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "135": [
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "140": [
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "165": [
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "210": [
+      "frameless",
+      "rainforce",
+      "uchennel"
+    ],
+    "302": [
+      "gridesystem",
+      "ths77"
+    ],
+    "26484": [
+      "rainforce",
+      "uchennel"
+    ],
+    "802": [
+      "th60",
+      "ths77"
+    ],
+    "803": [
+      "th60",
+      "ths77"
+    ],
+    "1030": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1028": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1035": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1008": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1016": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1029": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1012": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1013": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-210": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-262": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-392": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-470": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-522": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "PC-8": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1000": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1001": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1002": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1003": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1027": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1022": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1023": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1019": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1020": [
+      "w55",
+      "w60"
+    ],
+    "1021": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1017": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1018": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1046": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1014": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1036": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1037": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1038": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1039": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1040": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1041": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1042": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1043": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1044": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1024": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1005": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1006": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1009": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1010": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1011": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1015": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1007": [
+      "w55",
+      "w60",
+      "w69"
+    ],
+    "1045": [
+      "w55",
+      "w60",
+      "w69"
+    ]
+  },
+  "policy": "Same code, text, or image hashes are review candidates, never proof of interchangeability."
+}
